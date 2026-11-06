@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#051424;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ffb4ab", "inverse-surface": "#d4e4fa", "tertiary": "#ffdddc", "surface-tint": "#00e475", "on-error": "#690005", "tertiary-container": "#ffb6b6", "on-secondary": "#00363d", "inverse-on-surface": "#233143", "on-tertiary": "#680014", "on-tertiary-fixed-variant": "#920021", "on-surface": "#d4e4fa", "outline-variant": "#3b4a3d", "on-tertiary-fixed": "#400009", "on-secondary-container": "#00616d", "on-background": "#d4e4fa", "secondary": "#bdf4ff", "surface-bright": "#2c3a4c", "secondary-container": "#00e3fd", "on-secondary-fixed": "#001f24", "surface-variant": "#273647", "on-primary": "#003918", "surface-container-high": "#1c2b3c", "secondary-fixed-dim": "#00daf3", "outline": "#859585", "background": "#051424", "surface-dim": "#051424", "on-primary-fixed": "#00210b", "on-error-container": "#ffdad6", "primary": "#75ff9e", "surface": "#051424", "on-primary-fixed-variant": "#005226", "inverse-primary": "#006d35", "on-primary-container": "#00612e", "tertiary-fixed": "#ffdad9", "surface-container": "#122131", "primary-container": "#00e676", "surface-container-highest": "#273647", "tertiary-fixed-dim": "#ffb3b3", "surface-container-lowest": "#010f1f", "on-surface-variant": "#bacbb9", "surface-container-low": "#0d1c2d", "primary-fixed-dim": "#00e475", "error-container": "#93000a", "on-tertiary-container": "#ab0028", "secondary-fixed": "#9cf0ff", "on-secondary-fixed-variant": "#004f58", "primary-fixed": "#62ff96" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin": "1rem", "margin-tablet": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "margin-desktop": "2.5rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "stat-display": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "stat-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="FFA Crest Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XecrBlCyRTcdqPTFw_fGEQ-bFOmGdCcZGW1zMPaniAmTpGm8GEHfiENDRUxpgkpFmuPEldggRB-IOs32ymLUXbvxQfTBdfUIJ1Ez63HhTteXLzHWqAU-rgHvDCBYeAIlmsAS-dD_puApV_qNb0ZvwIdO7FBQkil0Npii3pOT00jrIIWvvfuwuvco1EZAyDbhsRhaWnkXC2IBigWbwKCdAHTg-TgXipfUEkdao2o5jYBw"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase">FFA</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase -mt-1">Arena</span></div></div><div class="flex-1 px-space-xs text-center"><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Groups</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[22px]">search</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary-container shadow-[0_0_8px_#00e3fd]"></span></button><button aria-label="Notifications" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00e676]"></span></button><a class="w-12 h-12 flex items-center justify-center" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZN9dDeF6YF7lbp2DsgQGNFK3gKk3W64a7OIdbPbkblaxcMZkrK6oQqiWmFMwqdiG1Ej2RaYKcqVQTvzm7D0wLYok_eXSu2ZIbTbppP_l_fLIFg0k_8tu6KDif_m8WOiYwvLSJ8D_hAr0yoEV7EfDxPCZ4tM52GtffBLVLYIT2CYMLgwEZg7UxiSAg4qTn33nOdg4YBPFVgsqBdu94G0wI8ephehcctWhBjRa6JIyO"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-8 space-y-6">
+<!-- Top Action & Community Intro Section -->
+<div class="px-margin flex items-center justify-between gap-space-sm pt-2">
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00e676]"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">Terrace Hub</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Discover &amp; Join Banter Groups</h2>
+</div>
+<button class="flex-shrink-0 flex items-center gap-1 px-4 py-2.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_0_16px_rgba(0,230,118,0.4)] active:scale-95 transition-transform" id="create-group-btn">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Create</span>
+</button>
+</div>
+<!-- Search & Category Filters Rail -->
+<div class="flex flex-col gap-3">
+<div class="px-margin">
+<div class="relative flex items-center w-full rounded-full bg-surface-container-high px-4 py-2.5 shadow-inner">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none" placeholder="Search clubs, rivals, or tactical hubs..." type="text"/>
+<span class="material-symbols-outlined text-outline text-[18px] cursor-pointer">tune</span>
+</div>
+</div>
+<div class="flex items-center gap-2 overflow-x-auto px-margin no-scrollbar py-1">
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-md text-label-md shadow-[0_0_10px_rgba(0,227,253,0.3)]" data-active="true">All Groups</button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-active="false">Rivalries &amp; Derbies</button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-active="false">Tactics &amp; Analytics</button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-active="false">Transfer Rumours</button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-active="false">Fantasy &amp; Stats</button>
+<button class="category-chip flex-shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors" data-active="false">Memes &amp; Banter</button>
+</div>
+</div>
+<!-- Your Joined Groups Carousel -->
+<div class="flex flex-col space-y-3">
+<div class="px-margin flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Your Joined Groups</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary">3 Active</span>
+</div>
+<!-- Carousel Container -->
+<div class="flex gap-3 overflow-x-auto px-margin no-scrollbar pb-2">
+<!-- Card 1: North London Derby -->
+<div class="flex-shrink-0 w-64 rounded-2xl bg-surface-container-low p-4 flex flex-col justify-between shadow-md relative overflow-hidden group active:scale-[0.98] transition-transform">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-primary/5 blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Arsenal vs Tottenham crest clash emblem rendered in sleek neon stadium floodlight sports graphic styling with high contrast" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzjqaOOHx7bTzwFYA6QUMJLHfQW3l1sdWQipPEoeqYduie9DykgeLXWQpC5ORMPdHp0zbjNMNbYZ5LYVs2KNlhQjX7wDKsJ6a0jYsOXfdJ8RAWG9VltqMOJmNfshkjQsmlKjMZP_EgmCqb5L3Z6NMRwGxjzCeC_paBVtM92URerA7eWQZxM9baOw71h1aYpXbv9Z_uYPFD5Kc4iqhBeq57cWoidkNAtmmztrLF6Bm-"/>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<span>Hot</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight mb-1">North London Derby Banter</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">18.4k members</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between bg-surface-container-lowest/60 rounded-xl px-2.5 py-1.5">
+<span class="font-label-sm text-label-sm text-primary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            12 new posts
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2: El Clasico Heated Debates -->
+<div class="flex-shrink-0 w-64 rounded-2xl bg-surface-container-low p-4 flex flex-col justify-between shadow-md relative overflow-hidden group active:scale-[0.98] transition-transform">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-secondary/5 blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Real Madrid versus Barcelona rivalry aesthetic crest emblem sports technology glowing neon stadium backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOZBRC40wN-a6oZxopoeUsEDRbuLzLD89hFez5zW-2-hVhnAcDkLYXJBAju4iQfg7qnbLEvH76S9p9IUnVwCwfnFg6zr4Irx1kOEvSwXY4bGwEM8fJOeEM-lpZz1Pxm5q3qBahG_4y9mKPQvF-4VbwokrTzsaT8RnJDAwOcWQYo1dhbtVSBe-U8hfhrmu6Y0XNG9yIeLPMr73OPrtAfUshinEzxhVenmF045bTiqQU"/>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">bolt</span>
+<span>Clasico</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight mb-1">El Clasico Heated Debates</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">25.1k members</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between bg-surface-container-lowest/60 rounded-xl px-2.5 py-1.5">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse"></span>
+            45 new posts
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3: Premier League VAR Rage -->
+<div class="flex-shrink-0 w-64 rounded-2xl bg-surface-container-low p-4 flex flex-col justify-between shadow-md relative overflow-hidden group active:scale-[0.98] transition-transform">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 rounded-full bg-error/10 blur-xl pointer-events-none"></div>
+<div class="flex items-start justify-between mb-3">
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="VAR referee review video screen symbol neon glowing football match stadium broadcast screen style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJMxXoRksBhBHZratPiJk8BEZf5yAuPr0Q5jDWXnEW6OMgRe52KZ8yZ4G8GFzhNER6QQennRHz9szDtuOBFtzHQmkti8kV0nkGdfBGWl3b-GKIrCTvygT19evU86w7W00x7cGE3g9pgkAgBKwUwJghbRAyXDOLqT1kiQHC6oN1iPImjzBAdLnc1LSGCXroJC0W3nO3sbEYOrnJaGP93B0AWfzzKxOEWJ6KsXrL5z4X"/>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container/40 text-error font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+<span>Rage Zone</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight mb-1">Premier League VAR Rage</h4>
+<p class="font-label-sm text-label-sm text-on-surface-variant">9.8k members</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between bg-surface-container-lowest/60 rounded-xl px-2.5 py-1.5">
+<span class="font-label-sm text-label-sm text-error font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+            5 new posts
+          </span>
+<span class="material-symbols-outlined text-outline text-[18px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Discover Trending Banter Groups Section -->
+<div class="px-margin flex flex-col space-y-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">explore</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Discover Trending Banter Groups</h3>
+</div>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-0.5">
+        See All
+        <span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+<!-- Feed / Group List -->
+<div class="flex flex-col space-y-3">
+<!-- Trending Group 1: The Champions League Arena -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm relative overflow-hidden transition-all duration-200">
+<div class="flex items-start gap-3">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex-shrink-0 overflow-hidden relative shadow">
+<img class="w-full h-full object-cover" data-alt="UEFA Champions League illuminated night stadium with iconic star ball trophy futuristic sports banner design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVPVeTY-64QC5XDYyOoQZpYamX7sySmBS09isFX9BbI0hO-BYxGTlhz0X5Rv3LDvDUbQrZCSK4txVN6jt9rllNedXJLw9t_iohcLOS4sw958ebEaAJP0UGZ3olxalzki4gbOdXnTqB2y7Hijfsxy2kmNBP5kahtOmP1gMuiNtz0hq6OS27Q9M-FnXgqkJpj-_3AE5rqEy6iGpoMsJ_llKjU6Ja_7B3itiB5xkgzVHE"/>
+<div class="absolute bottom-0 inset-x-0 bg-surface-container-lowest/80 py-0.5 flex justify-center">
+<span class="font-label-sm text-[8px] text-secondary tracking-widest uppercase">UCL</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[9px] uppercase tracking-wide">Public</span>
+<span class="px-2 py-0.2 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-[9px]">European Football</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate mt-1">The Champions League Arena</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">groups</span>
+                42.5k members
+              </span>
+<span>•</span>
+<span class="text-primary flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                Ultra Active
+              </span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 line-clamp-2">
+          Banter, tactical breakdowns and knockout drama. Strict no-abuse rules. Matchday threads locked at kickoff for verified fan warzones!
+        </p>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container-lowest/40 rounded-xl px-3 py-2">
+<div class="flex -space-x-1.5 items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] text-primary font-bold">CR</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-[10px] text-secondary font-bold">LM</div>
+<div class="w-6 h-6 rounded-full bg-surface-bright flex items-center justify-center text-[10px] text-on-surface font-bold">KB</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant pl-2">+1.2k today</span>
+</div>
+<button class="join-toggle-btn px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_0_12px_rgba(0,230,118,0.3)] active:scale-95 transition-all">
+            Join Group
+          </button>
+</div>
+</div>
+<!-- Trending Group 2: Premier League Title Race Banter -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm relative overflow-hidden transition-all duration-200">
+<div class="flex items-start gap-3">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex-shrink-0 overflow-hidden relative shadow">
+<img class="w-full h-full object-cover" data-alt="English Premier League golden trophy aesthetic with floodlit night match dramatic dark teal background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPol2O1xGcUD_y-JhjH8J6scqb-UCB-yVh9Jk6M3IelKqYFaQkbnmgl8t90WMBq2o8giP_sgtPTQlCwTckrR0JopoM7O1HDVbMZEEdBjl_XmShFN58a6VAiLOJy06yAxI_gT3-oZPGP-Dd6E6t6jwRtwmz23FQ9Fq_db2-3IYWalpY4usQtWNGkHaFblTxHIVotL30FEmazXcKkwZWGEgY1c5sGzYKIG4kPo6MH8nJ"/>
+<div class="absolute bottom-0 inset-x-0 bg-surface-container-lowest/80 py-0.5 flex justify-center">
+<span class="font-label-sm text-[8px] text-primary tracking-widest uppercase">EPL</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[9px] uppercase tracking-wide">Public</span>
+<span class="px-2 py-0.2 rounded-full bg-primary-container/20 text-primary font-label-sm text-[9px]">Title Race</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate mt-1">Premier League Title Race Banter</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">groups</span>
+                31.2k members
+              </span>
+<span>•</span>
+<span class="text-secondary flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                Heated Rivalry
+              </span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 line-clamp-2">
+          Daily banter between Arsenal, City, and Liverpool fans. Check your bottle memes at the door and prepare for 90+8 stoppage time arguments.
+        </p>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container-lowest/40 rounded-xl px-3 py-2">
+<div class="flex -space-x-1.5 items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] text-on-surface font-bold">AF</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-[10px] text-on-surface font-bold">MC</div>
+<div class="w-6 h-6 rounded-full bg-surface-bright flex items-center justify-center text-[10px] text-on-surface font-bold">LF</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant pl-2">+840 today</span>
+</div>
+<button class="join-toggle-btn px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_0_12px_rgba(0,230,118,0.3)] active:scale-95 transition-all">
+            Join Group
+          </button>
+</div>
+</div>
+<!-- Trending Group 3: Tactics & Pressing Nerds (Private) -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm relative overflow-hidden transition-all duration-200">
+<div class="flex items-start gap-3">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex-shrink-0 overflow-hidden relative shadow">
+<img class="w-full h-full object-cover" data-alt="Tactical pitch chalkboard with glowing holographic green pressing arrows, heat maps and chalkboard analytical formations" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGfgJs8tzSfsxeaSWukxjecblnWxe24D-L8d_V0BcnuoF7etWPVPN4H5HukE04yO_76Mer_RRxdSRT7qJGbbBZLPcTYI4ko5YrBUdrqaJbEiqqTgwEeUbdutD7dMhrCzt4TXp6T8v3x3P7G7C6EJX6kqufwbN4tJw6zyM1yDXg4ZH3lFCaK-T1oiqN3DRMkEZfeg4y9msmJK1oKRB9s83vu573LpdQSUNkzdb_Br-7"/>
+<div class="absolute inset-0 bg-surface-container-lowest/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[22px]">lock</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.2 rounded-full bg-surface-variant text-on-surface font-label-sm text-[9px] uppercase tracking-wide flex items-center gap-1">
+<span class="material-symbols-outlined text-[10px]">lock</span>
+                Private
+              </span>
+<span class="px-2 py-0.2 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-[9px]">Analytics</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate mt-1">Tactics &amp; Pressing Nerds</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">groups</span>
+                8.4k members
+              </span>
+<span>•</span>
+<span class="text-outline">Vetted Fans Only</span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 line-clamp-2">
+          In-depth tactical breakdowns, heatmaps, and stats. Request to join. Must answer entry quiz on inverted fullbacks and half-space overloads.
+        </p>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container-lowest/40 rounded-xl px-3 py-2">
+<div class="flex items-center gap-1.5 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-outline text-[16px]">verified_user</span>
+<span>Host: CoachDeBruyne</span>
+</div>
+<button class="request-access-btn px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md active:scale-95 transition-all flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[14px]">lock_clock</span>
+<span>Request Access</span>
+</button>
+</div>
+</div>
+<!-- Trending Group 4: Transfer Window Gossip & Meltdowns -->
+<div class="bg-surface-container-low rounded-2xl p-4 shadow-sm relative overflow-hidden transition-all duration-200">
+<div class="flex items-start gap-3">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-high flex-shrink-0 overflow-hidden relative shadow">
+<img class="w-full h-full object-cover" data-alt="Airport arrival private jet terminal with football transfer signing dramatic sports news broadcast graphic neon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYXGw2z2pBAI-y5MNDypxwKzESldEXv9dGZyLDmXQknt-WGoOIT9wmdwm_HnlekftazlQFCOzSSy53cJo72slC2ISV8Y9VoMo5pGG2oXm0uHiYExxlcOe3-OoPXt43s2izOI71jC35fyYcW1v0DlbUzGv5cOeTnhRbwsQNglsoVG5o6DV3uFZaL6Qmh30Ki4wdJJI1PLcypRwBuEg7OFDYFPm4tuEqjC2FOYrybnh-"/>
+<div class="absolute bottom-0 inset-x-0 bg-surface-container-lowest/80 py-0.5 flex justify-center">
+<span class="font-label-sm text-[8px] text-tertiary-fixed-dim tracking-widest uppercase">Rumours</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.2 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-[9px] uppercase tracking-wide">Public</span>
+<span class="px-2 py-0.2 rounded-full bg-tertiary-container/30 text-tertiary font-label-sm text-[9px]">Tier 1 Only</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate mt-1">Transfer Window Gossip &amp; Meltdowns</h4>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mt-0.5">
+<span class="flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">groups</span>
+                56.1k members
+              </span>
+<span>•</span>
+<span class="text-primary flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">flight_takeoff</span>
+                Here We Go!
+              </span>
+</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2.5 line-clamp-2">
+          Plane trackers, medical leaks, agent fee meltdowns, and Fabrizio Romano alert notifications decoded in real-time.
+        </p>
+<div class="mt-3.5 pt-3 flex items-center justify-between bg-surface-container-lowest/40 rounded-xl px-3 py-2">
+<div class="flex -space-x-1.5 items-center">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] text-on-surface font-bold">FR</div>
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-[10px] text-on-surface font-bold">DO</div>
+<div class="w-6 h-6 rounded-full bg-surface-bright flex items-center justify-center text-[10px] text-on-surface font-bold">TA</div>
+<span class="font-label-sm text-[10px] text-on-surface-variant pl-2">+3.4k today</span>
+</div>
+<button class="join-toggle-btn px-4 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md shadow-[0_0_12px_rgba(0,230,118,0.3)] active:scale-95 transition-all">
+            Join Group
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Community Safety & Rules Notice Card -->
+<div class="px-margin pt-2">
+<div class="rounded-2xl bg-surface-container-low p-4 shadow-sm relative overflow-hidden">
+<div class="absolute -right-12 -top-12 w-32 h-32 rounded-full bg-secondary-container/5 blur-2xl pointer-events-none"></div>
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-full bg-secondary-container/20 text-secondary-container flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">shield</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center gap-2 mb-1">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">FFA Banter Rules</h4>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-secondary font-label-sm text-[8px] uppercase tracking-wider">Terrace Code</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            Passionate banter welcomed. Zero tolerance for hate speech, racism, or personal harassment. Moderated 24/7 by community champions to keep terrace culture fierce yet respectful.
+          </p>
+<div class="mt-3 flex items-center gap-4">
+<button class="font-label-sm text-label-sm text-secondary hover:underline flex items-center gap-0.5">
+              Read Code of Conduct
+              <span class="material-symbols-outlined text-[12px]">open_in_new</span>
+</button>
+<span class="text-outline text-label-sm">•</span>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-error transition-colors flex items-center gap-0.5">
+              Report Violation
+            </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Create Group Modal Container (Hidden by Default) -->
+<div class="fixed inset-0 z-50 bg-background/80 backdrop-blur-md flex items-end justify-center hidden" id="create-group-modal">
+<div class="w-full max-w-md bg-surface-container-high rounded-t-3xl p-6 shadow-2xl space-y-4 max-h-[751px] overflow-y-auto">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary shadow-[0_0_8px_#00e676]"></span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Create Banter Group</h3>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="space-y-3 pt-1">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Group Name</label>
+<input class="w-full rounded-xl bg-surface-container-lowest px-3.5 py-2.5 text-on-surface font-body-md text-body-md focus:outline-none" placeholder="e.g. Manchester Derby Terrace Cry-Room" type="text"/>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Category</label>
+<select class="w-full rounded-xl bg-surface-container-lowest px-3.5 py-2.5 text-on-surface font-body-md text-body-md focus:outline-none">
+<option>Rivalries &amp; Derbies</option>
+<option>Tactics &amp; Analytics</option>
+<option>Transfer Rumours</option>
+<option>Fantasy &amp; Stats</option>
+<option>Memes &amp; Banter</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Banter Policy</label>
+<div class="grid grid-cols-2 gap-2">
+<div class="rounded-xl bg-surface-container-lowest p-2.5 flex items-center gap-2 cursor-pointer border border-primary/40">
+<span class="material-symbols-outlined text-primary text-[18px]">public</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Public</p>
+<p class="font-label-sm text-[10px] text-on-surface-variant">Open to all fans</p>
+</div>
+</div>
+<div class="rounded-xl bg-surface-container-lowest p-2.5 flex items-center gap-2 cursor-pointer opacity-70">
+<span class="material-symbols-outlined text-outline text-[18px]">lock</span>
+<div>
+<p class="font-label-md text-label-md text-on-surface">Private</p>
+<p class="font-label-sm text-[10px] text-on-surface-variant">Request &amp; vetting</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant block mb-1">Bio &amp; House Rules</label>
+<textarea class="w-full rounded-xl bg-surface-container-lowest p-3 text-on-surface font-body-md text-body-md focus:outline-none resize-none" placeholder="Describe the banter vibe and mandatory rules..." rows="2"></textarea>
+</div>
+<button class="w-full py-3 rounded-full bg-primary-container text-on-primary font-headline-sm text-headline-sm shadow-[0_0_16px_rgba(0,230,118,0.4)] mt-2 active:scale-98 transition-transform" id="submit-create-btn">
+          Launch Group
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Filter Chip Interactions
+  const filterChips = document.querySelectorAll('.category-chip');
+  filterChips.forEach(chip => {
+    chip.addEventListener('click', () => {
+      filterChips.forEach(c => {
+        c.classList.remove('bg-secondary-container', 'text-on-secondary', 'shadow-[0_0_10px_rgba(0,227,253,0.3)]');
+        c.classList.add('bg-surface-container-high', 'text-on-surface-variant');
+        c.dataset.active = "false";
+      });
+      chip.classList.remove('bg-surface-container-high', 'text-on-surface-variant');
+      chip.classList.add('bg-secondary-container', 'text-on-secondary', 'shadow-[0_0_10px_rgba(0,227,253,0.3)]');
+      chip.dataset.active = "true";
+    });
+  });
+
+  // Join / Joined Toggle Interactions
+  const joinBtns = document.querySelectorAll('.join-toggle-btn');
+  joinBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isJoined = btn.dataset.joined === 'true';
+      if (!isJoined) {
+        btn.dataset.joined = 'true';
+        btn.innerText = 'Joined ✓';
+        btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-[0_0_12px_rgba(0,230,118,0.3)]');
+        btn.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+      } else {
+        btn.dataset.joined = 'false';
+        btn.innerText = 'Join Group';
+        btn.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+        btn.classList.add('bg-primary-container', 'text-on-primary', 'shadow-[0_0_12px_rgba(0,230,118,0.3)]');
+      }
+    });
+  });
+
+  // Request Access Interactive State
+  const reqBtns = document.querySelectorAll('.request-access-btn');
+  reqBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      btn.innerHTML = '<span class="material-symbols-outlined text-[14px]">done</span><span>Requested</span>';
+      btn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+      btn.classList.add('bg-surface-container-lowest', 'text-primary');
+      btn.disabled = true;
+    });
+  });
+
+  // Create Group Modal Controls
+  const createBtn = document.getElementById('create-group-btn');
+  const modal = document.getElementById('create-group-modal');
+  const closeModalBtn = document.getElementById('close-modal-btn');
+  const submitCreateBtn = document.getElementById('submit-create-btn');
+
+  if (createBtn && modal && closeModalBtn) {
+    createBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
+
+    closeModalBtn.addEventListener('click', () => {
+      modal.classList.add('hidden');
+    });
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+
+    if (submitCreateBtn) {
+      submitCreateBtn.addEventListener('click', () => {
+        submitCreateBtn.innerText = 'Setting Up Pitch...';
+        setTimeout(() => {
+          modal.classList.add('hidden');
+          submitCreateBtn.innerText = 'Launch Group';
+        }, 600);
+      });
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_-8px_32px_rgba(0,0,0,0.6)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="feed" href="#"><span class="material-symbols-outlined text-[24px]">newspaper</span><span class="font-label-sm text-label-sm tracking-wide">Feed</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="clubs" href="#"><span class="material-symbols-outlined text-[24px]">shield</span><span class="font-label-sm text-label-sm tracking-wide">Clubs</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="predictions" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">sports_score</span><span class="absolute -top-1 -right-2 px-1 py-0.2 rounded-full bg-primary-container text-on-primary font-label-sm text-[8px] leading-tight font-bold tracking-tighter uppercase shadow-[0_0_8px_#00e676]">LIVE</span></div><span class="font-label-sm text-label-sm tracking-wide">Predictions</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-colors relative text-primary font-label-md" data-path="groups" href="#"><span class="material-symbols-outlined text-[24px]">local_fire_department</span><span class="font-label-sm text-label-sm tracking-wide">Groups</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm tracking-wide">Profile</span></a></div></nav></body></html>

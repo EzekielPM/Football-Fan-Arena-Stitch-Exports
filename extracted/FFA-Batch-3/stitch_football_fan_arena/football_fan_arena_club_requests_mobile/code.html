@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-fixed-variant": "#004f58", "secondary": "#bdf4ff", "surface-tint": "#00e475", "inverse-primary": "#006d35", "surface-container-lowest": "#010f1f", "tertiary": "#ffdddc", "tertiary-fixed": "#ffdad9", "on-tertiary-fixed-variant": "#920021", "on-secondary-fixed": "#001f24", "primary-fixed-dim": "#00e475", "tertiary-fixed-dim": "#ffb3b3", "outline": "#859585", "error": "#ffb4ab", "primary-fixed": "#62ff96", "background": "#051424", "error-container": "#93000a", "secondary-container": "#00e3fd", "primary": "#75ff9e", "on-surface-variant": "#bacbb9", "inverse-on-surface": "#233143", "secondary-fixed": "#9cf0ff", "surface-variant": "#273647", "primary-container": "#00e676", "surface-container-highest": "#273647", "surface-container-low": "#0d1c2d", "on-background": "#d4e4fa", "on-primary-fixed-variant": "#005226", "on-primary-container": "#00612e", "surface-container-high": "#1c2b3c", "secondary-fixed-dim": "#00daf3", "on-tertiary": "#680014", "on-secondary": "#00363d", "on-primary": "#003918", "surface": "#051424", "outline-variant": "#3b4a3d", "on-error": "#690005", "inverse-surface": "#d4e4fa", "surface-dim": "#051424", "on-tertiary-fixed": "#400009", "surface-container": "#122131", "on-secondary-container": "#00616d", "on-surface": "#d4e4fa", "on-error-container": "#ffdad6", "on-tertiary-container": "#ab0028", "on-primary-fixed": "#00210b", "surface-bright": "#2c3a4c", "tertiary-container": "#ffb6b6" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "margin-desktop": "2.5rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-tablet": "1.5rem", "space-md": "1rem", "margin": "1rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "stat-display": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-lg": ["Inter"] }, fontSize: { "headline-sm": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-xl-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "800" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.03em", fontWeight: "800" }], "stat-display": ["28px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><button aria-label="Go back" class="min-w-[44px] min-h-[44px] -ml-space-xs flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md tracking-tight text-on-surface truncate">Privacy &amp; Moderation</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><button aria-label="Filter" class="min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-20 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin space-y-space-md pb-space-xl">
+<!-- Sub-bar for Club Request Portal context -->
+<div class="flex items-center justify-between py-space-xs">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">add_moderator</span>
+</div>
+<div class="min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate block">Request Missing Club</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block uppercase tracking-wider">Terrace Expansion Portal</span>
+</div>
+</div>
+<button aria-label="Supporter criteria info" class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" id="info-btn">
+<span class="material-symbols-outlined text-[18px]">help_outline</span>
+</button>
+</div>
+<!-- Dynamic Info Modal Backdrop (Toggleable via script) -->
+<div class="hidden fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md p-margin flex items-center justify-center" id="info-modal">
+<div class="w-full max-w-sm bg-surface-container-high rounded-xl p-space-md shadow-2xl space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Criteria Guide</span>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant" id="close-modal-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Every club matters—from Sunday grassroots to tier 7 underdogs. To prevent duplicate ghost rooms, clubs enter official rosters once 200 terrace members vote or when a recognized Supporter Trust validates identity.
+      </p>
+<div class="p-space-sm bg-surface-container rounded flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">timer</span>
+<span class="font-label-sm text-label-sm text-on-surface">Review turnaround: 48 hours max</span>
+</div>
+</div>
+</div>
+<!-- Hero Status Tracker Card -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-lg space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-lg text-label-lg text-on-surface uppercase tracking-wide">Your Petitions Hub</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary bg-surface-container px-2.5 py-1 rounded-full font-bold">Active Roster</span>
+</div>
+<!-- Mini Metrics Strip -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="bg-surface-container p-space-sm rounded text-center">
+<span class="font-stat-display text-stat-display text-primary block leading-none">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1 block">In Review</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded text-center">
+<span class="font-stat-display text-stat-display text-secondary block leading-none">1</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1 block">Approved</span>
+</div>
+<div class="bg-surface-container p-space-sm rounded text-center">
+<span class="font-stat-display text-stat-display text-on-surface block leading-none">2</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase mt-1 block">Backed</span>
+</div>
+</div>
+<!-- Priority Petition Highlight -->
+<div class="bg-surface-container p-space-sm rounded-lg space-y-space-xs">
+<div class="flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[18px] text-primary">sports_soccer</span>
+<span class="font-headline-sm text-headline-sm truncate text-on-surface">Blyth Spartans AFC</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">84%</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full transition-all duration-500" style="width: 84%;"></div>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm pt-0.5">
+<span>Northern Premier Division</span>
+<span class="font-label-sm text-label-sm text-primary">168 / 200 Backers</span>
+</div>
+</div>
+</section>
+<!-- Submit New Club Form -->
+<section class="bg-surface-container-low rounded-xl p-space-md shadow-lg space-y-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">assignment_turned_in</span>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Submit Missing Club</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Get your grassroots side onto the matchday grid.</p>
+</div>
+</div>
+<form class="space-y-space-md" id="petition-form" onsubmit="event.preventDefault();">
+<!-- Club Name -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block" for="club-name">Club Legal or Match Name *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">shield</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-10 pr-4 py-3 rounded text-[16px] outline-none focus:bg-surface-container-high focus:text-on-surface transition-colors" id="club-name" placeholder="e.g. Dulwich Hamlet FC" required="" type="text"/>
+</div>
+</div>
+<!-- Country & League -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block" for="league-info">Country &amp; League / Tier *</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">public</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-10 pr-4 py-3 rounded text-[16px] outline-none focus:bg-surface-container-high focus:text-on-surface transition-colors" id="league-info" placeholder="England • National League South (Tier 6)" required="" type="text"/>
+</div>
+</div>
+<!-- Stadium / Home Ground -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block" for="stadium-name">Home Ground / Stadium</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">stadium</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-10 pr-4 py-3 rounded text-[16px] outline-none focus:bg-surface-container-high focus:text-on-surface transition-colors" id="stadium-name" placeholder="e.g. Champion Hill Stadium" type="text"/>
+</div>
+</div>
+<!-- Two-column: Founded Year & Colors -->
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block" for="founded-year">Founded Year</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">history</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-9 pr-3 py-3 rounded text-[16px] outline-none focus:bg-surface-container-high focus:text-on-surface transition-colors" id="founded-year" max="2026" min="1850" placeholder="1893" type="number"/>
+</div>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Terrace Colors</label>
+<div class="flex items-center gap-space-xs h-[48px] bg-surface-container px-3 rounded">
+<!-- Color Swatches as interactive micro pills -->
+<button aria-label="Color one" class="w-6 h-6 rounded-full bg-[#1e293b] shadow-sm focus:scale-110 transition-transform" title="Primary Color" type="button"></button>
+<button aria-label="Color two" class="w-6 h-6 rounded-full bg-[#ec4899] shadow-sm focus:scale-110 transition-transform" title="Secondary Color" type="button"></button>
+<span class="font-label-sm text-label-sm text-on-surface-variant ml-auto">Navy/Pink</span>
+</div>
+</div>
+</div>
+<!-- Official Link / Twitter / Website -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block" for="club-url">Official Website or @Handle</label>
+<div class="relative flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[20px]">link</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-10 pr-4 py-3 rounded text-[16px] outline-none focus:bg-surface-container-high focus:text-on-surface transition-colors" id="club-url" placeholder="https://dulwichhamletfc.co.uk" type="url"/>
+</div>
+</div>
+<!-- Supporter Crest / Evidence Upload Dropper -->
+<div class="space-y-space-xs">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider block">Club Crest &amp; Identity Asset</label>
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col items-center justify-center text-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-2 shadow-sm">
+<span class="material-symbols-outlined text-[24px]">cloud_upload</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface block font-bold">Tap to upload club badge</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block mt-0.5">High-res PNG, SVG or matchday program photo</span>
+</div>
+</div>
+<!-- Submit CTA Button -->
+<button class="w-full py-4 px-space-md rounded-full bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-space-xs hover:bg-primary-container active:scale-[0.98] transition-all shadow-lg" id="submit-petition-btn" type="submit">
+<span class="material-symbols-outlined text-[20px]">flag</span>
+<span>Submit Club Request</span>
+</button>
+</form>
+</section>
+<!-- Trending Community Petitions -->
+<section class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-secondary text-[20px]">whatshot</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Trending Grassroots Petitions</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Terrace Vote</span>
+</div>
+<!-- Petition 1: Dulwich Hamlet FC -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Official round vector-style crest of Dulwich Hamlet Football Club featuring deep navy blue and vibrant terrace pink colors on dark sports fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACroHXO9pJSo4BOx8ehUziHjVa9mQ7zH4LWs5kyaHofp5a5Vmd0OEiULy2gnnGrIVLkjmLzGnBFxWw33uMrGucbqlVRzAOqOvA_yc7MYcmJKkVCPBARwq1FN-gF2ztxJldxrCeEz2ICQ3q9L0fJVIYAYJ6x7Jw8H1yu_oSmnVmSl-bVT0jhMh81NYUOEzaJ-yY5bnhVLcBeRFHKrNY9OYCizWbA46Ko6Q2zT3jjKP8"/>
+</div>
+<div class="min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Dulwich Hamlet FC</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">National League South • Tier 6</span>
+</div>
+</div>
+<span class="bg-surface-container px-2 py-0.5 rounded text-secondary font-label-sm text-label-sm shrink-0">England</span>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Target Progress</span>
+<span class="text-primary font-bold">142 / 200 Backers (71%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 71%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">groups</span>
+<span>58 supporters needed</span>
+</span>
+<button class="back-club-btn px-4 py-2 rounded-full bg-surface-container-high hover:bg-primary hover:text-on-primary text-on-surface font-label-md text-label-md flex items-center gap-1 transition-all">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Back Club +1</span>
+</button>
+</div>
+</div>
+<!-- Petition 2: Wrexham AFC Women -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Bold red and white athletic crest of Wrexham AFC Women featuring the iconic Welsh dragon motif isolated on a dark locker room background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB6PRjYTJjfWvkkg4ynW6glY_eHae2pNLhTVIQ5PFOqmpRsCpudGqYnfwIOLEsB_aCT99ZRxAKj-LDlyeJQC0Hh3EiZp2HBfy0VlC5Rnj10JpqSbMOaZMx6jPOfK5TagaYQu6Q74cLLxRe-vSA_G9Hfz0ckSxfQNpgbh47LdijVBUSKk9dsXeBR4HQ2FPyvm-1GfjGWzmOosC1ntYgKhlTyjR-fAOhTh0M1OZnSXVW"/>
+</div>
+<div class="min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Wrexham AFC Women</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">Genero Adran Premier • Wales</span>
+</div>
+</div>
+<span class="bg-secondary-container/20 text-secondary-container px-2 py-0.5 rounded font-label-sm text-label-sm shrink-0 uppercase tracking-wider font-bold">FA Verification</span>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Verification Status</span>
+<span class="text-secondary font-bold">310 Backers (Threshold Cleared)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-secondary h-full rounded-full" style="width: 100%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[18px]">hourglass_top</span>
+<span class="font-label-md text-label-md font-bold">Under Review by FFA Admins</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Est. 24h</span>
+</div>
+</div>
+<!-- Petition 3: FC United of Manchester -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Traditional red, white and gold fan-owned shield emblem of FC United of Manchester with ship emblem on pitch-side terrace brick wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTvNioxGMQDpLqNgCEGgNHGY8-NGoCgW3VfbNetxU4xsr5j9gn_7I_8RzWgS2PrMPfnsiRCxdiFQUK3HaQC0-Sw9OTD-_4vJFlfvTIVp07QZsuw9iIiTULWjaNCPoHpv8k5InvwCrCKZVxfYQtMKyqqfcpBVW5zb4EF85dYemRiUCAqTnjiA7WCq2e1ZXksHpqQNfHy5Xazu7WZkg_gJbI1uP-3l_rBpQArikx3Hm0"/>
+</div>
+<div class="min-w-0">
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">FC United of Manchester</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant block truncate">Northern Premier League • Broadhurst Park</span>
+</div>
+</div>
+<span class="bg-surface-container px-2 py-0.5 rounded text-secondary font-label-sm text-label-sm shrink-0">Supporters Owned</span>
+</div>
+<div class="space-y-1">
+<div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>Approval Target</span>
+<span class="text-primary font-bold">195 / 200 Backers (97%)</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 97%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">local_fire_department</span>
+<span class="text-primary font-bold">5 votes to unlock room!</span>
+</span>
+<button class="back-club-btn px-4 py-2 rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md flex items-center gap-1 transition-all shadow-md">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Back Club +1</span>
+</button>
+</div>
+</div>
+</section>
+<!-- How Petitions Work Guidelines Card -->
+<section class="bg-surface-container-high rounded-xl p-space-md shadow-md space-y-space-sm">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[22px]">gavel</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">How Club Petitions Work</h3>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+      Every league deserves a voice. A club unlocks a designated live matchroom, chat banter forum, and prediction tracker once either benchmark is met:
+    </p>
+<div class="space-y-space-xs pt-space-xs">
+<div class="flex items-start gap-space-sm p-space-sm bg-surface-container rounded-lg">
+<div class="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0 mt-0.5">
+<span class="font-label-sm text-label-sm font-bold">1</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block font-bold">200 Community Backers</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Supporters click "Back Club" on mobile to show demand.</span>
+</div>
+</div>
+<div class="flex items-start gap-space-sm p-space-sm bg-surface-container rounded-lg">
+<div class="w-6 h-6 rounded-full bg-secondary/20 text-secondary flex items-center justify-center shrink-0 mt-0.5">
+<span class="font-label-sm text-label-sm font-bold">2</span>
+</div>
+<div class="min-w-0">
+<span class="font-label-md text-label-md text-on-surface block font-bold">Official Supporter Trust Validation</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant block">Verified club committee or trust submission bypasses vote counts.</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+<script>
+  // Simple micro-interactions for modal & button responsiveness
+  (function() {
+    const infoBtn = document.getElementById('info-btn');
+    const infoModal = document.getElementById('info-modal');
+    const closeModalBtn = document.getElementById('close-modal-btn');
+    const submitBtn = document.getElementById('submit-petition-btn');
+    const backButtons = document.querySelectorAll('.back-club-btn');
+
+    if (infoBtn && infoModal && closeModalBtn) {
+      infoBtn.addEventListener('click', () => {
+        infoModal.classList.remove('hidden');
+      });
+      closeModalBtn.addEventListener('click', () => {
+        infoModal.classList.add('hidden');
+      });
+      infoModal.addEventListener('click', (e) => {
+        if (e.target === infoModal) infoModal.classList.add('hidden');
+      });
+    }
+
+    if (submitBtn) {
+      submitBtn.addEventListener('click', () => {
+        const clubName = document.getElementById('club-name').value;
+        if (!clubName) {
+          document.getElementById('club-name').focus();
+          return;
+        }
+        submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Submitting to League Stewards...</span>';
+        setTimeout(() => {
+          submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Petition Lodged! (Under Review)</span>';
+          submitBtn.classList.remove('bg-primary');
+          submitBtn.classList.add('bg-secondary-container', 'text-on-secondary-container');
+        }, 800);
+      });
+    }
+
+    backButtons.forEach(btn => {
+      btn.addEventListener('click', function() {
+        if (this.dataset.backed === 'true') return;
+        this.dataset.backed = 'true';
+        this.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span><span>Backed!</span>';
+        this.classList.remove('bg-surface-container-high', 'bg-primary');
+        this.classList.add('bg-primary-container', 'text-on-primary-container', 'font-bold');
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.12)]" data-active-classes="text-primary font-bold"><div class="h-20 px-space-xs flex items-center justify-around"><a class="min-w-[44px] min-h-[44px] flex-1 flex flex-col items-center justify-center gap-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="feed" href="#"><span class="material-symbols-outlined text-[22px]">dynamic_feed</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Feed</span></a><a class="min-w-[44px] min-h-[44px] flex-1 flex flex-col items-center justify-center gap-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="clubs" href="#"><span class="material-symbols-outlined text-[22px]">shield</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Clubs</span></a><a class="min-w-[44px] min-h-[44px] flex-1 flex flex-col items-center justify-center gap-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="predictions" href="#"><span class="material-symbols-outlined text-[22px]">sports_score</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Predictions</span></a><a class="min-w-[44px] min-h-[44px] flex-1 flex flex-col items-center justify-center gap-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="banter" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Banter</span></a><a class="min-w-[44px] min-h-[44px] flex-1 flex flex-col items-center justify-center gap-space-xs text-on-surface-variant transition-colors hover:text-on-surface" data-path="settings-profile" href="#"><span class="material-symbols-outlined text-[22px]">manage_accounts</span><span class="font-label-sm text-label-sm tracking-wider uppercase">Settings</span></a></div></nav></body></html>

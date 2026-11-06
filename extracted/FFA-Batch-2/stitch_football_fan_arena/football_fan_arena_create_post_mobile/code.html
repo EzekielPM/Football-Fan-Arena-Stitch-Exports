@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#005226", "secondary-fixed-dim": "#00daf3", "error-container": "#93000a", "primary-fixed-dim": "#00e475", "on-primary-fixed": "#00210b", "surface-container-lowest": "#010f1f", "on-error-container": "#ffdad6", "on-primary-container": "#00612e", "on-tertiary-fixed": "#400009", "tertiary-fixed": "#ffdad9", "on-background": "#d4e4fa", "inverse-on-surface": "#233143", "inverse-surface": "#d4e4fa", "tertiary": "#ffdddc", "on-secondary-fixed-variant": "#004f58", "secondary-fixed": "#9cf0ff", "error": "#ffb4ab", "primary-container": "#00e676", "on-tertiary-fixed-variant": "#920021", "inverse-primary": "#006d35", "on-secondary-fixed": "#001f24", "surface-container": "#122131", "surface-bright": "#2c3a4c", "tertiary-fixed-dim": "#ffb3b3", "on-surface": "#d4e4fa", "secondary": "#bdf4ff", "surface-container-low": "#0d1c2d", "on-error": "#690005", "background": "#051424", "surface": "#051424", "surface-container-high": "#1c2b3c", "on-secondary-container": "#00616d", "on-tertiary-container": "#ab0028", "surface-tint": "#00e475", "on-secondary": "#00363d", "on-primary": "#003918", "outline-variant": "#3b4a3d", "outline": "#859585", "secondary-container": "#00e3fd", "primary-fixed": "#62ff96", "on-tertiary": "#680014", "tertiary-container": "#ffb6b6", "surface-dim": "#051424", "surface-variant": "#273647", "primary": "#75ff9e", "surface-container-highest": "#273647", "on-surface-variant": "#bacbb9" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-md": "1rem", "margin": "1rem", "space-xl": "2rem", "space-lg": "1.5rem", "margin-tablet": "1.5rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "margin-desktop": "2.5rem", "gutter": "1rem", "space-xs": "0.25rem" }, fontFamily: { "label-sm": ["Inter"], "label-md": ["Inter"], "body-sm": ["Inter"], "body-lg": ["Inter"], "body-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "stat-display": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700" }], "stat-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><button aria-label="Back" class="w-11 h-11 rounded-full flex items-center justify-center text-on-surface hover:text-primary active:scale-95 transition-transform" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md text-on-surface truncate tracking-tight">Groups</h1></div><div class="flex items-center gap-space-sm shrink-0"><div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-high/80 text-primary font-label-sm text-label-sm uppercase"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span>Live</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin pb-space-xl gap-space-md">
+<!-- Sub-header action bar with context switch -->
+<div class="flex items-center justify-between py-space-xs">
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2 -ml-2 rounded-full active:scale-95" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+<span class="font-label-md text-label-md">Cancel</span>
+</button>
+<div class="flex items-center gap-1 px-3 py-1 rounded-full bg-surface-container-high/60 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">Live Matchday</span>
+</div>
+<button class="inline-flex items-center justify-center px-4 py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-[0_0_20px_-4px_rgba(0,230,118,0.4)] active:scale-95 transition-all" id="publish-btn" type="button">
+      Publish Post
+    </button>
+</div>
+<!-- Arena Target Selector (Interactive Dropdown Drawer trigger) -->
+<div class="relative">
+<button class="w-full flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-high/50 hover:bg-surface-container-high transition-colors backdrop-blur-md text-left active:scale-[0.99]" id="arena-selector-trigger" type="button">
+<div class="flex items-center gap-2.5 min-w-0">
+<div class="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]">stadium</span>
+</div>
+<div class="min-w-0">
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Target Destination</div>
+<div class="font-headline-sm text-headline-sm text-on-surface truncate" id="target-arena-label">North London Derby Arena</div>
+</div>
+</div>
+<div class="flex items-center gap-1 shrink-0 text-primary font-label-md text-label-md bg-surface-container px-2.5 py-1 rounded-full">
+<span>Switch</span>
+<span class="material-symbols-outlined text-[16px] transition-transform" id="arena-arrow-icon">expand_more</span>
+</div>
+</button>
+<!-- Context Switch Menu Options (Hidden by default) -->
+<div class="hidden absolute top-full left-0 right-0 mt-2 z-20 p-2 rounded-DEFAULT bg-surface-container-highest shadow-xl flex flex-col gap-1 backdrop-blur-xl animate-in fade-in slide-in-from-top-2" id="arena-dropdown-menu">
+<button class="arena-opt flex items-center justify-between p-2.5 rounded-lg bg-surface-container text-left transition-colors" data-arena-icon="local_fire_department" data-arena-name="North London Derby Arena" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px]">local_fire_department</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">North London Derby Arena</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Live Rivalry Chat • 18.4k Fans Active</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-primary text-[18px]">check_circle</span>
+</button>
+<button class="arena-opt flex items-center justify-between p-2.5 rounded-lg hover:bg-surface-container text-left transition-colors" data-arena-icon="shield" data-arena-name="Arsenal FC Fanbase" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-secondary-fixed text-[20px]">shield</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">Arsenal FC Fanbase</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Supporters Club Only • Matchday Thread</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-transparent text-[18px]">check_circle</span>
+</button>
+<button class="arena-opt flex items-center justify-between p-2.5 rounded-lg hover:bg-surface-container text-left transition-colors" data-arena-icon="public" data-arena-name="My Profile / Public Feed" type="button">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">public</span>
+<div>
+<div class="font-label-md text-label-md text-on-surface">My Profile / Public Feed</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Visible to all followers &amp; global feed</div>
+</div>
+</div>
+<span class="material-symbols-outlined text-transparent text-[18px]">check_circle</span>
+</button>
+</div>
+</div>
+<!-- Author Card (Supporter Identity) -->
+<div class="flex items-center justify-between p-space-sm rounded-DEFAULT bg-surface-container-low/70">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-md" data-alt="Close up dynamic avatar of an energetic football fan wearing a club team scarf under bright stadium floodlights at night, cinematic neon green highlights in eyes, professional photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDCRbAZ2zZbdyCdGr17c1VDpeKb4pCawp6uuHpUuGZebys0jzn8C8ypt5KttruJ_PEK7lysN_Gyapfo2v7YQ3BNbQ_TCFIP9aiay4-iHkE5SvJg6x-o2AJN7Sr2TRY12ktvEo6wAd_zrOiXN6za3tIi37Yss5oAqLoHHv5b7kXaJB38k3B_JIOydfjTyojzfhdXUUH4ToHepRV2_luD5gzGU93C_buypF-Apo8sRkOs"/>
+<span class="absolute -bottom-1 -right-1 w-4 h-4 bg-primary text-on-primary rounded-full flex items-center justify-center text-[10px] font-bold">✓</span>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="font-label-lg text-label-lg text-on-surface">Marcus Bellingham</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">@MarcusBellingham</span>
+</div>
+<div class="flex items-center gap-2 mt-0.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm uppercase tracking-wider">
+<span class="material-symbols-outlined text-[12px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+            Tier 1 Ultra
+          </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> 94% Rep
+          </span>
+</div>
+</div>
+</div>
+<!-- Fan Rep Badge -->
+<div class="px-2.5 py-1 rounded-full bg-surface-container flex items-center gap-1 shrink-0 text-secondary-fixed">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm">Hot Streak</span>
+</div>
+</div>
+<!-- Text Composition Area -->
+<div class="flex flex-col rounded-DEFAULT bg-surface-container p-space-md gap-space-sm shadow-inner relative">
+<textarea class="w-full bg-transparent text-on-surface font-body-md text-body-md placeholder:text-on-surface-variant/60 focus:outline-none resize-none leading-relaxed" id="post-textarea" maxlength="500" placeholder="What's on your mind? Share a match take, tactical analysis, or banter snippet..." rows="4">Arteta inverted the right back into double pivot right before halftime and broke their press completely. Look at how Odegaard freed up the half space here. Total masterclass.</textarea>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-1.5 flex-wrap">
+<button class="px-2 py-0.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>#NLD</span>
+</button>
+<button class="px-2 py-0.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-primary font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>#TacticalView</span>
+</button>
+<button class="px-2 py-0.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-secondary font-label-sm text-label-sm flex items-center gap-1 transition-colors" type="button">
+<span>+ Tag Player</span>
+</button>
+</div>
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="font-label-sm text-label-sm text-primary font-bold" id="char-counter">144</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant/60">/ 500</span>
+</div>
+</div>
+</div>
+<!-- Media Attachment Preview (Tactical Board / Match Snapshot) -->
+<div class="flex flex-col gap-space-xs rounded-DEFAULT bg-surface-container p-space-sm relative overflow-hidden" id="media-attachment-box">
+<div class="relative w-full h-44 rounded-lg overflow-hidden group">
+<img class="w-full h-full object-cover" data-alt="Tactical chalkboard illustration of a soccer football pitch top-down perspective showing bright neon green passing vectors, player dots, pressing zones, and defensive half-space arrows during an intense derby match." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDawV61e_hKG1g8pbQLSnpgClcRl51UbYblghMi6AWRyGvUc4SGPXb3z1so52AZxeeFKoN2O5rVmiwvJwQUdHrwCWIrnZcEU9jufOi8llNivx9XmDjQawWnp1RasNk9GkdwlIkuYZ0WLln2iW39WmO8bMAa8mCfHUrhXT8fbqVeplQZAeUV2K1HjU5HDNy7g91Bi4oTaYk_uP9BSm6CeG8FSLkbY0Y3xto4VS0GEqEZ"/>
+<!-- Overlay gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-black/30"></div>
+<!-- Remove Attachment Button -->
+<button aria-label="Remove media" class="absolute top-2.5 right-2.5 w-8 h-8 rounded-full bg-surface-container-lowest/80 backdrop-blur-md text-error hover:bg-error hover:text-on-error flex items-center justify-center transition-all active:scale-90 shadow-md" id="remove-attachment-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<!-- Badge for board type -->
+<div class="absolute top-2.5 left-2.5 px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+<span class="font-label-sm text-label-sm uppercase">Tactical Diagram 4-2-3-1</span>
+</div>
+<!-- Time frame indicator -->
+<div class="absolute bottom-2.5 left-2.5 px-2 py-0.5 rounded-md bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm backdrop-blur-sm">
+        Match Min 41:18 Phase Transition
+      </div>
+</div>
+<!-- Media Caption Input -->
+<div class="flex items-center gap-2 px-space-sm py-1.5 rounded-lg bg-surface-container-high/60">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">subtitles</span>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none placeholder:text-on-surface-variant" placeholder="Add caption or analysis breakdown..." type="text" value="Notice the overload in Zone 14 dragging the center half away"/>
+</div>
+</div>
+<!-- Post Visibility & Match Settings Card -->
+<div class="flex flex-col rounded-DEFAULT bg-surface-container p-space-md gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[20px]">tune</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Post Settings &amp; Context</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary uppercase bg-primary/10 px-2 py-0.5 rounded-full">Interactive</span>
+</div>
+<!-- Audience Selection Segmented Tabs -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Audience Broadcast</label>
+<div class="grid grid-cols-2 gap-1.5 p-1 rounded-full bg-surface-container-low">
+<button class="flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all" id="aud-public-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">public</span>
+<span>Public Arena</span>
+</button>
+<button class="flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all" id="aud-group-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">lock</span>
+<span>Group Members</span>
+</button>
+</div>
+</div>
+<!-- Toggle Controls -->
+<div class="flex flex-col gap-space-sm">
+<!-- Allow Comments Switch -->
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface">Allow Banter &amp; Replies</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Supporters can reply with predictions and audio</div>
+</div>
+</div>
+<button aria-pressed="true" class="w-12 h-6 rounded-full bg-primary flex items-center p-0.5 transition-colors" id="toggle-comments" type="button">
+<span class="w-5 h-5 rounded-full bg-on-primary transform translate-x-6 transition-transform shadow-md"></span>
+</button>
+</div>
+<!-- Rivalry Matchday Tag -->
+<div class="flex items-center justify-between py-1">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">sports_soccer</span>
+</div>
+<div>
+<div class="font-label-lg text-label-lg text-on-surface">Tag Rivalry Matchday</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Linked: Arsenal vs Tottenham • Today 20:00</div>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span>Pinned</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Quick Attachment Bar -->
+<div class="flex flex-col gap-2 p-space-sm rounded-DEFAULT bg-surface-container-high/60 backdrop-blur-md">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Attach To Fan Post</span>
+<span class="font-label-sm text-label-sm text-secondary">5 Formats Ready</span>
+</div>
+<div class="flex items-center justify-between gap-1 overflow-x-auto pb-1">
+<!-- Photo/Video -->
+<button class="flex flex-col items-center justify-center py-2 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-primary transition-all shrink-0 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">add_photo_alternate</span>
+<span class="font-label-sm text-label-sm mt-1">Photo/Vid</span>
+</button>
+<!-- Match Prediction Tag -->
+<button class="flex flex-col items-center justify-center py-2 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-highest text-primary transition-all shrink-0 active:scale-95 shadow-[0_0_12px_-4px_rgba(0,230,118,0.25)]" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">scoreboard</span>
+<span class="font-label-sm text-label-sm mt-1">Predict Tag</span>
+</button>
+<!-- Fan Poll -->
+<button class="flex flex-col items-center justify-center py-2 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-secondary transition-all shrink-0 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">poll</span>
+<span class="font-label-sm text-label-sm mt-1">Fan Poll</span>
+</button>
+<!-- Tactical Board -->
+<button class="flex flex-col items-center justify-center py-2 px-2.5 rounded-xl bg-primary/10 text-primary font-bold shrink-0 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">brush</span>
+<span class="font-label-sm text-label-sm mt-1">Tactics (1)</span>
+</button>
+<!-- Voice Clip -->
+<button class="flex flex-col items-center justify-center py-2 px-2.5 rounded-xl bg-surface-container hover:bg-surface-container-highest text-on-surface-variant hover:text-error transition-all shrink-0 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[20px]">mic</span>
+<span class="font-label-sm text-label-sm mt-1">Voice Clip</span>
+</button>
+</div>
+</div>
+<!-- Terrace Charter Reminder Badge -->
+<div class="flex items-start gap-space-sm p-space-sm rounded-DEFAULT bg-surface-container-low/90">
+<div class="w-8 h-8 rounded-full bg-secondary-fixed/10 flex items-center justify-center shrink-0 text-secondary-fixed mt-0.5">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col gap-0.5 min-w-0">
+<div class="font-label-md text-label-md text-secondary-fixed">Terrace Charter Reminder</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        Be bold, keep banter clean and respectful of fair play rules. Hate speech or targeted harassment results in instant matchday suspension.
+      </p>
+</div>
+</div>
+</div>
+<script>
+  (function initCreatePost() {
+    const textarea = document.getElementById('post-textarea');
+    const counter = document.getElementById('char-counter');
+    const publishBtn = document.getElementById('publish-btn');
+    const trigger = document.getElementById('arena-selector-trigger');
+    const menu = document.getElementById('arena-dropdown-menu');
+    const arrow = document.getElementById('arena-arrow-icon');
+    const label = document.getElementById('target-arena-label');
+    const arenaOptions = document.querySelectorAll('.arena-opt');
+    const removeMediaBtn = document.getElementById('remove-attachment-btn');
+    const mediaBox = document.getElementById('media-attachment-box');
+    const audPublic = document.getElementById('aud-public-btn');
+    const audGroup = document.getElementById('aud-group-btn');
+    const commentsToggle = document.getElementById('toggle-comments');
+
+    // Realtime Character Counter
+    if (textarea && counter) {
+      const updateCount = () => {
+        const len = textarea.value.length;
+        counter.textContent = len;
+        if (len >= 480) {
+          counter.classList.remove('text-primary');
+          counter.classList.add('text-error');
+        } else {
+          counter.classList.remove('text-error');
+          counter.classList.add('text-primary');
+        }
+      };
+      textarea.addEventListener('input', updateCount);
+      updateCount();
+    }
+
+    // Arena Dropdown Toggle
+    if (trigger && menu) {
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const isHidden = menu.classList.contains('hidden');
+        if (isHidden) {
+          menu.classList.remove('hidden');
+          arrow.style.transform = 'rotate(180deg)';
+        } else {
+          menu.classList.add('hidden');
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      });
+
+      arenaOptions.forEach(opt => {
+        opt.addEventListener('click', () => {
+          const name = opt.getAttribute('data-arena-name');
+          if (name && label) label.textContent = name;
+          arenaOptions.forEach(o => {
+            const check = o.querySelector('span:last-child');
+            if (o === opt) {
+              o.classList.add('bg-surface-container');
+              if (check) check.classList.replace('text-transparent', 'text-primary');
+            } else {
+              o.classList.remove('bg-surface-container');
+              if (check) check.classList.replace('text-primary', 'text-transparent');
+            }
+          });
+          menu.classList.add('hidden');
+          arrow.style.transform = 'rotate(0deg)';
+        });
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!menu.contains(e.target) && !trigger.contains(e.target)) {
+          menu.classList.add('hidden');
+          arrow.style.transform = 'rotate(0deg)';
+        }
+      });
+    }
+
+    // Media remove action
+    if (removeMediaBtn && mediaBox) {
+      removeMediaBtn.addEventListener('click', () => {
+        mediaBox.style.opacity = '0';
+        mediaBox.style.transform = 'scale(0.95)';
+        mediaBox.style.transition = 'all 0.2s ease-out';
+        setTimeout(() => {
+          mediaBox.style.display = 'none';
+        }, 200);
+      });
+    }
+
+    // Audience selection tabs
+    if (audPublic && audGroup) {
+      audPublic.addEventListener('click', () => {
+        audPublic.className = 'flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-full bg-primary text-on-primary font-label-md text-label-md shadow-sm transition-all';
+        audGroup.className = 'flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all';
+      });
+      audGroup.addEventListener('click', () => {
+        audGroup.className = 'flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md shadow-sm transition-all';
+        audPublic.className = 'flex items-center justify-center gap-1.5 py-1.5 px-3 rounded-full text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-all';
+      });
+    }
+
+    // Comment Toggle Micro-interaction
+    if (commentsToggle) {
+      let isCommentsOn = true;
+      commentsToggle.addEventListener('click', () => {
+        isCommentsOn = !isCommentsOn;
+        const knob = commentsToggle.firstElementChild;
+        if (isCommentsOn) {
+          commentsToggle.classList.remove('bg-surface-container-highest');
+          commentsToggle.classList.add('bg-primary');
+          knob.classList.remove('translate-x-0', 'bg-on-surface-variant');
+          knob.classList.add('translate-x-6', 'bg-on-primary');
+          commentsToggle.setAttribute('aria-pressed', 'true');
+        } else {
+          commentsToggle.classList.remove('bg-primary');
+          commentsToggle.classList.add('bg-surface-container-highest');
+          knob.classList.remove('translate-x-6', 'bg-on-primary');
+          knob.classList.add('translate-x-0', 'bg-on-surface-variant');
+          commentsToggle.setAttribute('aria-pressed', 'false');
+        }
+      });
+    }
+
+    // Publish celebration click animation
+    if (publishBtn) {
+      publishBtn.addEventListener('click', () => {
+        publishBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">progress_activity</span><span class="ml-1.5">Posting...</span>';
+        setTimeout(() => {
+          publishBtn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check</span><span class="ml-1.5">Published!</span>';
+          publishBtn.classList.replace('bg-primary', 'bg-primary-fixed');
+        }, 600);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_24px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container relative after:content-[''] after:absolute after:bottom-1 after:w-8 after:h-0.5 after:bg-primary-container after:rounded-full"><div class="h-16 px-space-xs flex items-center justify-around"><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="feed" href="#"><span class="material-symbols-outlined text-[22px]">dynamic_feed</span><span class="font-label-sm text-label-sm mt-0.5">Feed</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="clubs" href="#"><span class="material-symbols-outlined text-[22px]">shield</span><span class="font-label-sm text-label-sm mt-0.5">Clubs</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="predictions" href="#"><span class="material-symbols-outlined text-[22px]">sports_soccer</span><span class="font-label-sm text-label-sm mt-0.5">Predictions</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] transition-colors text-primary-container relative after:content-[''] after:absolute after:bottom-1 after:w-8 after:h-0.5 after:bg-primary-container after:rounded-full" data-path="groups" href="#"><span class="material-symbols-outlined text-[22px]">groups</span><span class="font-label-sm text-label-sm mt-0.5">Groups</span></a><a class="flex flex-col items-center justify-center min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="font-label-sm text-label-sm mt-0.5">Profile</span></a></div></nav></body></html>

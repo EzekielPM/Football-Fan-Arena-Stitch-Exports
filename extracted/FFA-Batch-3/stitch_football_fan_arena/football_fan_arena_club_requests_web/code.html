@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed-variant":"#004f58","secondary":"#bdf4ff","surface-tint":"#00e475","inverse-primary":"#006d35","surface-container-lowest":"#010f1f","tertiary":"#ffdddc","tertiary-fixed":"#ffdad9","on-tertiary-fixed-variant":"#920021","on-secondary-fixed":"#001f24","primary-fixed-dim":"#00e475","tertiary-fixed-dim":"#ffb3b3","outline":"#859585","error":"#ffb4ab","primary-fixed":"#62ff96","background":"#051424","error-container":"#93000a","secondary-container":"#00e3fd","primary":"#75ff9e","on-surface-variant":"#bacbb9","inverse-on-surface":"#233143","secondary-fixed":"#9cf0ff","surface-variant":"#273647","primary-container":"#00e676","surface-container-highest":"#273647","surface-container-low":"#0d1c2d","on-background":"#d4e4fa","on-primary-fixed-variant":"#005226","on-primary-container":"#00612e","surface-container-high":"#1c2b3c","secondary-fixed-dim":"#00daf3","on-tertiary":"#680014","on-secondary":"#00363d","on-primary":"#003918","surface":"#051424","outline-variant":"#3b4a3d","on-error":"#690005","inverse-surface":"#d4e4fa","surface-dim":"#051424","on-tertiary-fixed":"#400009","surface-container":"#122131","on-secondary-container":"#00616d","on-surface":"#d4e4fa","on-error-container":"#ffdad6","on-tertiary-container":"#ab0028","on-primary-fixed":"#00210b","surface-bright":"#2c3a4c","tertiary-container":"#ffb6b6"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","margin-desktop":"2.5rem","space-xl":"2rem","gutter-desktop":"1.5rem","gutter":"1rem","margin-tablet":"1.5rem","space-md":"1rem","margin":"1rem"},"fontFamily":{"headline-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"stat-display":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-lg":["Inter"]},"fontSize":{"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"stat-display":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_0_20px_-4px_rgba(0,230,118,0.35)]"><span class="material-symbols-outlined text-[20px]">sports_soccer</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">Arena Core</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Matchday Live</span></div></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm shadow-[0_0_20px_-4px_rgba(0,230,118,0.35)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="feed" href="#"><span class="material-symbols-outlined text-[20px]">dynamic_feed</span><span class="font-label-lg text-label-lg">Feed</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="clubs-and-discovery" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-lg text-label-lg">Clubs &amp; Discovery</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="predictions" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-lg text-label-lg">Predictions</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="banter-groups" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-lg text-label-lg">Banter Groups</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="saved-posts" href="#"><span class="material-symbols-outlined text-[20px]">bookmark</span><span class="font-label-lg text-label-lg">Saved Posts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-lg text-label-lg">Profile</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="px-space-md"><div class="bg-surface-container-high p-space-md rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">SERVER STATUS</span><span class="font-label-md text-label-md text-on-surface">Low Latency Live</span></div></div><span class="material-symbols-outlined text-primary text-[18px]">wifi_tethering</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">LIVE 78'</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-space-xs">ARS 2 - 1 CHE</span></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded-full text-on-surface-variant"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">HT</span><span class="font-body-sm text-body-sm text-on-surface">MCI 0 - 0 LIV</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-high text-on-surface placeholder:text-on-surface-variant pl-10 pr-space-md py-space-xs rounded-full font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-highest transition-colors" placeholder="Search clubs, banter, matches..." type="text"/></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop min-h-screen bg-surface"><div class="flex flex-col w-full pb-16">
+<!-- Top Ambient Glow Field -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-24 left-1/4 w-96 h-96 bg-primary-container/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-12 right-10 w-80 h-80 bg-secondary-container/5 rounded-full blur-3xl pointer-events-none"></div>
+<!-- Header Section with Breadcrumbs & Top Actions -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pt-space-md mb-space-xl relative z-10">
+<div class="flex flex-col gap-space-xs">
+<!-- Breadcrumb Bar -->
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider mb-space-xs">
+<span class="hover:text-primary transition-colors cursor-pointer">Home</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-primary transition-colors cursor-pointer">Discovery</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Club Request Portal</span>
+</nav>
+<div class="flex items-center gap-space-sm">
+<div class="w-2.5 h-7 rounded-full bg-primary-container shadow-[0_0_16px_rgba(0,230,118,0.5)]"></div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Grassroots &amp; Club Petition Portal</h1>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl leading-relaxed">
+          Petition for lower-tier, non-league, and regional clubs to be officially integrated into the Football Fan Arena ecosystem. Rally fellow terrace supporters, reach 200 verified backers, and unlock dedicated matchday live-rooms.
+        </p>
+</div>
+<!-- Action Pill Group -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest px-space-md py-space-sm rounded-full text-on-surface transition-all">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-lg text-label-lg">Verification Criteria</span>
+</button>
+<button class="flex items-center gap-space-xs bg-surface-container-low hover:bg-surface-container-high px-space-md py-space-sm rounded-full text-on-surface transition-all relative">
+<span class="material-symbols-outlined text-secondary text-[18px]">folder_special</span>
+<span class="font-label-lg text-label-lg">My Active Petitions</span>
+<span class="ml-space-xs bg-primary-container text-on-primary-container font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold">2</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Primary Asymmetric Two-Column Grid (60% / 40%) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT COLUMN: 60% (7 cols on lg) -->
+<div class="lg:col-span-7 flex flex-col gap-space-xl">
+<!-- Submit Club Petition Form Panel -->
+<div class="bg-surface-container-low rounded-lg p-space-lg lg:p-space-xl shadow-xl relative overflow-hidden backdrop-blur-md">
+<!-- Stadium Turf Watermark Accent -->
+<div class="absolute -right-16 -top-16 opacity-5 pointer-events-none">
+<span class="material-symbols-outlined text-[240px] text-primary">stadium</span>
+</div>
+<div class="flex items-center justify-between pb-space-lg mb-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shadow-[0_0_20px_-4px_rgba(0,230,118,0.3)]">
+<span class="material-symbols-outlined text-[26px]">add_moderator</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Submit a New Club Petition</h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Stage 1: Community Submission Protocol</span>
+</div>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs bg-surface-container px-space-sm py-1 rounded-full text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span>Est. Review: 48h</span>
+</div>
+</div>
+<!-- Form Container -->
+<form class="flex flex-col gap-space-lg" onsubmit="event.preventDefault();">
+<!-- Club Names Row -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between">
+<span>Official Club Name</span>
+<span class="text-error font-label-sm text-label-sm">*</span>
+</label>
+<div class="relative">
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 px-space-md py-space-sm rounded-full font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="e.g. Dulwich Hamlet Football Club" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Nickname / Terrace Moniker</label>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 px-space-md py-space-sm rounded-full font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="e.g. The Hamlet / The Rabble" type="text"/>
+</div>
+</div>
+<!-- Country & League Tier -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Nation / Football Association</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container text-on-surface px-space-md py-space-sm rounded-full font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors cursor-pointer">
+<option selected="">England (The FA)</option>
+<option>Scotland (SFA)</option>
+<option>Wales (FAW)</option>
+<option>Germany (DFB)</option>
+<option>Spain (RFEF)</option>
+<option>Italy (FIGC)</option>
+<option>France (FFF)</option>
+<option>Other Regional Association</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant pointer-events-none text-[18px]">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">League Tier / Division</label>
+<div class="relative">
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 px-space-md py-space-sm rounded-full font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="e.g. National League South (Tier 6)" type="text"/>
+</div>
+</div>
+</div>
+<!-- Stadium & Capacity -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Home Ground / Stadium</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">pin_drop</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-10 pr-space-md py-space-sm rounded-full font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="e.g. Champion Hill, East Dulwich" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Ground Capacity</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">groups</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-10 pr-space-md py-space-sm rounded-full font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="e.g. 3,334 (Standing &amp; Seating)" type="text"/>
+</div>
+</div>
+</div>
+<!-- Badge Dropzone & Crest Upload -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Club Crest / Badge Asset</label>
+<div class="bg-surface-container rounded-lg p-space-lg flex flex-col sm:flex-row items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors cursor-pointer group">
+<div class="flex items-center gap-space-md">
+<div class="w-16 h-16 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary group-hover:scale-105 transition-transform overflow-hidden shadow-inner">
+<span class="material-symbols-outlined text-[32px]">shield</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Drag &amp; drop SVG, PNG or WebP crest</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Recommended high-res transparent 512x512px. Max 4MB.</span>
+</div>
+</div>
+<button class="px-space-md py-space-xs bg-surface-container-highest group-hover:bg-primary-container group-hover:text-on-primary-container text-on-surface rounded-full font-label-md text-label-md transition-colors shrink-0" type="button">
+                Browse Files
+              </button>
+</div>
+</div>
+<!-- Kit Color Picker Tags -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Primary Kit Color</label>
+<div class="flex items-center gap-space-sm bg-surface-container p-space-xs rounded-full">
+<div class="w-7 h-7 rounded-full bg-[#3B1975] shrink-0 ml-1 shadow-sm"></div>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" type="text" value="#3B1975 (Deep Violet)"/>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-2">palette</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Secondary Kit Color</label>
+<div class="flex items-center gap-space-sm bg-surface-container p-space-xs rounded-full">
+<div class="w-7 h-7 rounded-full bg-[#00E676] shrink-0 ml-1 shadow-sm"></div>
+<input class="w-full bg-transparent text-on-surface font-body-sm text-body-sm focus:outline-none" type="text" value="#00E676 (Terrace Green)"/>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-2">palette</span>
+</div>
+</div>
+</div>
+<!-- Socials & Online Presence -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Official Club Website / Link</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">public</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-10 pr-space-md py-space-sm rounded-full font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="https://dulwichhamletfc.co.uk" type="url"/>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Official Social Handle (X / IG)</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">tag</span>
+<input class="w-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/50 pl-10 pr-space-md py-space-sm rounded-full font-body-md text-body-md focus:outline-none focus:bg-surface-container-high transition-colors" placeholder="@DulwichHamletFC" type="text"/>
+</div>
+</div>
+</div>
+<!-- Supporter Affiliation Selection -->
+<div class="flex flex-col gap-space-xs">
+<label class="font-label-md text-label-md text-on-surface">Your Official Affiliation to this Club</label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm">
+<label class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-sm rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input checked="" class="accent-[#00E676] w-4 h-4 cursor-pointer" name="affiliation" type="radio"/>
+<span class="font-label-md text-label-md text-on-surface">Season Ticket Holder</span>
+</label>
+<label class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-sm rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="accent-[#00E676] w-4 h-4 cursor-pointer" name="affiliation" type="radio"/>
+<span class="font-label-md text-label-md text-on-surface">Supporters Trust</span>
+</label>
+<label class="flex items-center gap-space-sm bg-surface-container px-space-md py-space-sm rounded-lg cursor-pointer hover:bg-surface-container-high transition-colors">
+<input class="accent-[#00E676] w-4 h-4 cursor-pointer" name="affiliation" type="radio"/>
+<span class="font-label-md text-label-md text-on-surface">Terrace Matchgoer</span>
+</label>
+</div>
+</div>
+<!-- Submit CTA Button -->
+<div class="pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">gavel</span>
+              Complies with FFA Grassroots Integrity Charter v2.4
+            </span>
+<button class="w-full sm:w-auto bg-primary-container hover:bg-primary-fixed text-on-primary-container font-headline-sm text-headline-sm px-space-xl py-space-md rounded-full shadow-[0_0_24px_-4px_rgba(0,230,118,0.45)] hover:shadow-[0_0_32px_-2px_rgba(0,230,118,0.6)] transition-all flex items-center justify-center gap-space-sm" type="submit">
+<span>Submit Petition for Community Review</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</form>
+</div>
+<!-- 'My Submitted Petitions' Drawer -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px]">history_edu</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">My Submitted Petitions</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">2 Petitions Tracked</span>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Active Pinned Item 1 -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-primary font-headline-sm text-headline-sm shrink-0 shadow-sm">
+                DH
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Dulwich Hamlet FC</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm">In Progress</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Submitted 3 days ago • Champion Hill, London</span>
+</div>
+</div>
+<div class="flex items-center sm:justify-end gap-space-lg shrink-0">
+<div class="flex flex-col text-left sm:text-right">
+<span class="font-label-lg text-label-lg text-primary font-bold">168 / 200 Backers</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Stage: Community Endorsement</span>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Approved -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col sm:flex-row sm:items-center justify-between gap-space-md hover:bg-surface-container-high transition-colors">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-surface-container-highest flex items-center justify-center text-secondary font-headline-sm text-headline-sm shrink-0 shadow-sm">
+                CC
+              </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface">Clapton Community FC</span>
+<span class="bg-secondary-container/20 text-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">check_circle</span> Approved
+                  </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live in Fanbase Directory • The Old Spotted Dog Ground</span>
+</div>
+</div>
+<div class="flex items-center sm:justify-end gap-space-md shrink-0">
+<a class="font-label-md text-label-md text-secondary hover:underline flex items-center gap-1" href="#">
+                View Fanbase Arena <span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: 40% (5 cols on lg) -->
+<div class="lg:col-span-5 flex flex-col gap-space-xl">
+<!-- Trending Supporter Petitions Panel -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-xl flex flex-col gap-space-lg backdrop-blur-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[24px]">local_fire_department</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Trending Supporter Petitions</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Terrace Vote</span>
+</div>
+<!-- Filter Pill Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1">
+<button class="bg-primary-container text-on-primary-container font-label-md text-label-md px-space-md py-1 rounded-full font-bold shadow-sm whitespace-nowrap">
+            Most Backed
+          </button>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-space-md py-1 rounded-full whitespace-nowrap transition-colors">
+            Near Goal (&gt;90%)
+          </button>
+<button class="bg-surface-container-high hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-space-md py-1 rounded-full whitespace-nowrap transition-colors">
+            Recently Added
+          </button>
+</div>
+<!-- Petition Cards List -->
+<div class="flex flex-col gap-space-md">
+<!-- Card 1: FC United of Manchester (96%) -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-md hover:bg-surface-container-high transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold shadow-sm shrink-0">
+                  FCU
+                </div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">FC United of Manchester</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Northern Premier League • Broadhurst Park</span>
+</div>
+</div>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shrink-0">
+                96% Goal
+              </span>
+</div>
+<!-- Segmented Progress Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">192 Backers</span>
+<span class="text-on-surface-variant">8 required to verify</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="bg-primary-container h-full rounded-full shadow-[0_0_12px_rgba(0,230,118,0.8)]" style="width: 96%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center font-label-sm text-[10px] text-on-surface shadow-sm">MB</div>
+<div class="w-7 h-7 rounded-full bg-surface-bright flex items-center justify-center font-label-sm text-[10px] text-primary shadow-sm">KR</div>
+<div class="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-[10px] text-primary font-bold shadow-sm">+190</div>
+</div>
+<button class="bg-primary-container hover:bg-primary-fixed text-on-primary-container font-label-md text-label-md px-space-md py-1.5 rounded-full font-bold flex items-center gap-1 shadow-sm transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Back This Club</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Blyth Spartans AFC (94%) -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-md hover:bg-surface-container-high transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-secondary font-headline-sm text-headline-sm font-bold shadow-sm shrink-0">
+                  BLY
+                </div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Blyth Spartans AFC</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">National League North • Croft Park</span>
+</div>
+</div>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shrink-0">
+                94% Goal
+              </span>
+</div>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">188 Backers</span>
+<span class="text-on-surface-variant">12 required to verify</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="bg-primary-container h-full rounded-full shadow-[0_0_12px_rgba(0,230,118,0.8)]" style="width: 94%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center font-label-sm text-[10px] text-on-surface shadow-sm">SP</div>
+<div class="w-7 h-7 rounded-full bg-surface-bright flex items-center justify-center font-label-sm text-[10px] text-secondary shadow-sm">TJ</div>
+<div class="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-[10px] text-primary font-bold shadow-sm">+186</div>
+</div>
+<button class="bg-primary-container hover:bg-primary-fixed text-on-primary-container font-label-md text-label-md px-space-md py-1.5 rounded-full font-bold flex items-center gap-1 shadow-sm transition-transform active:scale-95">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Back This Club</span>
+</button>
+</div>
+</div>
+<!-- Card 3: Wrexham AFC Women (Over 200 - Under Verification) -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-md hover:bg-surface-container-high transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold shadow-sm shrink-0">
+                  WAW
+                </div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Wrexham AFC Women</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Genero Adran Premier • The Rock Ground</span>
+</div>
+</div>
+<span class="bg-secondary-container/20 text-secondary-fixed font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold flex items-center gap-1 shrink-0">
+<span class="material-symbols-outlined text-[12px] animate-pulse">hourglass_top</span> In Verification
+              </span>
+</div>
+<!-- Complete Progress -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">340 Backers</span>
+<span class="text-secondary font-semibold">Threshold Exceeded (170%)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="bg-secondary-container h-full rounded-full shadow-[0_0_12px_rgba(0,227,253,0.8)]" style="width: 100%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-primary text-[14px]">task_alt</span>
+                League API linking underway
+              </span>
+<button class="bg-surface-container-highest text-on-surface-variant font-label-md text-label-md px-space-md py-1.5 rounded-full font-semibold cursor-not-allowed" disabled="">
+                Goal Reached
+              </button>
+</div>
+</div>
+<!-- Card 4: Hastings United (57%) -->
+<div class="bg-surface-container rounded-lg p-space-md flex flex-col gap-space-md hover:bg-surface-container-high transition-all">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface font-headline-sm text-headline-sm font-bold shadow-sm shrink-0">
+                  HU
+                </div>
+<div class="flex flex-col">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Hastings United</h4>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Isthmian Premier Division • The Pilot Field</span>
+</div>
+</div>
+<span class="bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full font-bold shrink-0">
+                57% Goal
+              </span>
+</div>
+<!-- Progress Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface font-semibold">114 Backers</span>
+<span class="text-on-surface-variant">86 required</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 57%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center -space-x-2">
+<div class="w-7 h-7 rounded-full bg-surface-container-highest flex items-center justify-center font-label-sm text-[10px] text-on-surface shadow-sm">DG</div>
+<div class="w-7 h-7 rounded-full bg-surface-bright flex items-center justify-center font-label-sm text-[10px] text-primary shadow-sm">EW</div>
+<div class="w-7 h-7 rounded-full bg-primary/20 flex items-center justify-center font-label-sm text-[10px] text-primary font-bold shadow-sm">+112</div>
+</div>
+<button class="bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md px-space-md py-1.5 rounded-full font-bold flex items-center gap-1 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[16px]">thumb_up</span>
+<span>Back This Club</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Terrace Accreditation Protocol Informational Card -->
+<div class="bg-surface-container-low rounded-lg p-space-lg shadow-xl flex flex-col gap-space-md relative overflow-hidden backdrop-blur-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded-full bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">policy</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Terrace Accreditation Protocol</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">How Grassroots Activation Works</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<!-- Step 1 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-primary font-bold shrink-0 mt-0.5">
+              1
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">The 200 Backer Threshold</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Reaching 200 registered supporter signatures guarantees that there is an active matchday crowd to sustain automated match banter rooms and player ratings.
+              </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-primary font-bold shrink-0 mt-0.5">
+              2
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Automated API &amp; League Ingestion</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Once verified, our platform links the club to regional FA schedules for real-time kick-off feeds, line-ups, and stadium coordinates.
+              </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-surface-container flex items-center justify-center font-label-sm text-label-sm text-primary font-bold shrink-0 mt-0.5">
+              3
+            </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Moderator Badge Certification</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Supporter trust representatives receive certified community manager badges to maintain official club banter rooms and matchday channels.
+              </p>
+</div>
+</div>
+</div>
+<!-- Download Action Card Footer -->
+<div class="pt-space-sm">
+<a class="w-full bg-surface-container hover:bg-surface-container-high py-space-sm px-space-md rounded-full flex items-center justify-between text-on-surface font-label-md text-label-md transition-colors group" href="#">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">download_for_offline</span>
+<span>Download Supporter Trust Petition Pack</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:translate-x-1 transition-transform text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div></main></div></body></html>

@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-secondary-fixed-variant":"#004f58","secondary":"#bdf4ff","surface-tint":"#00e475","inverse-primary":"#006d35","surface-container-lowest":"#010f1f","tertiary":"#ffdddc","tertiary-fixed":"#ffdad9","on-tertiary-fixed-variant":"#920021","on-secondary-fixed":"#001f24","primary-fixed-dim":"#00e475","tertiary-fixed-dim":"#ffb3b3","outline":"#859585","error":"#ffb4ab","primary-fixed":"#62ff96","background":"#051424","error-container":"#93000a","secondary-container":"#00e3fd","primary":"#75ff9e","on-surface-variant":"#bacbb9","inverse-on-surface":"#233143","secondary-fixed":"#9cf0ff","surface-variant":"#273647","primary-container":"#00e676","surface-container-highest":"#273647","surface-container-low":"#0d1c2d","on-background":"#d4e4fa","on-primary-fixed-variant":"#005226","on-primary-container":"#00612e","surface-container-high":"#1c2b3c","secondary-fixed-dim":"#00daf3","on-tertiary":"#680014","on-secondary":"#00363d","on-primary":"#003918","surface":"#051424","outline-variant":"#3b4a3d","on-error":"#690005","inverse-surface":"#d4e4fa","surface-dim":"#051424","on-tertiary-fixed":"#400009","surface-container":"#122131","on-secondary-container":"#00616d","on-surface":"#d4e4fa","on-error-container":"#ffdad6","on-tertiary-container":"#ab0028","on-primary-fixed":"#00210b","surface-bright":"#2c3a4c","tertiary-container":"#ffb6b6"},"borderRadius":{"DEFAULT":"1rem","lg":"2rem","xl":"3rem","full":"9999px"},"spacing":{"space-lg":"1.5rem","space-sm":"0.5rem","space-xs":"0.25rem","margin-desktop":"2.5rem","space-xl":"2rem","gutter-desktop":"1.5rem","gutter":"1rem","margin-tablet":"1.5rem","space-md":"1rem","margin":"1rem"},"fontFamily":{"headline-sm":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"stat-display":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-lg":["Inter"]},"fontSize":{"headline-sm":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-md":["14px",{"lineHeight":"22px","letterSpacing":"0em","fontWeight":"400"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"18px","letterSpacing":"0.01em","fontWeight":"400"}],"headline-xl":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"stat-display":["28px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"800"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"400"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased selection:bg-primary selection:text-on-primary"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low z-50 flex flex-col justify-between py-space-lg shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col gap-space-lg"><div class="px-space-lg flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full bg-primary-container flex items-center justify-center text-on-primary-container shadow-[0_0_20px_-4px_rgba(0,230,118,0.35)]"><span class="material-symbols-outlined text-[20px]">sports_soccer</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">Arena Core</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Matchday Live</span></div></div><nav class="flex flex-col gap-space-xs px-space-md" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm shadow-[0_0_20px_-4px_rgba(0,230,118,0.35)]"><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="feed" href="#"><span class="material-symbols-outlined text-[20px]">dynamic_feed</span><span class="font-label-lg text-label-lg">Feed</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="clubs-and-discovery" href="#"><span class="material-symbols-outlined text-[20px]">explore</span><span class="font-label-lg text-label-lg">Clubs &amp; Discovery</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="predictions" href="#"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-lg text-label-lg">Predictions</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="banter-groups" href="#"><span class="material-symbols-outlined text-[20px]">forum</span><span class="font-label-lg text-label-lg">Banter Groups</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="notifications" href="#"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="font-label-lg text-label-lg">Notifications</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="saved-posts" href="#"><span class="material-symbols-outlined text-[20px]">bookmark</span><span class="font-label-lg text-label-lg">Saved Posts</span></a><a class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="profile" href="#"><span class="material-symbols-outlined text-[20px]">person</span><span class="font-label-lg text-label-lg">Profile</span></a><a aria-current="page" class="flex items-center gap-space-md px-space-md py-space-sm rounded-lg transition-all bg-primary-container text-on-primary-container font-headline-sm shadow-[0_0_20px_-4px_rgba(0,230,118,0.35)]" data-path="settings" href="#"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-lg text-label-lg">Settings</span></a></nav></div><div class="px-space-md"><div class="bg-surface-container-high p-space-md rounded-lg flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></div><div class="flex flex-col"><span class="font-label-sm text-label-sm text-on-surface-variant">SERVER STATUS</span><span class="font-label-md text-label-md text-on-surface">Low Latency Live</span></div></div><span class="material-symbols-outlined text-primary text-[18px]">wifi_tethering</span></div></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/80 backdrop-blur-xl z-40 flex items-center justify-between px-space-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-sm bg-surface-container-high px-space-md py-space-xs rounded-full"><span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span><span class="font-label-sm text-label-sm text-primary uppercase tracking-wider">LIVE 78'</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight ml-space-xs">ARS 2 - 1 CHE</span></div><div class="hidden xl:flex items-center gap-space-sm bg-surface-container px-space-md py-space-xs rounded-full text-on-surface-variant"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">HT</span><span class="font-body-sm text-body-sm text-on-surface">MCI 0 - 0 LIV</span></div></div><div class="flex items-center gap-space-lg"><div class="relative flex items-center w-80"><span class="material-symbols-outlined absolute left-space-md text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-high text-on-surface placeholder:text-on-surface-variant pl-10 pr-space-md py-space-xs rounded-full font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-highest transition-colors" placeholder="Search clubs, banter, matches..." type="text"/></div><div class="flex items-center gap-space-md"><button class="w-10 h-10 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-highest transition-colors"><span class="material-symbols-outlined text-[20px]">tune</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 px-gutter-desktop min-h-screen bg-surface"><div class="flex flex-col w-full pb-space-xl">
+<!-- Sticky / Top Breadcrumb & Action Header Bar -->
+<div class="flex flex-col gap-space-md mb-space-lg">
+<!-- Breadcrumb & Status Pill Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<a class="hover:text-primary transition-colors flex items-center gap-1" href="#">
+<span class="material-symbols-outlined text-[16px]">sports_soccer</span>
+          Arena Core
+        </a>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface cursor-pointer">Settings &amp; Governance</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-label-md">Privacy &amp; Terrace Moderation</span>
+</div>
+<!-- Quick Conduct Status Pill -->
+<div class="flex items-center gap-space-sm bg-surface-container-high/70 backdrop-blur-md px-space-md py-1.5 rounded-full shadow-sm">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Terrace Conduct Standing</span>
+<span class="font-label-md text-label-md text-primary bg-primary/10 px-2 py-0.5 rounded-full">98 / 100 • Exemplary Ultra</span>
+</div>
+</div>
+<!-- Title and Action Row -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md">
+<div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Terrace Governance, Privacy &amp; Banter Engine</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-3xl">
+          Calibrate dynamic derby heat filters, shield tactical prediction telemetry, and enforce matchday anti-spoiler latency controls across all stadium soundrooms.
+        </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="group flex items-center gap-space-xs bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface font-label-md text-label-md px-space-md py-2.5 rounded-full shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant group-hover:text-primary transition-colors">download</span>
+          Export Dossier
+        </button>
+<button class="flex items-center gap-space-xs bg-surface-container-high/80 hover:bg-surface-container-highest text-on-surface-variant hover:text-on-surface font-label-md text-label-md px-space-md py-2.5 rounded-full shadow-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">restart_alt</span>
+          Reset Filters
+        </button>
+<button class="flex items-center gap-space-xs bg-primary hover:bg-primary-fixed text-on-primary font-label-lg text-label-lg font-bold px-space-lg py-2.5 rounded-full shadow-[0_0_24px_-4px_rgba(0,230,118,0.4)] hover:shadow-[0_0_32px_0px_rgba(0,230,118,0.55)] transition-all active:scale-95" id="save-governance-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">format_image_left</span>
+          Save Governance Settings
+        </button>
+</div>
+</div>
+</div>
+<!-- Dynamic Saved Toast (Hidden by default, triggered via script) -->
+<div class="hidden fixed bottom-6 right-8 z-50 bg-surface-container-high/95 backdrop-blur-xl px-space-lg py-space-md rounded-2xl shadow-2xl flex items-center gap-space-md text-on-surface transition-all" id="save-toast">
+<div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[20px]">check</span>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-on-surface">Pact Sealed</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Matchday telemetry &amp; banter protocols refreshed across live clusters.</p>
+</div>
+</div>
+<!-- Main Grid: 2 Columns (65% Controls, 35% Sidebar) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: Primary Moderation Controls (Cols 1-8) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- CARD 1: Banter Engine & Rivalry Heat Filtering -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-2xl p-space-xl shadow-lg relative overflow-hidden">
+<!-- Subtle stadium floodlight glow -->
+<div class="absolute -right-24 -top-24 w-72 h-72 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-md mb-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary shadow-[0_0_16px_rgba(0,230,118,0.15)]">
+<span class="material-symbols-outlined text-[26px]">local_fire_department</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface">Banter Engine &amp; Rivalry Heat Filtering</h2>
+<span class="bg-primary/10 text-primary font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase tracking-wider">Live Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Control the emotional atmospheric ceiling of North London &amp; Merseyside rivalry noise.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/80 uppercase tracking-widest hidden sm:inline-block">TERRACE-CORE v4.8</span>
+</div>
+<!-- Tiered Multi-Level Slider Selector -->
+<div class="mb-space-xl">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest block mb-space-sm">
+            Current Banter Threshold Tier
+          </label>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm bg-surface-container-lowest p-1.5 rounded-xl">
+<!-- Tier 1 -->
+<button class="banter-tier-btn flex flex-col items-start text-left p-space-md rounded-lg transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40" data-tier="1" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-lg text-label-lg font-bold">Tier I: Family Terrace</span>
+<span class="material-symbols-outlined text-[18px] opacity-40">child_care</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Sanitized match feeds. Strict zero-sarcasm filter, stats-first delivery.</p>
+</button>
+<!-- Tier 2 (Active Default) -->
+<button class="banter-tier-btn active flex flex-col items-start text-left p-space-md rounded-lg transition-all bg-surface-container-high text-on-surface shadow-[0_0_20px_-4px_rgba(0,230,118,0.2)]" data-tier="2" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-lg text-label-lg font-bold text-primary flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+                  Tier II: Terrace Banter
+                </span>
+<span class="material-symbols-outlined text-[18px] text-primary">sports_kabaddi</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Authentic UK &amp; European pub humor, tactical mocking, memes permitted.</p>
+</button>
+<!-- Tier 3 -->
+<button class="banter-tier-btn flex flex-col items-start text-left p-space-md rounded-lg transition-all text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high/40" data-tier="3" type="button">
+<div class="flex items-center justify-between w-full mb-1">
+<span class="font-label-lg text-label-lg font-bold text-tertiary-fixed">Tier III: Derby Wire</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">warning</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Maximum noise, unadulterated tribal tension. High heat alerts active.</p>
+</button>
+</div>
+</div>
+<!-- Granular Toggles Sub-panel -->
+<div class="flex flex-col gap-space-md pt-space-md">
+<div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Terrace Safety Perimeter Rules</div>
+<!-- Toggle 1: Derby Slurs (Locked / Hard Mandate) -->
+<div class="flex items-center justify-between p-space-md bg-surface-container rounded-xl">
+<div class="flex items-start gap-space-md pr-space-md">
+<span class="material-symbols-outlined text-[22px] text-primary mt-0.5">gavel</span>
+<div>
+<div class="flex items-center gap-space-xs">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Auto-Censor Derby Slurs &amp; Tragic Chants</h3>
+<span class="bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm px-2 py-0.5 rounded-full flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">lock</span> FIFA / FA Treaty
+                  </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Instantly scrubs tragedy chants, disaster references, and discriminatory terrace hate across all feeds.</p>
+</div>
+</div>
+<!-- Locked Switch -->
+<div class="w-12 h-6 bg-primary/40 rounded-full flex items-center p-1 cursor-not-allowed opacity-90 justify-end" title="Mandatory league integrity rule">
+<div class="w-4 h-4 rounded-full bg-primary shadow-sm flex items-center justify-center">
+<span class="material-symbols-outlined text-[10px] text-on-primary">lock</span>
+</div>
+</div>
+</div>
+<!-- Toggle 2: Mute Voice Room Toxicity -->
+<div class="flex items-center justify-between p-space-md bg-surface-container rounded-xl">
+<div class="flex items-start gap-space-md pr-space-md">
+<span class="material-symbols-outlined text-[22px] text-secondary mt-0.5">mic_off</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">AI Real-Time Audio Scrubber (Voice Rooms)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Applies sub-50ms acoustic pitch drop to abusive shouting and decibel peaks during live halftime fan panels.</p>
+</div>
+</div>
+<!-- Interactive Switch -->
+<button class="toggle-btn w-12 h-6 bg-primary rounded-full flex items-center p-1 cursor-pointer transition-colors justify-end" data-checked="true" type="button">
+<div class="w-4 h-4 rounded-full bg-on-primary shadow-sm"></div>
+</button>
+</div>
+<!-- Toggle 3: Anti-Troll Gate -->
+<div class="flex items-center justify-between p-space-md bg-surface-container rounded-xl">
+<div class="flex items-start gap-space-md pr-space-md">
+<span class="material-symbols-outlined text-[22px] text-primary mt-0.5">verified_user</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Anti-Troll Reputation Gate (&gt;80% Terrace Rep)</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Only supporters verified by their local fan club or possessing &gt;80 score can initiate Matchday Direct Messages.</p>
+</div>
+</div>
+<!-- Interactive Switch -->
+<button class="toggle-btn w-12 h-6 bg-primary rounded-full flex items-center p-1 cursor-pointer transition-colors justify-end" data-checked="true" type="button">
+<div class="w-4 h-4 rounded-full bg-on-primary shadow-sm"></div>
+</button>
+</div>
+<!-- Matchday Anti-Spoiler Buffer -->
+<div class="p-space-md bg-surface-container rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[22px] text-on-secondary-container">alarm_on</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Live Matchday Anti-Spoiler Buffer</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Delay notification pushes and banner flashes if your stream lag is behind satellite broadcast.</p>
+</div>
+</div>
+<span class="font-stat-display text-headline-sm text-secondary bg-surface-container-high px-space-md py-1 rounded-full" id="buffer-val-indicator">
+                45s Delay
+              </span>
+</div>
+<!-- Buffer Range Selector Buttons -->
+<div class="grid grid-cols-4 gap-space-xs mt-space-xs">
+<button class="buffer-btn py-2 px-space-sm rounded-lg bg-surface-container-high/60 text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface text-center transition-all" data-val="Realtime (0s)" type="button">
+                0s (Punt)
+              </button>
+<button class="buffer-btn py-2 px-space-sm rounded-lg bg-surface-container-high/60 text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface text-center transition-all" data-val="30s Delay" type="button">
+                30s (OTT)
+              </button>
+<button class="buffer-btn active py-2 px-space-sm rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold text-center shadow-[0_0_12px_rgba(0,230,118,0.3)] transition-all" data-val="45s Delay" type="button">
+                45s (IPTV)
+              </button>
+<button class="buffer-btn py-2 px-space-sm rounded-lg bg-surface-container-high/60 text-on-surface-variant font-label-md text-label-md hover:bg-surface-container-high hover:text-on-surface text-center transition-all" data-val="90s Delay" type="button">
+                90s (Pub Stream)
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- CARD 2: Supporter Privacy & Prediction Vault Governance -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-secondary shadow-[0_0_16px_rgba(0,227,253,0.15)]">
+<span class="material-symbols-outlined text-[26px]">lock_clock</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Prediction Vault &amp; Check-In Privacy</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Protect proprietary accumulator models, betting slips, and match turnstile attendance telemetry.</p>
+</div>
+</div>
+<!-- 4-Way Radio Pill Selector for Prediction Visibility -->
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest block mb-space-sm">
+            Live Prediction Slips &amp; Tactical xG Slips Visibility
+          </label>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<!-- Option 1 -->
+<label class="cursor-pointer bg-surface-container hover:bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-xs transition-all relative">
+<input class="sr-only peer" name="pred_visibility" type="radio" value="public"/>
+<div class="flex items-center justify-between text-on-surface-variant peer-checked:text-primary">
+<span class="material-symbols-outlined text-[20px]">public</span>
+<span class="w-3 h-3 rounded-full bg-surface-container-highest peer-checked:bg-primary"></span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Open Stadium</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Visible on global match feed.</span>
+</label>
+<!-- Option 2 (Selected) -->
+<label class="cursor-pointer bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-xs transition-all relative shadow-[0_0_16px_-4px_rgba(0,230,118,0.2)]">
+<input checked="" class="sr-only peer" name="pred_visibility" type="radio" value="followers"/>
+<div class="flex items-center justify-between text-primary">
+<span class="material-symbols-outlined text-[20px]">group</span>
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+</div>
+<span class="font-label-md text-label-md font-bold text-primary">Followers Only</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Only members of your firm.</span>
+</label>
+<!-- Option 3 -->
+<label class="cursor-pointer bg-surface-container hover:bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-xs transition-all relative">
+<input class="sr-only peer" name="pred_visibility" type="radio" value="mutual"/>
+<div class="flex items-center justify-between text-on-surface-variant peer-checked:text-primary">
+<span class="material-symbols-outlined text-[20px]">diversity_1</span>
+<span class="w-3 h-3 rounded-full bg-surface-container-highest peer-checked:bg-primary"></span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Mutual Ultras</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Verified mutual season ticket holders.</span>
+</label>
+<!-- Option 4 -->
+<label class="cursor-pointer bg-surface-container hover:bg-surface-container-high p-space-md rounded-xl flex flex-col gap-space-xs transition-all relative">
+<input class="sr-only peer" name="pred_visibility" type="radio" value="incognito"/>
+<div class="flex items-center justify-between text-on-surface-variant peer-checked:text-primary">
+<span class="material-symbols-outlined text-[20px]">visibility_off</span>
+<span class="w-3 h-3 rounded-full bg-surface-container-highest peer-checked:bg-primary"></span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">Ghost Mode</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hidden until referee blows FT.</span>
+</label>
+</div>
+</div>
+<!-- Privacy Toggles Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Accuracy Record Toggle -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between">
+<div class="pr-space-sm">
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Show Historical Accuracy (74.2%)</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Display tactical prediction hit rate and leaderboard badge on profile header.</p>
+</div>
+<button class="toggle-btn w-12 h-6 bg-primary rounded-full flex items-center p-1 cursor-pointer transition-colors justify-end shrink-0" data-checked="true" type="button">
+<div class="w-4 h-4 rounded-full bg-on-primary shadow-sm"></div>
+</button>
+</div>
+<!-- Stadium Physical Location Toggle (OFF) -->
+<div class="bg-surface-container p-space-md rounded-xl flex items-center justify-between">
+<div class="pr-space-sm">
+<p class="font-label-lg text-label-lg font-bold text-on-surface">Broadcast Stadium Turnstile Geolocation</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Broadcast live GPS gate check-ins (e.g., Emirates North Bank Stand) during derbies.</p>
+</div>
+<button class="toggle-btn w-12 h-6 bg-surface-container-highest rounded-full flex items-center p-1 cursor-pointer transition-colors justify-start shrink-0" data-checked="false" type="button">
+<div class="w-4 h-4 rounded-full bg-on-surface-variant shadow-sm"></div>
+</button>
+</div>
+</div>
+</div>
+<!-- CARD 3: Keyword & Chant Censor Ledger -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-2xl p-space-xl shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-tertiary-fixed shadow-sm">
+<span class="material-symbols-outlined text-[26px]">spellcheck</span>
+</div>
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Keyword &amp; Terrace Chant Censor Ledger</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Any matchday banter stream or match chat containing these custom lexicons is automatically masked.</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold bg-primary/10 px-space-md py-1 rounded-full">
+            5 Active Blocks
+          </span>
+</div>
+<!-- Add Custom Word Form Input -->
+<div class="flex items-center gap-space-sm mt-space-xs">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-space-md top-1/2 -translate-y-1/2 text-on-surface-variant text-[18px]">block</span>
+<input class="w-full bg-surface-container-high text-on-surface placeholder:text-on-surface-variant pl-10 pr-space-md py-2.5 rounded-full font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-highest transition-colors" id="new-tag-input" placeholder="Type derogatory nickname, chant phrase, or referee hashtag..." type="text"/>
+</div>
+<button class="bg-primary hover:bg-primary-fixed text-on-primary font-label-md text-label-md font-bold px-space-lg py-2.5 rounded-full shadow-md transition-all shrink-0 flex items-center gap-1" id="add-tag-btn" type="button">
+<span class="material-symbols-outlined text-[18px]">add</span>
+            Add Custom Censor
+          </button>
+</div>
+<!-- Active Tags Container -->
+<div class="flex flex-wrap gap-space-xs pt-space-xs" id="tags-container">
+<div class="censor-tag flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest px-3.5 py-1.5 rounded-full transition-colors">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md text-on-surface">Spurs</span>
+<button class="remove-tag text-on-surface-variant hover:text-error transition-colors ml-1" type="button">
+<span class="material-symbols-outlined text-[16px] leading-none">close</span>
+</button>
+</div>
+<div class="censor-tag flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest px-3.5 py-1.5 rounded-full transition-colors">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md text-on-surface">Bottlers</span>
+<button class="remove-tag text-on-surface-variant hover:text-error transition-colors ml-1" type="button">
+<span class="material-symbols-outlined text-[16px] leading-none">close</span>
+</button>
+</div>
+<div class="censor-tag flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest px-3.5 py-1.5 rounded-full transition-colors">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md text-on-surface">Poverty Chants</span>
+<button class="remove-tag text-on-surface-variant hover:text-error transition-colors ml-1" type="button">
+<span class="material-symbols-outlined text-[16px] leading-none">close</span>
+</button>
+</div>
+<div class="censor-tag flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest px-3.5 py-1.5 rounded-full transition-colors">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md text-on-surface">Farmer League</span>
+<button class="remove-tag text-on-surface-variant hover:text-error transition-colors ml-1" type="button">
+<span class="material-symbols-outlined text-[16px] leading-none">close</span>
+</button>
+</div>
+<div class="censor-tag flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest px-3.5 py-1.5 rounded-full transition-colors">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md text-on-surface">Tinpot</span>
+<button class="remove-tag text-on-surface-variant hover:text-error transition-colors ml-1" type="button">
+<span class="material-symbols-outlined text-[16px] leading-none">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT SIDEBAR: Conduct Standing & Moderation Ledger (Cols 9-12) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- WIDGET 1: Supporter Fair-Play Charter Standing -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-2xl p-space-xl shadow-lg relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant">Charter Standing</span>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+</div>
+<!-- Metric Display & Progress Gauge -->
+<div class="flex items-center gap-space-lg my-space-md">
+<!-- Circular Ring Progress (Inline SVG) -->
+<div class="relative w-28 h-28 shrink-0 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 100 100">
+<!-- Background Circle -->
+<circle class="text-surface-container-high" cx="50" cy="50" fill="transparent" r="42" stroke="currentColor" stroke-width="8"></circle>
+<!-- Progress Arc 98% -->
+<circle class="text-primary-container" cx="50" cy="50" fill="transparent" r="42" stroke="currentColor" stroke-dasharray="264" stroke-dashoffset="5.2" stroke-linecap="round" stroke-width="8"></circle>
+</svg>
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+<span class="font-stat-display text-stat-display text-on-surface font-extrabold leading-none">98<span class="text-headline-sm text-primary">%</span></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase text-[10px] mt-0.5">Trust Score</span>
+</div>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">0 Active Red Flags</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-md text-label-md text-on-surface">0 Yellow Warnings</span>
+</div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px]">event_repeat</span>
+<span class="font-body-sm text-body-sm">Audit in 14 days</span>
+</div>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-xl mt-space-md">
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            You enjoy Tier-1 voting rights in matchday VAR consensus polls and VIP banter soundrooms.
+          </p>
+</div>
+<button class="w-full mt-space-md py-2.5 px-space-md rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md font-semibold transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">history_edu</span>
+          Inspect Red-Card Appeals Ledger
+        </button>
+</div>
+<!-- WIDGET 2: Blocked Accounts & Muted Fanbases -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-2xl p-space-xl shadow-lg flex flex-col">
+<div class="flex items-center justify-between mb-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">person_off</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Restricted Fan Directory</h3>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">17 Silenced</span>
+</div>
+<!-- Mini Tabs (Blocked Users vs Muted Clubs) -->
+<div class="flex items-center bg-surface-container-lowest p-1 rounded-xl mb-space-md">
+<button class="flex-1 py-1.5 rounded-lg font-label-md text-label-md font-bold transition-all bg-surface-container-high text-on-surface shadow-sm" id="tab-blocked-users" type="button">
+            Blocked (14)
+          </button>
+<button class="flex-1 py-1.5 rounded-lg font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface transition-all" id="tab-muted-clubs" type="button">
+            Muted Clubs (3)
+          </button>
+</div>
+<!-- Panel 1: Blocked Users -->
+<div class="flex flex-col gap-space-sm" id="panel-blocked-users">
+<!-- User Item 1 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[16px]">person</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">@CFC_HazardKing99</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Serial matchday spammer</p>
+</div>
+</div>
+<button class="unblock-action text-on-surface-variant hover:text-primary font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-high hover:bg-surface-container-highest rounded-full transition-colors shrink-0" type="button">
+              Unblock
+            </button>
+</div>
+<!-- User Item 2 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[16px]">person</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">@NorthLondonIsLilywhite</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Aggressive derby DM</p>
+</div>
+</div>
+<button class="unblock-action text-on-surface-variant hover:text-primary font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-high hover:bg-surface-container-highest rounded-full transition-colors shrink-0" type="button">
+              Unblock
+            </button>
+</div>
+<!-- User Item 3 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-error shrink-0">
+<span class="material-symbols-outlined text-[16px]">person</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">@Manc_Troll77</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Banned chant reproduction</p>
+</div>
+</div>
+<button class="unblock-action text-on-surface-variant hover:text-primary font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-high hover:bg-surface-container-highest rounded-full transition-colors shrink-0" type="button">
+              Unblock
+            </button>
+</div>
+</div>
+<!-- Panel 2: Muted Clubs (Hidden initially) -->
+<div class="hidden flex flex-col gap-space-sm" id="panel-muted-clubs">
+<!-- Club Item 1 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Tottenham Hotspur Banter</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">All viral clips muted</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-secondary font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-high hover:bg-surface-container-highest rounded-full transition-colors shrink-0" type="button">
+              Unmute
+            </button>
+</div>
+<!-- Club Item 2 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Chelsea Ultras Official</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Halftime alerts silenced</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-secondary font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-high hover:bg-surface-container-highest rounded-full transition-colors shrink-0" type="button">
+              Unmute
+            </button>
+</div>
+<!-- Club Item 3 -->
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-xl">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[16px]">shield</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Galatasaray Ultras Soundroom</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Decibel flare muted</p>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-secondary font-label-sm text-label-sm px-2.5 py-1 bg-surface-container-high hover:bg-surface-container-highest rounded-full transition-colors shrink-0" type="button">
+              Unmute
+            </button>
+</div>
+</div>
+</div>
+<!-- WIDGET 3: Rapid Incident & Chant Reporting Center -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-2xl p-space-xl shadow-lg relative overflow-hidden">
+<div class="absolute -right-10 -bottom-10 w-44 h-44 bg-error-container/20 rounded-full blur-2xl pointer-events-none"></div>
+<div class="flex items-center gap-space-sm mb-space-sm">
+<div class="w-3 h-3 rounded-full bg-error animate-ping"></div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-error font-bold">Priority Incident Center</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Terrace Harassment or Discrimination?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs mb-space-md">
+          If you experienced stadium hate speech, coordinated doxxing, or malicious physical geolocation stalking during today's matchday, dispatch directly to the Arena Stewards.
+        </p>
+<!-- Visual Stadium Moderation Badge -->
+<div class="flex items-center gap-space-md p-space-md bg-surface-container rounded-xl mb-space-md">
+<div class="w-10 h-10 rounded-full bg-error/10 text-error flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[22px]">emergency</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-bold">Guaranteed Response Under 180s</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Assigned to live match referee booth &amp; human stewards.</p>
+</div>
+</div>
+<button class="w-full py-3 px-space-md rounded-xl bg-error hover:bg-error-container text-on-error font-label-md text-label-md font-bold transition-all shadow-lg flex items-center justify-center gap-space-xs" id="priority-report-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">flag</span>
+          File Priority Moderation Report
+        </button>
+</div>
+<!-- Mini Live Support Footnote -->
+<div class="p-space-md bg-surface-container-high/40 rounded-xl flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-primary">security</span>
+<span>Encrypted under Terrace-Zero Key Protocol</span>
+</div>
+<a class="text-primary hover:underline" href="#">Guidelines</a>
+</div>
+</div>
+</div>
+<!-- Interactive JavaScript -->
+<script>
+    (function initPrivacyModeration() {
+      // 1. Save Notification Toast
+      const saveBtn = document.getElementById('save-governance-btn');
+      const toast = document.getElementById('save-toast');
+
+      if (saveBtn && toast) {
+        saveBtn.addEventListener('click', () => {
+          toast.classList.remove('hidden');
+          toast.classList.add('flex');
+          setTimeout(() => {
+            toast.classList.add('hidden');
+            toast.classList.remove('flex');
+          }, 4000);
+        });
+      }
+
+      // 2. Interactive Toggles
+      const toggles = document.querySelectorAll('.toggle-btn');
+      toggles.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+          const isChecked = toggle.getAttribute('data-checked') === 'true';
+          const newState = !isChecked;
+          toggle.setAttribute('data-checked', String(newState));
+
+          const indicator = toggle.firstElementChild;
+          if (newState) {
+            toggle.classList.remove('bg-surface-container-highest', 'justify-start');
+            toggle.classList.add('bg-primary', 'justify-end');
+            indicator.classList.remove('bg-on-surface-variant');
+            indicator.classList.add('bg-on-primary');
+          } else {
+            toggle.classList.remove('bg-primary', 'justify-end');
+            toggle.classList.add('bg-surface-container-highest', 'justify-start');
+            indicator.classList.remove('bg-on-primary');
+            indicator.classList.add('bg-on-surface-variant');
+          }
+        });
+      });
+
+      // 3. Banter Tier Buttons
+      const tierBtns = document.querySelectorAll('.banter-tier-btn');
+      tierBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          tierBtns.forEach(b => {
+            b.classList.remove('bg-surface-container-high', 'text-on-surface', 'shadow-[0_0_20px_-4px_rgba(0,230,118,0.2)]');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-surface-container-high', 'text-on-surface', 'shadow-[0_0_20px_-4px_rgba(0,230,118,0.2)]');
+          btn.classList.remove('text-on-surface-variant');
+        });
+      });
+
+      // 4. Matchday Buffer Buttons
+      const bufferBtns = document.querySelectorAll('.buffer-btn');
+      const bufferValIndicator = document.getElementById('buffer-val-indicator');
+      bufferBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          bufferBtns.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'font-bold', 'shadow-[0_0_12px_rgba(0,230,118,0.3)]');
+            b.classList.add('bg-surface-container-high/60', 'text-on-surface-variant');
+          });
+          btn.classList.remove('bg-surface-container-high/60', 'text-on-surface-variant');
+          btn.classList.add('bg-primary', 'text-on-primary', 'font-bold', 'shadow-[0_0_12px_rgba(0,230,118,0.3)]');
+
+          const val = btn.getAttribute('data-val');
+          if (bufferValIndicator) {
+            bufferValIndicator.textContent = val;
+          }
+        });
+      });
+
+      // 5. Add / Remove Custom Censor Tags
+      const tagInput = document.getElementById('new-tag-input');
+      const addTagBtn = document.getElementById('add-tag-btn');
+      const tagsContainer = document.getElementById('tags-container');
+
+      function addTag(text) {
+        if (!text || !tagsContainer) return;
+        const newTag = document.createElement('div');
+        newTag.className = 'censor-tag flex items-center gap-space-xs bg-surface-container-high hover:bg-surface-container-highest px-3.5 py-1.5 rounded-full transition-colors';
+        newTag.innerHTML = `
+          <span class="w-2 h-2 rounded-full bg-error"></span>
+          <span class="font-label-md text-label-md text-on-surface">${escapeHtml(text)}</span>
+          <button type="button" class="remove-tag text-on-surface-variant hover:text-error transition-colors ml-1">
+            <span class="material-symbols-outlined text-[16px] leading-none">close</span>
+          </button>
+        `;
+        tagsContainer.appendChild(newTag);
+        attachRemoveEvent(newTag.querySelector('.remove-tag'));
+      }
+
+      function escapeHtml(string) {
+        return String(string).replace(/[&<>"']/g, function(s) {
+          return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[s];
+        });
+      }
+
+      function attachRemoveEvent(btn) {
+        if (!btn) return;
+        btn.addEventListener('click', (e) => {
+          const tag = e.target.closest('.censor-tag');
+          if (tag) tag.remove();
+        });
+      }
+
+      document.querySelectorAll('.remove-tag').forEach(attachRemoveEvent);
+
+      if (addTagBtn && tagInput) {
+        addTagBtn.addEventListener('click', () => {
+          const val = tagInput.value.trim();
+          if (val) {
+            addTag(val);
+            tagInput.value = '';
+          }
+        });
+
+        tagInput.addEventListener('keydown', (e) => {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            const val = tagInput.value.trim();
+            if (val) {
+              addTag(val);
+              tagInput.value = '';
+            }
+          }
+        });
+      }
+
+      // 6. Tabs: Blocked Users vs Muted Clubs
+      const tabBlocked = document.getElementById('tab-blocked-users');
+      const tabMuted = document.getElementById('tab-muted-clubs');
+      const panelBlocked = document.getElementById('panel-blocked-users');
+      const panelMuted = document.getElementById('panel-muted-clubs');
+
+      if (tabBlocked && tabMuted && panelBlocked && panelMuted) {
+        tabBlocked.addEventListener('click', () => {
+          tabBlocked.classList.add('bg-surface-container-high', 'text-on-surface');
+          tabBlocked.classList.remove('text-on-surface-variant');
+          tabMuted.classList.remove('bg-surface-container-high', 'text-on-surface');
+          tabMuted.classList.add('text-on-surface-variant');
+
+          panelBlocked.classList.remove('hidden');
+          panelMuted.classList.add('hidden');
+        });
+
+        tabMuted.addEventListener('click', () => {
+          tabMuted.classList.add('bg-surface-container-high', 'text-on-surface');
+          tabMuted.classList.remove('text-on-surface-variant');
+          tabBlocked.classList.remove('bg-surface-container-high', 'text-on-surface');
+          tabBlocked.classList.add('text-on-surface-variant');
+
+          panelMuted.classList.remove('hidden');
+          panelBlocked.classList.add('hidden');
+        });
+      }
+
+      // 7. Unblock Interaction Feedback
+      document.querySelectorAll('.unblock-action').forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.textContent = 'Unblocked';
+          btn.classList.add('text-primary');
+          setTimeout(() => {
+            const item = btn.closest('.flex.items-center.justify-between');
+            if (item) item.remove();
+          }, 700);
+        });
+      });
+
+      // 8. Priority Report Button Prompt
+      const reportBtn = document.getElementById('priority-report-btn');
+      if (reportBtn) {
+        reportBtn.addEventListener('click', () => {
+          reportBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span> Connecting Stewards...';
+          setTimeout(() => {
+            reportBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span> Case Dispatched (#TR-904)';
+            reportBtn.classList.remove('bg-error');
+            reportBtn.classList.add('bg-primary', 'text-on-primary');
+          }, 1200);
+        });
+      }
+    })();
+  </script>
+</div></main></div></body></html>

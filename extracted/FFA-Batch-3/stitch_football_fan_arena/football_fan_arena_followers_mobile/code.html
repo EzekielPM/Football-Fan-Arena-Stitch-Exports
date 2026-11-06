@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&amp;family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-container-lowest": "#010f1f", "inverse-on-surface": "#233143", "surface-container-highest": "#273647", "background": "#051424", "secondary": "#bdf4ff", "on-background": "#d4e4fa", "tertiary-fixed": "#ffdad9", "primary": "#75ff9e", "on-surface": "#d4e4fa", "surface-container-high": "#1c2b3c", "error-container": "#93000a", "tertiary-container": "#ffb6b6", "on-primary": "#003918", "on-tertiary-fixed": "#400009", "on-primary-fixed": "#00210b", "secondary-fixed-dim": "#00daf3", "on-secondary-container": "#00616d", "on-secondary": "#00363d", "on-error-container": "#ffdad6", "surface": "#051424", "secondary-fixed": "#9cf0ff", "surface-container": "#122131", "primary-fixed": "#62ff96", "on-secondary-fixed": "#001f24", "surface-variant": "#273647", "on-surface-variant": "#bacbb9", "surface-container-low": "#0d1c2d", "secondary-container": "#00e3fd", "on-tertiary": "#680014", "surface-dim": "#051424", "on-error": "#690005", "inverse-primary": "#006d35", "on-tertiary-container": "#ab0028", "primary-container": "#00e676", "on-secondary-fixed-variant": "#004f58", "tertiary-fixed-dim": "#ffb3b3", "outline": "#859585", "on-primary-fixed-variant": "#005226", "surface-bright": "#2c3a4c", "inverse-surface": "#d4e4fa", "error": "#ffb4ab", "surface-tint": "#00e475", "on-tertiary-fixed-variant": "#920021", "on-primary-container": "#00612e", "outline-variant": "#3b4a3d", "tertiary": "#ffdddc", "primary-fixed-dim": "#00e475" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin-tablet": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "margin": "1rem" }, "fontFamily": { "stat-display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, "fontSize": { "stat-display": ["28px", {"lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "headline-md": ["20px", {"lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700"}], "headline-sm": ["16px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700"}], "body-lg": ["16px", {"lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800"}], "body-md": ["14px", {"lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400"}], "headline-xl-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800"}], "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600"}], "body-sm": ["12px", {"lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400"}], "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}], "headline-lg-mobile": ["24px", {"lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700"}], "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><h1 class="text-headline-md font-headline-md text-on-surface tracking-tight">Profile</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Share Profile" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><button aria-label="Settings" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[22px]">settings</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full pb-10">
+<!-- Sub-Header View Navigation -->
+<div class="flex items-center justify-between px-margin py-space-sm bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-sm">
+<button aria-label="Go Back" class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container text-on-surface hover:text-primary transition-colors active:scale-95">
+<span class="material-symbols-outlined text-[20px]">arrow_back</span>
+</button>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface tracking-tight">Supporters</span>
+<span class="px-space-xs py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm">1,420</span>
+</div>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Sort &amp; Filter" class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</div>
+<!-- Segmented Tab Switcher (Followers vs Following) -->
+<div class="px-margin pt-space-md">
+<div class="flex p-1 rounded-full bg-surface-container-lowest">
+<button class="flex-1 py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg text-center font-bold shadow-md transition-all" id="tab-followers">
+        Followers <span class="font-label-sm text-label-sm opacity-90">(1,420)</span>
+</button>
+<button class="flex-1 py-space-sm rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg text-center transition-all" id="tab-following">
+        Following <span class="font-label-sm text-label-sm opacity-60">(380)</span>
+</button>
+</div>
+</div>
+<!-- Interactive Search & Live Filter Bar -->
+<div class="px-margin pt-space-md flex flex-col gap-space-sm">
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full h-12 pl-11 pr-10 rounded-full bg-surface-container text-on-surface placeholder:text-on-surface-variant/70 font-body-md text-body-md focus:outline-none focus:ring-2 focus:ring-primary-container transition-all" id="supporter-search" placeholder="Search supporters following @Alex_Terrace..." type="search"/>
+<button class="hidden absolute right-3 top-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-surface-container-highest text-on-surface-variant items-center justify-center" id="clear-search">
+<span class="material-symbols-outlined text-[14px]">close</span>
+</button>
+</div>
+<!-- Live Filter Pills Rail -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-space-xs -mx-margin px-margin">
+<button class="filter-pill active whitespace-nowrap px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shadow-sm transition-transform active:scale-95" data-filter="all">
+        All Followers
+      </button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-transform active:scale-95" data-filter="mutual">
+        Mutual Gooners
+      </button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-transform active:scale-95" data-filter="pundit">
+        Top Pundits
+      </button>
+<button class="filter-pill whitespace-nowrap px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-transform active:scale-95" data-filter="rival">
+        Derby Rivals
+      </button>
+</div>
+</div>
+<!-- Supporter Matchday Leaderboard / Follower Cards -->
+<div class="flex flex-col gap-space-sm px-margin pt-space-md" id="supporters-list">
+<!-- 1. Declan Rolls Rice -->
+<div class="supporter-card flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low shadow-sm" data-category="mutual">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0 w-13 h-13">
+<img class="w-12 h-12 rounded-full object-cover shadow" data-alt="A portrait photograph of a passionate 20s male football supporter wearing a classic retro Arsenal jersey with London stadium lights glowing subtly in the dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBKCVu_ewWw74yq2FgAWeU-3OW5GIPHWZX3drmRRJxzlvSsfaJEEP7NbEszSByDNqhj3MJdEeajo6znEQIy-gsFum_m1UiOx53GM5rYr2DcBQPQVBUhz0CKfAWhSYu_zHP-y5AfIi3nk6FnhKSg1l_2N3p7b4D4CKHSWdQL_tatzPVvs-CJeAAVOd3TgkIK1SiM7EerkVAT-9-P9Hu5N2rBhPHHBfZC68tvi1l6dO4U"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px] text-primary">sports_soccer</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Declan Rolls Rice</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant truncate">@DeclanRollsRice</span>
+<div class="flex items-center gap-1.5 mt-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Tier 2 Ultra</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">92% Rep</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">Mutual</span>
+</div>
+</div>
+</div>
+<button class="follow-toggle shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all" data-state="following">
+<span class="material-symbols-outlined text-[16px]">done</span>
+<span>Following</span>
+</button>
+</div>
+<!-- 2. Tactical Gooner -->
+<div class="supporter-card flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low shadow-sm" data-category="pundit">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0 w-13 h-13">
+<img class="w-12 h-12 rounded-full object-cover shadow" data-alt="A tactical football analysis creator in a modern dark studio reviewing digital whiteboard tactics with dynamic green ambient lights reflecting on his glasses" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS21E00yvbpUvcgX62r80ymy0yzjAuXKU5OumZ37id5C5SQMwvy7I5sssS3keJTlhLt10rnwlPAoNPdnLyhafwnz9C_fIxrU9pEEyE94MNavcInjKhf6VQiaf_9FHNl9rVf3m7sqJVqsreCNKYO7fnHepMYeF2Y7-XMHh178Nw4AeNzGZ4s33kchWX5cZMNayPo-NeWvLbck5DC2d4rRwqR7U5lCWTr_fRRIkmp_za"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px] text-primary">analytics</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Tactical Gooner</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant truncate">@TacticalGooner</span>
+<div class="flex items-center gap-1.5 mt-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Analyst Pro</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">95% Rep</span>
+</div>
+</div>
+</div>
+<button class="follow-toggle shrink-0 px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold flex items-center gap-1 shadow-md active:scale-95 transition-all" data-state="not-following">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Follow Back</span>
+</button>
+</div>
+<!-- 3. Curva Nord Milano -->
+<div class="supporter-card flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low shadow-sm" data-category="all">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0 w-13 h-13">
+<img class="w-12 h-12 rounded-full object-cover shadow" data-alt="A portrait of an Italian football ultra supporter holding a blue and black scarf under dramatic San Siro evening stadium lights with electric atmospheric haze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8IfKFA7r1SM4LwbWYhdbwDRtQZoSNrhk6NK4TBOSqbvKKGhqYjCsf3DXREGIPHatPgM6q4airsoAnl9osBSa5AQ6LbhyNg1mkO4X-VDxVApie29hTls-MUuDgVXAJtJoYvWQISNLCrPmYgnrhFHOoJp-8PwOd6RVbENW9RHnTzaTHHabNvqPNXdbuuINdEZScE2StXOzmni4k-85WCgi1zsX9rCg1oRA7qKUGY9uh"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px] text-secondary">shield</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Curva Nord Milano</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant truncate">@CurvaNord</span>
+<div class="flex items-center gap-1.5 mt-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm">Global Rank #2</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">91% Rep</span>
+</div>
+</div>
+</div>
+<button class="follow-toggle shrink-0 px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold flex items-center gap-1 shadow-md active:scale-95 transition-all" data-state="not-following">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Follow Back</span>
+</button>
+</div>
+<!-- 4. Spurs Pulse (Derby Rival) -->
+<div class="supporter-card flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low shadow-sm" data-category="rival">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0 w-13 h-13">
+<img class="w-12 h-12 rounded-full object-cover shadow" data-alt="A North London supporter in a modern navy blue tracksuit standing outside a stadium at dusk with electric neon reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXrZaKWEPqYL4tdd_XOoICkVmOl4pQMfduGN19zdJzrbJ3AFv8FzxVo3AnemxwE1AOAob7sCDEfJ0e3pINGuhgTgfpsCF4uc1ob16ukaYnVxvQ5b8dk9N0J2_yQx2RyvvYKYo5apOcqlNCVSMyq4S1QoP2Yy6FMscKAKtdZktfZV7mcPumQ33gvt0gy7Jug_1MdOCOlV8EFx1PHk7lvA5SephdUUbU06gyGkxLSLYz"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-error-container flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px] text-on-error-container">warning</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">SpursPulse N17</span>
+<span class="px-1.5 py-0.2 rounded bg-error-container text-on-error-container font-label-sm text-[9px] uppercase tracking-wider font-extrabold">Rival</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant truncate">@SpursPulse</span>
+<div class="flex items-center gap-1.5 mt-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Lilywhite Tier 2</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-error font-label-sm text-label-sm">Derby Nemesis</span>
+</div>
+</div>
+</div>
+<button class="follow-toggle shrink-0 px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold flex items-center gap-1 shadow-md active:scale-95 transition-all" data-state="not-following">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Follow Back</span>
+</button>
+</div>
+<!-- 5. Bavarian Wall -->
+<div class="supporter-card flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low shadow-sm" data-category="all">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0 w-13 h-13">
+<img class="w-12 h-12 rounded-full object-cover shadow" data-alt="A close portrait of a German football fan wearing a red scarf in a roaring European championship stadium filled with smoke and bright stadium floodlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgspFANq3UAJ007MV6AI6okOIvM45_qy509NuR2mrBvRJm-AQRISA1Ce_SVGgU270y79hXzkdU9eJB_JbV3Iztb4o-mOCCJTqvzdF2LSDkMMobB6CcxXQUh-PNuartQPi2FMhU1czbXo4c4LdMZ6NMzsXltP8e9lIbAoL149_c1B1L4g1mQrelgesnjUgP6dw4UPpUFZsDQAoGjCgOIXiGqOO12i_UVFWJjZ4dIo9t"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px] text-tertiary-container">stadium</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Bavarian Wall</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant truncate">@BavarianWall</span>
+<div class="flex items-center gap-1.5 mt-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Matchgoer</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">87% Rep</span>
+</div>
+</div>
+</div>
+<button class="follow-toggle shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all" data-state="following">
+<span class="material-symbols-outlined text-[16px]">done</span>
+<span>Following</span>
+</button>
+</div>
+<!-- 6. North Bank Ultra -->
+<div class="supporter-card flex items-center justify-between p-space-md rounded-2xl bg-surface-container-low shadow-sm" data-category="mutual">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative shrink-0 w-13 h-13">
+<img class="w-12 h-12 rounded-full object-cover shadow" data-alt="A passionate football fan holding up a team banner in the historic stadium terrace stands, with bright night floodlights casting atmospheric shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAH0cbLoLyR24dkDaTTJNKxTM-68v2Q-_V8HjdDPcmcdWXeNNF3Sm3kqATbpWFtUXXoj_bpzeOCnS29LTIeuCX4uiKyzMkD9ibb2S97HV6gORt6aLgxA06nzDNSsPH28yMBCVxaWAPRBCQqvxYQxa1O6PHAoENp5euLhpHQxScKMb6f0P14hFKJNdzaPpFJ4HTv7ATeap61J9nVJHfbyr3iDyUswM643Tsb8gh-_itu"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-surface-container-highest flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px] text-primary">confirmation_number</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 pr-space-xs">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">North Bank Ultra</span>
+<span class="material-symbols-outlined text-[16px] text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="text-body-sm font-body-sm text-on-surface-variant truncate">@NorthBank_Ultra</span>
+<div class="flex items-center gap-1.5 mt-1 flex-wrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm">Season Ticket</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-primary font-label-sm text-label-sm">96% Rep</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">Mutual</span>
+</div>
+</div>
+</div>
+<button class="follow-toggle shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all" data-state="following">
+<span class="material-symbols-outlined text-[16px]">done</span>
+<span>Following</span>
+</button>
+</div>
+</div>
+<!-- Empty Search Result State (Hidden by default) -->
+<div class="hidden flex-col items-center justify-center p-space-xl text-center" id="empty-state">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-space-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[32px]">sports_soccer</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">No supporters found</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[240px]">We couldn't spot any terrace members matching your search term.</span>
+</div>
+<!-- End of Stream Arena Counter -->
+<div class="flex items-center justify-center gap-2 py-space-xl text-center">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Viewing all 1,420 arena followers</span>
+</div>
+</div>
+<script>
+  (function() {
+    // Follow/Unfollow Micro-interaction
+    const followButtons = document.querySelectorAll('.follow-toggle');
+    followButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const currentState = btn.getAttribute('data-state');
+        if (currentState === 'following') {
+          btn.setAttribute('data-state', 'not-following');
+          btn.className = 'follow-toggle shrink-0 px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md font-bold flex items-center gap-1 shadow-md active:scale-95 transition-all';
+          btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">add</span><span>Follow Back</span>';
+        } else {
+          btn.setAttribute('data-state', 'following');
+          btn.className = 'follow-toggle shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-high text-primary font-label-md text-label-md flex items-center gap-1 active:scale-95 transition-all';
+          btn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span><span>Following</span>';
+        }
+      });
+    });
+
+    // Segmented View Toggle
+    const tabFollowers = document.getElementById('tab-followers');
+    const tabFollowing = document.getElementById('tab-following');
+    tabFollowers.addEventListener('click', () => {
+      tabFollowers.className = 'flex-1 py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg text-center font-bold shadow-md transition-all';
+      tabFollowing.className = 'flex-1 py-space-sm rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg text-center transition-all';
+    });
+    tabFollowing.addEventListener('click', () => {
+      tabFollowing.className = 'flex-1 py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg text-center font-bold shadow-md transition-all';
+      tabFollowers.className = 'flex-1 py-space-sm rounded-full text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg text-center transition-all';
+    });
+
+    // Tag Filtering logic
+    const filterPills = document.querySelectorAll('.filter-pill');
+    const cards = document.querySelectorAll('.supporter-card');
+    const emptyState = document.getElementById('empty-state');
+
+    function applyFilter(category) {
+      let visibleCount = 0;
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        if (category === 'all' || cat === category) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+        }
+      });
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    }
+
+    filterPills.forEach(pill => {
+      pill.addEventListener('click', () => {
+        filterPills.forEach(p => {
+          p.className = 'filter-pill whitespace-nowrap px-4 py-1.5 rounded-full bg-surface-container text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm transition-transform active:scale-95';
+        });
+        pill.className = 'filter-pill active whitespace-nowrap px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary font-label-sm text-label-sm font-bold shadow-sm transition-transform active:scale-95';
+        applyFilter(pill.getAttribute('data-filter'));
+      });
+    });
+
+    // Live Search Filter
+    const searchInput = document.getElementById('supporter-search');
+    const clearBtn = document.getElementById('clear-search');
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      if (query.length > 0) {
+        clearBtn.classList.remove('hidden');
+        clearBtn.classList.add('flex');
+      } else {
+        clearBtn.classList.add('hidden');
+        clearBtn.classList.remove('flex');
+      }
+
+      cards.forEach(card => {
+        const text = card.textContent.toLowerCase();
+        if (text.includes(query)) {
+          card.classList.remove('hidden');
+          card.classList.add('flex');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+          card.classList.remove('flex');
+        }
+      });
+
+      if (visibleCount === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    });
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      clearBtn.classList.add('hidden');
+      clearBtn.classList.remove('flex');
+      cards.forEach(card => {
+        card.classList.remove('hidden');
+        card.classList.add('flex');
+      });
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+      searchInput.focus();
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.4)]" data-active-classes="text-primary-container font-label-md"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="feed" href="#"><span class="material-symbols-outlined text-[22px]">dynamic_feed</span><span class="text-label-sm font-label-sm tracking-normal">Feed</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="clubs" href="#"><span class="material-symbols-outlined text-[22px]">shield</span><span class="text-label-sm font-label-sm tracking-normal">Clubs</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="predictions" href="#"><span class="material-symbols-outlined text-[22px]">sports_soccer</span><span class="text-label-sm font-label-sm tracking-normal">Predictions</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="groups" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="text-label-sm font-label-sm tracking-normal">Groups</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 gap-space-xs text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">person</span><span class="text-label-sm font-label-sm tracking-normal">Profile</span></a></div></nav></body></html>

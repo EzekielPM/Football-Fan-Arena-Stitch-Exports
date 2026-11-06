@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_blank" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary": "#75ff9e", "on-primary-fixed": "#00210b", "background": "#051424", "on-secondary-fixed": "#001f24", "tertiary-fixed-dim": "#ffb3b3", "on-primary": "#003918", "on-background": "#d4e4fa", "error-container": "#93000a", "tertiary-fixed": "#ffdad9", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#920021", "secondary-container": "#00e3fd", "on-tertiary": "#680014", "inverse-primary": "#006d35", "outline": "#859585", "inverse-on-surface": "#233143", "on-error": "#690005", "error": "#ffb4ab", "on-primary-container": "#00612e", "secondary-fixed": "#9cf0ff", "surface-dim": "#051424", "surface": "#051424", "surface-bright": "#2c3a4c", "inverse-surface": "#d4e4fa", "primary-container": "#00e676", "tertiary-container": "#ffb6b6", "outline-variant": "#3b4a3d", "secondary-fixed-dim": "#00daf3", "on-surface-variant": "#bacbb9", "secondary": "#bdf4ff", "surface-container": "#122131", "on-secondary-fixed-variant": "#004f58", "tertiary": "#ffdddc", "primary-fixed-dim": "#00e475", "surface-container-high": "#1c2b3c", "surface-variant": "#273647", "primary-fixed": "#62ff96", "surface-container-highest": "#273647", "on-tertiary-container": "#ab0028", "on-tertiary-fixed": "#400009", "surface-container-lowest": "#010f1f", "on-secondary": "#00363d", "surface-tint": "#00e475", "on-secondary-container": "#00616d", "surface-container-low": "#0d1c2d", "on-primary-fixed-variant": "#005226", "on-surface": "#d4e4fa" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "space-sm": "0.5rem", "gutter": "1rem", "space-lg": "1.5rem", "margin-desktop": "2.5rem", "space-xs": "0.25rem", "gutter-desktop": "1.5rem", "space-md": "1rem", "margin": "1rem", "space-xl": "2rem", "margin-tablet": "1.5rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], "label-sm": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"], "stat-display": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-lg": ["Inter"], "body-sm": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"] }, fontSize: { "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "stat-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#051424;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface flex flex-col min-h-screen pt-safe pb-safe"><main class="flex-1 flex flex-col relative w-full bg-surface"><div class="flex flex-col w-full px-margin pb-space-xl">
+<!-- Top Navigation & Progress Bar -->
+<div class="flex flex-col gap-space-sm pt-space-md pb-space-sm">
+<div class="flex items-center justify-between">
+<button aria-label="Go back" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface active:scale-95 transition-transform" type="button">
+<span class="material-symbols-outlined text-headline-sm">arrow_back</span>
+</button>
+<span class="font-label-sm text-label-sm tracking-wider uppercase text-primary font-bold">
+        Step 1 of 3 • Supporter Identity
+      </span>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors py-2 px-1" type="button">
+        Skip for now
+      </button>
+</div>
+<!-- Segmented Setup Track -->
+<div class="w-full grid grid-cols-3 gap-1.5 mt-space-xs">
+<div class="h-1 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,230,118,0.5)]"></div>
+<div class="h-1 rounded-full bg-surface-container-high"></div>
+<div class="h-1 rounded-full bg-surface-container-high"></div>
+</div>
+</div>
+<!-- Hero Header -->
+<div class="flex flex-col gap-1 my-space-md">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">badge</span>
+</span>
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Matchday Profile</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">
+      Set Up Your Profile
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+      Build your terrace identity. This is how fellow fans will recognise your match banter and predictions.
+    </p>
+</div>
+<!-- Supporter Avatar Generator / Upload -->
+<div class="bg-surface-container-low rounded-xl p-space-md mb-space-md flex flex-col items-center shadow-lg relative overflow-hidden">
+<!-- Subtle floodlight aesthetic aura -->
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-48 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative mb-3 group">
+<div class="w-24 h-24 rounded-full overflow-hidden bg-surface-container-highest shadow-xl flex items-center justify-center relative" id="avatarDisplay">
+<img class="w-full h-full object-cover" data-alt="A stylized atmospheric football supporter silhouette cheering under vibrant stadium lights and green neon mist in modern dark digital art style" id="avatarImage" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqMk4W7hHsdwCBnjeMl4DfbZG0KTfEZMz7uVtRo5PUIeaSxxMMjicIN4D50VpMEsYI71v2UKMHIutjK5jFhsm31Z2MKasGlPE_U_Kqm_XMaLRl9Ru6j0FaCLUFIF83oLbXlrLDSCC7ph4872aY7TRPgvwnnvPk2ES_lPnZ9SIW0N0lm1dpqksrBTz01ZiK6Ayao9SuhXOn3OUouW8ukLThuXrB30wj5Bu4bGA6bCwv"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent"></div>
+</div>
+<button aria-label="Upload photo" class="absolute bottom-0 right-0 w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center shadow-[0_0_12px_rgba(0,230,118,0.6)] active:scale-90 transition-transform" type="button">
+<span class="material-symbols-outlined text-[18px]">add_a_photo</span>
+</button>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface text-center">Upload Supporter Avatar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-center mt-0.5">PNG, JPG or WebP (Max 5MB)</span>
+<!-- Quick Terrace Presets -->
+<div class="w-full mt-4 pt-3 flex flex-col gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant text-center">Quick Terrace Personas</span>
+<div class="grid grid-cols-3 gap-2">
+<button class="preset-btn bg-surface-container p-2 rounded-DEFAULT flex flex-col items-center gap-1 transition-all active:scale-95 text-on-surface-variant hover:text-on-surface" onclick="selectPreset(this, 'Ultras')" type="button">
+<span class="text-xl">🔥</span>
+<span class="font-label-sm text-label-sm font-semibold">Ultras</span>
+</button>
+<button class="preset-btn bg-surface-container p-2 rounded-DEFAULT flex flex-col items-center gap-1 transition-all active:scale-95 text-on-surface-variant hover:text-on-surface" onclick="selectPreset(this, 'Tactician')" type="button">
+<span class="text-xl">📋</span>
+<span class="font-label-sm text-label-sm font-semibold">Tactician</span>
+</button>
+<button class="preset-btn bg-surface-container p-2 rounded-DEFAULT flex flex-col items-center gap-1 transition-all active:scale-95 text-on-surface-variant hover:text-on-surface" onclick="selectPreset(this, 'Scarf Fan')" type="button">
+<span class="text-xl">🧣</span>
+<span class="font-label-sm text-label-sm font-semibold">Scarf Fan</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Profile Details Form -->
+<div class="flex flex-col gap-space-md">
+<!-- Full Name Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center justify-between" for="fullName">
+<span>Full Name</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-normal">Displayed on official rank cards</span>
+</label>
+<div class="relative flex items-center">
+<div class="absolute left-3.5 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<input class="w-full bg-surface-container-low text-on-surface rounded-DEFAULT py-3.5 pl-11 pr-11 font-body-md text-body-md focus:outline-none focus:bg-surface-container focus:shadow-[0_0_12px_rgba(0,230,118,0.2)] transition-all" id="fullName" type="text" value="Marcus Bellingham"/>
+<div class="absolute right-3.5 flex items-center text-primary pointer-events-none">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</div>
+</div>
+</div>
+<!-- Username / Terrace Tag -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface" for="username">Username / Arena Handle</label>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/15 text-primary font-label-sm text-label-sm font-bold animate-pulse">
+<span class="material-symbols-outlined text-[13px]">check</span>
+          Available
+        </span>
+</div>
+<div class="relative flex items-center">
+<span class="absolute left-3.5 font-headline-sm text-headline-sm text-on-surface-variant select-none pointer-events-none">@</span>
+<input class="w-full bg-surface-container-low text-on-surface rounded-DEFAULT py-3.5 pl-9 pr-11 font-body-md text-body-md focus:outline-none focus:bg-surface-container focus:shadow-[0_0_12px_rgba(0,230,118,0.2)] transition-all" id="username" type="text" value="Marcus_Bellingham"/>
+<div class="absolute right-3.5 flex items-center text-primary pointer-events-none">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant px-1">Permanent terrace handle used for derby chat &amp; leaderboard badges.</span>
+</div>
+<!-- Short Bio / Terrace Banter -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-1" for="bio">
+<span>Terrace Bio</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">(Optional)</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono" id="charCount">74/160</span>
+</div>
+<div class="relative">
+<textarea class="w-full bg-surface-container-low text-on-surface rounded-DEFAULT p-3.5 font-body-md text-body-md resize-none focus:outline-none focus:bg-surface-container focus:shadow-[0_0_12px_rgba(0,230,118,0.2)] transition-all leading-relaxed" id="bio" maxlength="160" oninput="updateCharCount(this)" placeholder="Arsenal die-hard. Tactical analysis, high press obsessions &amp; North London banter." rows="3">Arsenal die-hard. Tactical analysis, high press obsessions &amp; North London banter.</textarea>
+</div>
+</div>
+<!-- Country / Territory Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface">Territory Representation</label>
+<div class="bg-surface-container-low active:bg-surface-container rounded-DEFAULT p-3.5 flex items-center justify-between cursor-pointer transition-colors shadow-sm">
+<div class="flex items-center gap-3">
+<span aria-hidden="true" class="text-2xl">🇬🇧</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">United Kingdom</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Tap to change match territory</span>
+</div>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Visual Callout / Live Supporter Card Preview -->
+<div class="mt-space-md bg-surface-container rounded-xl p-space-md flex items-center gap-space-sm relative overflow-hidden">
+<div class="absolute -right-4 -bottom-4 w-20 h-20 bg-secondary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">sports_soccer</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">Matchday Debut Ready</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Your predictions will compete in the Premier Division right away.</span>
+</div>
+</div>
+<!-- Bottom CTA Actions -->
+<div class="flex flex-col gap-space-sm mt-space-lg">
+<button class="w-full bg-primary-container text-on-primary py-4 px-space-md rounded-full font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_4px_20px_rgba(0,230,118,0.35)] active:scale-[0.98] transition-all" type="button">
+<span>Continue to Club Selection</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+<button class="w-full py-2.5 text-center text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors" type="button">
+      Skip Optional Details
+    </button>
+</div>
+<!-- Trust Charter Footer Badge -->
+<div class="flex items-center justify-center gap-1.5 mt-space-md text-center">
+<span class="material-symbols-outlined text-[15px] text-primary" style="font-variation-settings: 'FILL' 1;">security</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Official Football Fan Arena Supporter Charter Enforced</span>
+</div>
+</div>
+<script>
+  function updateCharCount(el) {
+    var count = el.value.length;
+    var target = document.getElementById('charCount');
+    if (target) {
+      target.innerText = count + '/160';
+    }
+  }
+
+  function selectPreset(btn, persona) {
+    document.querySelectorAll('.preset-btn').forEach(function(el) {
+      el.classList.remove('bg-primary/20', 'text-primary');
+      el.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+    btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    btn.classList.add('bg-primary/20', 'text-primary');
+  }
+</script></main></body></html>

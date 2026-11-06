@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary-fixed-variant": "#005226", "outline": "#859585", "surface-container-low": "#0d1c2d", "primary-container": "#00e676", "surface-container-lowest": "#010f1f", "on-primary-container": "#00612e", "tertiary-container": "#ffb6b6", "surface-container-high": "#1c2b3c", "inverse-surface": "#d4e4fa", "secondary-fixed": "#9cf0ff", "on-surface-variant": "#bacbb9", "background": "#051424", "surface-tint": "#00e475", "on-tertiary": "#680014", "on-tertiary-container": "#ab0028", "error": "#ffb4ab", "primary-fixed-dim": "#00e475", "on-secondary-fixed": "#001f24", "inverse-on-surface": "#233143", "surface-dim": "#051424", "surface-container": "#122131", "tertiary-fixed-dim": "#ffb3b3", "primary": "#75ff9e", "on-secondary-fixed-variant": "#004f58", "surface-container-highest": "#273647", "secondary-fixed-dim": "#00daf3", "surface-bright": "#2c3a4c", "on-secondary-container": "#00616d", "inverse-primary": "#006d35", "outline-variant": "#3b4a3d", "on-error-container": "#ffdad6", "surface": "#051424", "on-tertiary-fixed-variant": "#920021", "tertiary-fixed": "#ffdad9", "on-primary": "#003918", "on-error": "#690005", "on-primary-fixed": "#00210b", "on-tertiary-fixed": "#400009", "error-container": "#93000a", "surface-variant": "#273647", "secondary": "#bdf4ff", "on-background": "#d4e4fa", "on-surface": "#d4e4fa", "secondary-container": "#00e3fd", "tertiary": "#ffdddc", "primary-fixed": "#62ff96", "on-secondary": "#00363d" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-md": "1rem", "space-lg": "1.5rem", "gutter": "1rem", "margin": "1rem", "margin-desktop": "2.5rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-xl": "2rem", "margin-tablet": "1.5rem", "space-xs": "0.25rem" }, "fontFamily": { "stat-display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-md": ["Inter"], "label-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"] }, "fontSize": { "stat-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#051424;color:#d4e4fa;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 -ml-space-xs flex items-center justify-center rounded-full text-on-surface hover:text-primary active:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back_ios_new</span></button><h1 class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface truncate">Club Details</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Share match" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface-variant hover:text-primary active:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center ml-space-xs"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface min-h-screen"><div class="flex flex-col w-full pb-10 space-y-4">
+<!-- Visual Hero & Stadium Canopy -->
+<div class="relative w-full overflow-hidden bg-surface-container-lowest">
+<!-- Emirates Stadium Floodlit Atmosphere -->
+<div class="w-full h-48 bg-cover bg-center relative" data-alt="Emirates Stadium in North London during a floodlit night match, dynamic atmospheric lens flare through evening mist, red and white supporter scarves in the distance, stadium canopy illuminated with subtle deep navy and neon green accent shadows, ultra-detailed architectural sports photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQSW7PTr9z9ALsVsyhpfQ124iO8DGFAn8vNOMuzkegr-YijCuWiGwkgCHpYaPXoFdhZNydadtubalEUqP5k_rGdwABFmslU8BGdTauGFghz7Uq57Lz0l5-tYTvrqEe8ego8rneexj2u72pP25qEZ04MNuD8Gj-K9R4Rcmgw9DaR5dLik_VVwem9nPNMlDJtWZkxhUdsKdrdLhOn8PPhxVfdVsm4j3CJ-psO9De6-6O')">
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-surface/60 to-transparent"></div>
+<div class="absolute top-3 right-margin flex items-center space-x-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high/90 backdrop-blur-md text-primary font-label-sm text-label-sm shadow-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse mr-1.5"></span>
+          LIVE TERRACE
+        </span>
+</div>
+</div>
+<!-- Crest Badge & Primary Club Identity -->
+<div class="px-margin relative -mt-14 flex flex-col">
+<div class="flex items-end justify-between">
+<div class="relative w-24 h-24 rounded-full p-1 bg-surface-container-highest shadow-xl">
+<div class="w-full h-full rounded-full overflow-hidden bg-surface-container flex items-center justify-center shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Arsenal FC official club crest featuring the iconic golden artillery cannon on a rich red shield with deep navy and white heraldic accents, glossy broadcast badge styling, crisp high fidelity micro details." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDD2zWZoIb0DbjGK9wjzITHftFO_NK0t_yaKRzbVn9jrGJu4Y6hWd_7XF99W6Zwxma_8ekXrRJOwmZcbLLfPASd8FAL55ySo-IMr2TxI3z8du8hOky3HH6rNpsvWL2n6OIsgu1WQ0dkENZIlD8D2ZRLOPdVxlyj0xUWlTbDBp4S-o94I83NAhVXKZajlsFDz9Qj6DGwfMJfnDiSgviW8sT4oVWn8E-GxGEDhxyGjDo1"/>
+</div>
+<div class="absolute bottom-0 right-0 w-7 h-7 rounded-full bg-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-on-primary text-[16px]">verified</span>
+</div>
+</div>
+<!-- League Ranking Floating Capsule -->
+<div class="mb-1 flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-surface-container-high backdrop-blur-md shadow-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">trophy</span>
+<span class="font-label-md text-label-md text-on-surface">1st in EPL</span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-md text-label-md text-primary font-bold">64 Pts</span>
+</div>
+</div>
+<div class="mt-3">
+<div class="flex items-baseline space-x-2">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">Arsenal Football Club</h2>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span>Arsenal FC</span>
+<span class="w-1 h-1 rounded-full bg-outline-variant"></span>
+<span>The Gunners</span>
+</p>
+<!-- Metadata Pills Strip -->
+<div class="flex flex-wrap items-center gap-1.5 mt-2.5">
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+            🏴󠁧󠁢󠁥󠁮󠁧󠁿 England
+          </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+            Premier League
+          </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+            Est. 1886
+          </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[13px] mr-1 text-outline">stadium</span>
+            Emirates Stadium (60,704)
+          </span>
+</div>
+<!-- Club Heritage Bio -->
+<p class="mt-3 font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Founded in 1886 in Woolwich, North London. 13 League titles, record 14 FA Cups. Renowned for fluid attacking football, storied London rivalries and passionate global fanbase.
+        </p>
+</div>
+<!-- Dual Action Interactive Engine -->
+<div class="mt-4 flex flex-col gap-2">
+<div class="grid grid-cols-2 gap-2">
+<!-- Follow Subscription Pill -->
+<button class="w-full h-11 px-3 rounded-full bg-surface-container-high hover:bg-surface-bright active:scale-95 text-on-surface font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-all shadow-sm" id="follow-toggle-btn">
+<span class="material-symbols-outlined text-primary text-[18px]" id="follow-icon">check_circle</span>
+<span id="follow-label">Following</span>
+</button>
+<!-- Join Fanbase Flagship CTA -->
+<button class="w-full h-11 px-3 rounded-full bg-primary-container hover:bg-primary-fixed active:scale-95 text-on-primary-container font-label-lg text-label-lg flex items-center justify-center gap-1.5 transition-all shadow-md">
+<span>Join Fanbase</span>
+<span class="material-symbols-outlined text-[18px]">shield_person</span>
+</button>
+</div>
+<!-- Microcopy Explainer Box -->
+<div class="p-2.5 rounded-DEFAULT bg-surface-container-low flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] mt-0.5 shrink-0">info</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant text-[11px] leading-tight">
+<strong class="text-on-surface font-semibold">Following</strong> alerts you to match fixtures and news. <strong class="text-primary font-semibold">Joining Fanbase</strong> grants terrace voting rights, banter room access &amp; matchday badges.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Club Community Metrics Quad Bar -->
+<div class="px-margin">
+<div class="grid grid-cols-2 gap-2 p-3 rounded-DEFAULT bg-surface-container-low shadow-sm">
+<div class="p-2.5 rounded-DEFAULT bg-surface-container flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">group</span>
+          Followers
+        </span>
+<div class="mt-1">
+<span class="font-stat-display text-stat-display text-on-surface">1.4M</span>
+<span class="block font-label-sm text-label-sm text-primary">+12k this wk</span>
+</div>
+</div>
+<div class="p-2.5 rounded-DEFAULT bg-surface-container flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">local_fire_department</span>
+          Fanbase
+        </span>
+<div class="mt-1">
+<span class="font-stat-display text-stat-display text-primary">420k</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Verified Gooners</span>
+</div>
+</div>
+<div class="p-2.5 rounded-DEFAULT bg-surface-container flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">trending_up</span>
+          Terrace Rank
+        </span>
+<div class="mt-1">
+<span class="font-stat-display text-stat-display text-secondary">#2</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">Worldwide arena</span>
+</div>
+</div>
+<div class="p-2.5 rounded-DEFAULT bg-surface-container flex flex-col justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">thumb_up</span>
+          Fanbase Rating
+        </span>
+<div class="mt-1">
+<span class="font-stat-display text-stat-display text-on-surface">98%</span>
+<span class="block font-label-sm text-label-sm text-primary">Terrace Passion</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Official Metadata & Fast Nav Links -->
+<div class="px-margin">
+<div class="p-3 rounded-DEFAULT bg-surface-container flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-3 min-w-0">
+<div class="w-9 h-9 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">language</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Official Portal</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">arsenal.com</span>
+</div>
+</div>
+<a class="px-3 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-bright text-primary font-label-md text-label-md flex items-center gap-1" href="https://arsenal.com" rel="noopener noreferrer" target="_blank">
+<span>Visit</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Fan Arena Discussions Gateway Feed -->
+<div class="px-margin space-y-3">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Recent Discussions</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Community chatter from the North Bank</p>
+</div>
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-0.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+        Active
+      </span>
+</div>
+<!-- Category Filter Tabs -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-0.5">
+<button class="px-3 py-1 rounded-full bg-primary font-label-md text-label-md text-on-primary shadow-sm whitespace-nowrap">
+        Top Banter
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high font-label-md text-label-md text-on-surface-variant hover:text-on-surface whitespace-nowrap">
+        Matchday
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high font-label-md text-label-md text-on-surface-variant hover:text-on-surface whitespace-nowrap">
+        Tactics
+      </button>
+<button class="px-3 py-1 rounded-full bg-surface-container-high font-label-md text-label-md text-on-surface-variant hover:text-on-surface whitespace-nowrap">
+        Transfer Talk
+      </button>
+</div>
+<!-- Feed Card 1: Tactical Analysis with Formation Graphic -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container space-y-3 shadow-md">
+<!-- Author info header -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Portrait avatar of an energetic football fan wearing a vintage red Arsenal jersey, smiling against stadium lights, stylized digital fan profile icon." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXRXLiEJQJphcn7e9j0xn2G-YnIN3zfDzJ64NvcHKcjx5IPN3GD6mig5AFNiO5XJu749Tx4kVwC7knqne4ojR0rMEXvBb0UN5DOCYsL0EDmSbwsHuTiTMyR0lbtVGJDhBY0TgX0wr-BvkWzSayxPy68jX9zA6BULCV0jE-LNVtQ2YwGCZa2_X6bA6DrNxPoWvpaQr3R8ZuDtZqs4T9mxiSCELjvags6AFQY4upBn81"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">@Highbury_Gooner</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest font-label-sm text-label-sm text-primary">Tier 2</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">2h ago • North Bank Terrace</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+<!-- Discussion Body -->
+<p class="font-body-md text-body-md text-on-surface leading-normal">
+        Arteta's tactical shift in midfield: Rice and Havertz pressing dynamics vs Porto preview. Notice the high turnover trigger zone on the right flank!
+      </p>
+<!-- Attached Tactical Formation Graphic -->
+<div class="relative w-full h-40 rounded-DEFAULT overflow-hidden bg-surface-container-lowest flex items-center justify-center">
+<div class="w-full h-full bg-cover bg-center" data-alt="Football tactical whiteboard display showing football pitch vectors, green tactical grass grid with player positional markers in white and glowing red dots showing press movements, high contrast analytical coaching graphic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDNQOncfLuKrgZKQJefaPNf_fzCgHaVsTnpeuUe2JzxfcapBfutWSlGQ5FQxXho6OEUeAmR8AjiQSCrG9n-3z5FBGWbmPmBazfwzJV6jaELUEExcweRcbTjW66cBlySV4E7V_m5F9XLNPLskEj3YPrgh5m8shKcxOUbEjFgTm1vbPhZUgDcxSOEQX5Sw-4Zx8PIP8vTJ6aE7VNetOkaPAC2upLjoU3ZvbF0m8NzVzBM')">
+<div class="absolute inset-0 bg-surface-container-lowest/40 backdrop-blur-[2px] flex items-end p-2.5">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest/90 text-on-surface font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">schema</span>
+              4-3-3 Inverted Overload
+            </span>
+</div>
+</div>
+</div>
+<!-- Engagement Counter Footer -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px] text-error">local_fire_department</span>
+<span class="font-label-md text-label-md">840</span>
+</button>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">thumb_up</span>
+<span class="font-label-md text-label-md">210</span>
+</button>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+<span class="font-label-md text-label-md">84</span>
+</button>
+</div>
+<button class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</div>
+<!-- Feed Card 2: Matchday Away Stand Meetup -->
+<div class="p-3.5 rounded-DEFAULT bg-surface-container space-y-2.5 shadow-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-surface-container-highest overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close up supporter face with Arsenal red scarf wrapped around neck on a cold London matchday, passionate expression with stadium floodlights reflected in eyes." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJy7NNw6THwyi4WgFHTOimtiTKHOV-fs5SF5zaMcphRyYgI5v-YaEB9ArB1Q_RpN0YTRJ2UdhHvfZpLWARTPFkZb5pQQE2elNeelTChtyQ-m1und9obugw8CY5ybN3u1KgL7TzDYysnAgX32Y-k0Krtkn6dYaDxThOjp-kAuAgkuvPNm4gH8nCP3B_e1FJWuh8itcWuJw7SfnObVutdExzevXXMAKj_kyL2U8mK5hp"/>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">@LondonRed</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-highest font-label-sm text-label-sm text-secondary">Matchgoer</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant text-[11px]">4h ago • Clock End Bar</span>
+</div>
+</div>
+<button class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[20px]">more_horiz</span>
+</button>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-normal">
+        Derby matchday tickets confirmed for the away stand! Anyone meeting at the stadium pub beforehand? Bringing the flags early 🔴⚪️
+      </p>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-3">
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">thumb_up</span>
+<span class="font-label-md text-label-md">320</span>
+</button>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px] text-error">local_fire_department</span>
+<span class="font-label-md text-label-md">45</span>
+</button>
+<button class="flex items-center gap-1 text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[18px]">chat_bubble</span>
+<span class="font-label-md text-label-md">32</span>
+</button>
+</div>
+<button class="text-on-surface-variant hover:text-primary">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+<!-- Community Broadcaster Gateway CTA -->
+<div class="p-4 rounded-DEFAULT bg-surface-container-high flex flex-col items-center justify-center text-center space-y-2 shadow-sm">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">forum</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Join 1,420 Discussions</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs mt-0.5">
+          Share your match predictions, tactical breakdowns, and chat live with fellow Gunners.
+        </p>
+</div>
+<button class="mt-1 px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-lg text-label-lg flex items-center gap-1.5 active:scale-95 transition-transform shadow-md">
+<span>View Fanbase Arena</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Micro-interaction for the Following Toggle State
+  const followBtn = document.getElementById('follow-toggle-btn');
+  const followIcon = document.getElementById('follow-icon');
+  const followLabel = document.getElementById('follow-label');
+  let isFollowing = true;
+
+  if (followBtn) {
+    followBtn.addEventListener('click', () => {
+      isFollowing = !isFollowing;
+      if (isFollowing) {
+        followIcon.textContent = 'check_circle';
+        followIcon.className = 'material-symbols-outlined text-primary text-[18px]';
+        followLabel.textContent = 'Following';
+        followBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+        followBtn.classList.add('bg-surface-container-high', 'text-on-surface');
+      } else {
+        followIcon.textContent = 'add_circle';
+        followIcon.className = 'material-symbols-outlined text-on-surface-variant text-[18px]';
+        followLabel.textContent = 'Follow';
+        followBtn.classList.remove('bg-surface-container-high', 'text-on-surface');
+        followBtn.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+      }
+    });
+  }
+</script></main></body></html>

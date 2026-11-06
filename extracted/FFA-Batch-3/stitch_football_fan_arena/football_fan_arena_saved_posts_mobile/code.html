@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#233143", "on-surface": "#d4e4fa", "on-primary-container": "#00612e", "on-background": "#d4e4fa", "on-error": "#690005", "on-primary": "#003918", "error": "#ffb4ab", "background": "#051424", "secondary": "#bdf4ff", "on-tertiary-fixed": "#400009", "on-primary-fixed-variant": "#005226", "surface-dim": "#051424", "on-tertiary": "#680014", "tertiary-container": "#ffb6b6", "surface-bright": "#2c3a4c", "secondary-fixed": "#9cf0ff", "on-secondary-fixed-variant": "#004f58", "tertiary": "#ffdddc", "secondary-fixed-dim": "#00daf3", "on-error-container": "#ffdad6", "on-primary-fixed": "#00210b", "on-secondary": "#00363d", "outline": "#859585", "surface-container": "#122131", "on-tertiary-fixed-variant": "#920021", "error-container": "#93000a", "on-secondary-fixed": "#001f24", "surface-container-low": "#0d1c2d", "on-secondary-container": "#00616d", "primary": "#75ff9e", "inverse-surface": "#d4e4fa", "on-surface-variant": "#bacbb9", "surface-container-highest": "#273647", "primary-fixed": "#62ff96", "secondary-container": "#00e3fd", "on-tertiary-container": "#ab0028", "primary-container": "#00e676", "outline-variant": "#3b4a3d", "tertiary-fixed-dim": "#ffb3b3", "tertiary-fixed": "#ffdad9", "surface": "#051424", "surface-variant": "#273647", "surface-container-lowest": "#010f1f", "primary-fixed-dim": "#00e475", "inverse-primary": "#006d35", "surface-tint": "#00e475", "surface-container-high": "#1c2b3c" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "margin": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "gutter": "1rem", "margin-desktop": "2.5rem", "space-sm": "0.5rem", "margin-tablet": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem" }, fontFamily: { "stat-display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-lg": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-sm": ["Inter"], "headline-lg": ["Plus Jakarta Sans"] }, fontSize: { "stat-display": ["28px", { lineHeight: "32px", letterSpacing: "-0.02em", fontWeight: "800" }], "headline-md": ["20px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-sm": ["16px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "700" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "body-md": ["14px", { lineHeight: "22px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "400" }], "headline-xl": ["48px", { lineHeight: "56px", letterSpacing: "-0.03em", fontWeight: "800" }], "headline-xl-mobile": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "800" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.04em", fontWeight: "700" }], "body-sm": ["12px", { lineHeight: "18px", letterSpacing: "0.01em", fontWeight: "400" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }] } } } }</script><style>@layer base { html, body { width: 100vw; margin: 0; padding: 0; background-color: #051424; } body { overscroll-behavior-y: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen flex flex-col antialiased selection:bg-primary selection:text-on-primary"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.25)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" onclick="history.back()" type="button"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-md text-headline-md tracking-tight text-on-surface line-clamp-1">Terrace Bookmarks</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Search bookmarks" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors" type="button"><span class="material-symbols-outlined text-[22px]">search</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_12px_-2px_rgba(0,230,118,0.5)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface px-margin"><div class="flex flex-col w-full pb-6 space-y-space-md">
+<!-- Toast Notification Container (Fixed floating delight) -->
+<div class="fixed top-20 left-1/2 -translate-x-1/2 z-50 transition-all duration-300 pointer-events-none opacity-0 translate-y-[-10px] w-[90%] max-w-sm flex items-center justify-between px-space-md py-space-sm rounded-full bg-surface-container-highest text-on-surface shadow-xl" id="toastNotification">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-[18px]">bookmark_remove</span>
+<span class="font-label-md text-label-md text-on-surface" id="toastMsg">Bookmark removed</span>
+</div>
+<button class="font-label-md text-label-md text-primary hover:underline pointer-events-auto" id="undoBtn" type="button">Undo</button>
+</div>
+<!-- Header Intel Hub & Counter -->
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_rgba(0,230,118,0.8)]"></span>
+<span class="font-label-md text-label-md text-on-surface-variant tracking-wide uppercase">Terrace Vault Intel</span>
+</div>
+<div class="px-3 py-1 rounded-full bg-surface-container-high text-primary flex items-center gap-1 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">cloud_done</span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight">24 Saved • Sync Active</span>
+</div>
+</div>
+<!-- Search & Search Utilities -->
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 pl-space-md flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</div>
+<input class="w-full pl-11 pr-12 py-3 rounded-full bg-surface-container-low text-on-surface font-body-md text-body-md placeholder-on-surface-variant/60 focus:outline-none focus:bg-surface-container-high transition-colors shadow-inner" placeholder="Search saved posts, tactics, banter..." type="text"/>
+<button aria-label="Filter voice or options" class="absolute inset-y-0 right-0 pr-space-md flex items-center text-on-surface-variant hover:text-primary transition-colors" type="button">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Collections Carousel -->
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">Collections &amp; Playlists</span>
+<button class="font-label-sm text-label-sm text-primary flex items-center gap-0.5 hover:underline" type="button">
+<span>Manage</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+</div>
+<div class="flex gap-space-sm overflow-x-auto no-scrollbar py-1">
+<!-- Collection Chip 1 -->
+<button class="flex-shrink-0 flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-high text-on-surface shadow-sm hover:bg-surface-container-highest transition-colors active:scale-95" type="button">
+<span class="w-6 h-6 rounded-full bg-primary/20 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">folder</span>
+</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Matchday 28 Vault</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant">11</span>
+</button>
+<!-- Collection Chip 2 -->
+<button class="flex-shrink-0 flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-high text-on-surface shadow-sm hover:bg-surface-container-highest transition-colors active:scale-95" type="button">
+<span class="w-6 h-6 rounded-full bg-secondary-container/20 text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">sports_soccer</span>
+</span>
+<span class="font-label-md text-label-md whitespace-nowrap">Rice &amp; Ødegaard Classes</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant">6</span>
+</button>
+<!-- Collection Chip 3 -->
+<button class="flex-shrink-0 flex items-center gap-2 px-space-md py-2 rounded-full bg-surface-container-high text-on-surface shadow-sm hover:bg-surface-container-highest transition-colors active:scale-95" type="button">
+<span class="w-6 h-6 rounded-full bg-tertiary-container/30 text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[14px]">local_fire_department</span>
+</span>
+<span class="font-label-md text-label-md whitespace-nowrap">N. London Derby Clips</span>
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 rounded-full bg-surface-container-lowest text-on-surface-variant">7</span>
+</button>
+</div>
+</div>
+<!-- Tag Filter Pills -->
+<div class="flex gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<button class="px-4 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-bold whitespace-nowrap shadow-[0_0_12px_rgba(0,230,118,0.35)] transition-transform active:scale-95" type="button">
+      All (24)
+    </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+      Tactical Analysis (8)
+    </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+      Match Predictions (6)
+    </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+      Derby Banter (7)
+    </button>
+<button class="px-4 py-1.5 rounded-full bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-md text-label-md whitespace-nowrap transition-colors" type="button">
+      Memes &amp; Chants (3)
+    </button>
+</div>
+<!-- Bookmarks Feed Container -->
+<div class="space-y-space-md" id="bookmarksContainer">
+<!-- Card 1: Tactical Analysis -->
+<article class="p-space-md rounded-xl bg-surface-container-low text-on-surface space-y-space-sm shadow-md transition-all hover:bg-surface-container bookmark-card relative overflow-hidden" id="card-arteta-tactics">
+<!-- Glow hint -->
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary/5 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Author Row -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close up dramatic stadium floodlit portrait of football tactician Coach in sleek modern technical track jacket, cinematic sports photography with green accent highlights and deep navy stadium shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYpYM7stsbluVC8lhsKKGz6HJilx3haOwWR65iCKYZiPucm0B0YDkNIQJkMDK32hJc8GDyrQItrgHggT-HahXriUcO-Oe6VKNps4zn_rAf6pZ1d0FBH_h2-d_Et-2DRiozX5zoR8e4q_wAzyjvo5Cl0AWO1yKLpfmQdcJm-vrvoc9z6hJJOjXNhPf2K83D4-gyeqSLbuiTN1tdaTGcHl9kZwOjIwD-zknJAyp4pm9t"/>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Coach ArtetaVision</span>
+<span class="material-symbols-outlined text-primary text-[16px]" title="Tactical Pro">verified</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">@ArtetaVision • 2h ago</p>
+</div>
+</div>
+<!-- Card Bookmark Action -->
+<button aria-label="Saved item options" class="w-9 h-9 rounded-full bg-surface-container-high text-primary flex items-center justify-center transition-transform active:scale-75 shadow-sm" onclick="toggleSave('card-arteta-tactics')" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<!-- Post Body -->
+<div class="space-y-1">
+<div class="flex flex-wrap gap-1.5 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">Tactical Analysis</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Arsenal FC</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">
+          How Rice and Ødegaard dismantle the low-block in North London Derby
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+          Expect Rice to bait the double press on the half-turn, sliding diagonal line-breakers directly into Ødegaard attacking the Zone 14 half-space seam...
+        </p>
+</div>
+<!-- Tactical Pitch Visual SVG (Custom match diagram) -->
+<div class="relative w-full h-40 rounded-DEFAULT bg-surface-container-lowest p-2 overflow-hidden flex items-center justify-center shadow-inner">
+<!-- Stadium Grass Pattern lines -->
+<svg class="w-full h-full text-outline-variant/30" fill="none" viewbox="0 0 320 140">
+<!-- Pitch bounds & markings -->
+<rect height="124" rx="4" stroke="currentColor" stroke-dasharray="2 2" stroke-width="1.5" width="300" x="10" y="8"></rect>
+<line stroke="currentColor" stroke-width="1.5" x1="160" x2="160" y1="8" y2="132"></line>
+<circle cx="160" cy="70" r="28" stroke="currentColor" stroke-width="1.5"></circle>
+<circle cx="160" cy="70" fill="currentColor" r="2"></circle>
+<!-- Penalty Box (Attacking Zone) -->
+<rect height="80" stroke="currentColor" stroke-width="1.2" width="80" x="230" y="30"></rect>
+<path d="M 230 52 A 20 20 0 0 0 230 88" stroke="currentColor" stroke-width="1.2"></path>
+<!-- Shaded Zone 14 Exploitation Box -->
+<rect class="fill-primary/20 animate-pulse" height="56" rx="4" width="46" x="180" y="42"></rect>
+<text class="fill-primary font-bold text-[9px] tracking-widest font-mono" x="186" y="73">ZONE 14</text>
+<!-- Tactical Passing Arcs -->
+<!-- Player Rice Node (41) -->
+<circle class="fill-primary-container" cx="120" cy="80" r="10"></circle>
+<text class="fill-on-primary font-bold text-[9px]" x="114" y="84">41</text>
+<!-- Vector Arrow from Rice to Ødegaard -->
+<path d="M 132 77 Q 160 55 194 56" stroke="#00E676" stroke-dasharray="4 2" stroke-linecap="round" stroke-width="2.5"></path>
+<polygon fill="#00E676" points="196,56 189,52 191,59"></polygon>
+<!-- Player Ødegaard Node (8) -->
+<circle class="fill-secondary-container" cx="204" cy="56" r="10"></circle>
+<text class="fill-on-secondary font-bold text-[9px]" x="201" y="60">8</text>
+<!-- Saka Running Track -->
+<path d="M 204 56 L 270 36" stroke="#75FF9E" stroke-linecap="round" stroke-width="1.5"></path>
+<circle class="fill-surface-container-highest stroke-primary" cx="270" cy="36" r="7" stroke-width="1.5"></circle>
+<text class="fill-primary font-bold text-[8px]" x="267" y="39">7</text>
+</svg>
+<div class="absolute bottom-2 left-3 px-2 py-0.5 rounded-full bg-surface-container/90 text-on-surface-variant font-label-sm text-label-sm">
+          Passing Network &amp; Overload Flow
+        </div>
+</div>
+<!-- Card Engagement & Action Bar -->
+<div class="flex items-center justify-between pt-1 text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">sports</span>
+<span class="font-label-md text-label-md">342 Cheers</span>
+</div>
+<div class="flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">forum</span>
+<span class="font-label-md text-label-md">89 Banter</span>
+</div>
+</div>
+<button aria-label="Share tactical post" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</article>
+<!-- Card 2: Prediction Slip Saved -->
+<article class="p-space-md rounded-xl bg-surface-container-low text-on-surface space-y-space-sm shadow-md transition-all hover:bg-surface-container bookmark-card relative overflow-hidden" id="card-prediction-slip">
+<!-- Author Row -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-headline-sm flex-shrink-0 shadow-[0_0_10px_rgba(0,230,118,0.4)]">
+            AT
+          </div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">@Alex_Terrace</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">My Slip</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">Locked &amp; Verified • Saved Yesterday</p>
+</div>
+</div>
+<button aria-label="Saved item options" class="w-9 h-9 rounded-full bg-surface-container-high text-primary flex items-center justify-center transition-transform active:scale-75 shadow-sm" onclick="toggleSave('card-prediction-slip')" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<!-- Prediction Tally Box -->
+<div class="p-space-md rounded-DEFAULT bg-surface-container space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary font-label-sm text-label-sm font-bold uppercase">Prediction Slip</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">GW28 • Finished</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+<span>+150 PTS WON</span>
+</div>
+</div>
+<!-- Teams & Score Display -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-[12px] font-bold text-on-surface">
+              ARS
+            </div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Arsenal</span>
+</div>
+<div class="px-3 py-1 rounded bg-surface-container-lowest text-primary font-stat-display text-stat-display tracking-tight">
+            2 - 0
+          </div>
+<div class="flex items-center gap-2.5">
+<span class="font-headline-sm text-headline-sm text-on-surface">Newcastle</span>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-[12px] font-bold text-on-surface">
+              NEW
+            </div>
+</div>
+</div>
+<!-- Slip Notes -->
+<div class="pt-2 flex items-start gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary mt-0.5">sticky_note_2</span>
+<p class="font-body-sm text-body-sm italic">
+            "Called Saka pocket run behind Burn. Banked points for Tier 3 stadium rank."
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<span class="font-label-sm text-label-sm text-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">military_tech</span>
+          Leaderboard rank bumped to #42
+        </span>
+<button aria-label="Share slip" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</article>
+<!-- Card 3: Rivalry Banter & Audio Chants -->
+<article class="p-space-md rounded-xl bg-surface-container-low text-on-surface space-y-space-sm shadow-md transition-all hover:bg-surface-container bookmark-card relative overflow-hidden" id="card-chants-banter">
+<!-- Author Row -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Atmospheric stadium crowd ultra fan holding up red and white supporter scarf in smoky packed terrace under bright night floodlights, vibrant and textured documentary style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCzUcID9FYud9zlvk42bdbCOAim37Di7L4jKIJL4htaa1-GALptiWFwTJBbXl8rCt4KrXRzN-f9BXZtSoXy_8QgM3mHVQsz7N6RbOWVCFOH3dam84pP03kBXxuH2e_lcrlen8NMWCSIDRGJati9JrPp96AkqyjJsFaHLyFTzOXGOqqFi08AacEtGbvHwbY4uj8DjvB5UCtVo9BGkOhZD3c7Z8O53X0kELrfH0hLLHVS"/>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">North Bank Ultra</span>
+<span class="px-1.5 py-0.2 rounded bg-tertiary/20 text-tertiary-fixed font-label-sm text-label-sm">Away Loyals</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">North London Derby Banter Arena • 3d ago</p>
+</div>
+</div>
+<button aria-label="Saved item options" class="w-9 h-9 rounded-full bg-surface-container-high text-primary flex items-center justify-center transition-transform active:scale-75 shadow-sm" onclick="toggleSave('card-chants-banter')" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<!-- Card Title & Excerpt -->
+<div class="space-y-1">
+<div class="flex flex-wrap gap-1.5 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-bold uppercase">Terrace Chants</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Derby Prep</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-normal">
+          The definitive away end chants for Sunday. Keep the stadium loud from minute 1. Full song sheet inside.
+        </p>
+</div>
+<!-- Interactive Audio Waveform Pill -->
+<div class="p-3 rounded-DEFAULT bg-surface-container flex items-center justify-between gap-3 shadow-inner">
+<button class="w-10 h-10 rounded-full bg-primary text-on-primary flex items-center justify-center flex-shrink-0 shadow-[0_0_12px_rgba(0,230,118,0.5)] active:scale-95 transition-transform" id="playAudioBtn" onclick="toggleAudioPreview(this)" type="button">
+<span class="material-symbols-outlined text-[22px]">play_arrow</span>
+</button>
+<div class="flex-1 min-w-0 space-y-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md text-on-surface font-semibold truncate">🎙️ Terrace Audio Preview</span>
+<span class="font-label-sm text-label-sm text-primary font-mono">1:24</span>
+</div>
+<!-- Simulated Sound Bars -->
+<div class="flex items-center gap-1 h-4 w-full">
+<div class="w-1 bg-primary/70 h-2 rounded-full animate-pulse"></div>
+<div class="w-1 bg-primary h-3 rounded-full animate-pulse" style="animation-delay: 75ms"></div>
+<div class="w-1 bg-primary h-4 rounded-full animate-pulse" style="animation-delay: 150ms"></div>
+<div class="w-1 bg-primary/80 h-2.5 rounded-full animate-pulse" style="animation-delay: 200ms"></div>
+<div class="w-1 bg-surface-variant h-1 rounded-full"></div>
+<div class="w-1 bg-surface-variant h-2 rounded-full"></div>
+<div class="w-1 bg-primary h-3.5 rounded-full animate-pulse" style="animation-delay: 120ms"></div>
+<div class="w-1 bg-primary/90 h-3 rounded-full animate-pulse" style="animation-delay: 300ms"></div>
+<div class="w-1 bg-surface-variant h-1 rounded-full"></div>
+<div class="w-1 bg-primary/60 h-2 rounded-full"></div>
+<div class="w-1 bg-surface-variant h-1.5 rounded-full"></div>
+<div class="w-1 bg-surface-variant h-1 rounded-full"></div>
+<div class="w-1 bg-surface-variant h-2 rounded-full"></div>
+<div class="w-1 bg-surface-variant h-1 rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="flex items-center justify-between pt-1 text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-tertiary">local_fire_department</span>
+            1.2k Loud Votes
+          </span>
+<span class="font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">record_voice_over</span>
+            54 Samples
+          </span>
+</div>
+<button aria-label="Share chants" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</article>
+<!-- Card 4: Opta Statistical Data Matrix -->
+<article class="p-space-md rounded-xl bg-surface-container-low text-on-surface space-y-space-sm shadow-md transition-all hover:bg-surface-container bookmark-card relative overflow-hidden" id="card-opta-stats">
+<!-- Author Row -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="High tech sports data analytics studio monitor showcasing vibrant glowing radar charts and live biometric heatmaps, deep dark blue atmospheric stadium tech lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEi_biwuE1wYPqaAxRDr-3NH7GikbtP29pMCoKX87zJYhgC_DKlS-8wu7cXj6gmRphdXKuzgKiAGia9GGOhO7tcM9L3PBMBcA_v_LaSV3KabOG89SnvJ4C8XyOgc7oQWSDlTe7TJB-ODkRoHiQy-xJPTLFYycnwgJOmvWMdsXskKfsTOgewAfL10VDCiQQiGaG5zJvK75bJ08491mQLFwk7N1mFvjBTcheeJb8ZwKy"/>
+</div>
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Opta Analyst Pro</span>
+<span class="material-symbols-outlined text-secondary text-[16px]">analytics</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant truncate">@OptaAnalyst_Pro • 5d ago</p>
+</div>
+</div>
+<button aria-label="Saved item options" class="w-9 h-9 rounded-full bg-surface-container-high text-primary flex items-center justify-center transition-transform active:scale-75 shadow-sm" onclick="toggleSave('card-opta-stats')" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+</button>
+</div>
+<!-- Post Body -->
+<div class="space-y-1">
+<div class="flex flex-wrap gap-1.5 mb-1">
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-container/20 text-secondary font-label-sm text-label-sm font-bold uppercase">Data Telemetry</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">Premier League GW28</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface leading-snug">
+          Premier League GW28: Field Tilt &amp; Turnover Recovery Matrices
+        </h2>
+</div>
+<!-- Inline Telemetry Bar Chart -->
+<div class="p-3 rounded-DEFAULT bg-surface-container space-y-2.5">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+<span>Field Tilt % in Final Third</span>
+<span class="text-primary font-mono font-bold">Arsenal 74.2%</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-primary" style="width: 74%"></div>
+<div class="h-full bg-surface-variant" style="width: 26%"></div>
+</div>
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant pt-1">
+<span>High Turnover Recoveries (&lt;40m)</span>
+<span class="text-secondary font-mono font-bold">14 Recoveries (1st)</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden flex">
+<div class="h-full bg-secondary" style="width: 88%"></div>
+<div class="h-full bg-surface-variant" style="width: 12%"></div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="font-label-md text-label-md flex items-center gap-1 hover:text-primary transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+            Full Sheet (PDF)
+          </span>
+</div>
+<button aria-label="Share stats" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</article>
+</div>
+<!-- Vault Storage & Local Sync Footer -->
+<section class="p-space-md rounded-xl bg-surface-container-low text-on-surface space-y-space-sm shadow-sm mt-space-md">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center flex-shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">offline_pin</span>
+</div>
+<div class="space-y-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Offline Terrace Access</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Using 24 of unlimited saved items. Tactical diagrams and audio song sheets remain cached when stadium cell network drops.
+        </p>
+</div>
+</div>
+<!-- Storage capacity indicator bar -->
+<div class="space-y-1 pt-1">
+<div class="flex justify-between text-label-sm font-label-sm text-on-surface-variant">
+<span>Vault Storage</span>
+<span class="text-primary font-mono">18.4 MB / Unlimited</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 14%"></div>
+</div>
+</div>
+<div class="pt-2 flex items-center justify-between text-on-surface-variant">
+<span class="font-label-sm text-label-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync</span>
+        Last cloud backup: 14m ago
+      </span>
+<button class="font-label-sm text-label-sm text-primary hover:underline" type="button">
+        Vault Settings
+      </button>
+</div>
+</section>
+<!-- Empty State Friendly Hint -->
+<div class="py-4 text-center space-y-1 px-space-md">
+<span class="material-symbols-outlined text-[24px] text-on-surface-variant/40">bookmark_add</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant/70 max-w-xs mx-auto">
+      Tap the bookmark icon on any matchday post or take to access it offline on terrace matchdays.
+    </p>
+</div>
+</div>
+<script>
+  let lastRemovedCardId = null;
+  let toastTimer = null;
+
+  function toggleSave(cardId) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+
+    lastRemovedCardId = cardId;
+    
+    // Quick micro-interaction animation
+    card.style.transition = 'all 0.3s ease';
+    card.style.opacity = '0';
+    card.style.transform = 'scale(0.95)';
+    
+    setTimeout(() => {
+      card.classList.add('hidden');
+      showToast('Removed from Terrace Vault');
+    }, 300);
+  }
+
+  function showToast(message) {
+    const toast = document.getElementById('toastNotification');
+    const toastMsg = document.getElementById('toastMsg');
+    if (!toast || !toastMsg) return;
+
+    toastMsg.innerText = message;
+    toast.classList.remove('opacity-0', 'translate-y-[-10px]', 'pointer-events-none');
+    toast.classList.add('opacity-100', 'translate-y-0');
+
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => {
+      hideToast();
+    }, 4500);
+  }
+
+  function hideToast() {
+    const toast = document.getElementById('toastNotification');
+    if (!toast) return;
+    toast.classList.add('opacity-0', 'translate-y-[-10px]', 'pointer-events-none');
+    toast.classList.remove('opacity-100', 'translate-y-0');
+  }
+
+  document.getElementById('undoBtn')?.addEventListener('click', () => {
+    if (lastRemovedCardId) {
+      const card = document.getElementById(lastRemovedCardId);
+      if (card) {
+        card.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          card.style.opacity = '1';
+          card.style.transform = 'scale(1)';
+        });
+      }
+      hideToast();
+      lastRemovedCardId = null;
+    }
+  });
+
+  function toggleAudioPreview(btn) {
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (!icon) return;
+    if (icon.innerText === 'play_arrow') {
+      icon.innerText = 'pause';
+      btn.classList.add('bg-primary-container');
+    } else {
+      icon.innerText = 'play_arrow';
+      btn.classList.remove('bg-primary-container');
+    }
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.3)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="matchday-feed" href="#"><span class="material-symbols-outlined text-[22px]">sports_soccer</span><span class="font-label-sm text-label-sm">Feed</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="live-scores" href="#"><span class="material-symbols-outlined text-[22px]">scoreboard</span><span class="font-label-sm text-label-sm">Scores</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="fan-arena" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-label-sm">Arena</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] transition-colors text-primary" data-path="terrace-bookmarks" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span><span class="font-label-sm text-label-sm">Saved</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] min-h-[44px] text-on-surface-variant hover:text-on-surface transition-colors" data-path="fan-profile" href="#"><span class="material-symbols-outlined text-[22px]">badge</span><span class="font-label-sm text-label-sm">Profile</span></a></div></nav></body></html>

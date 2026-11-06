@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#051424;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "error": "#ffb4ab", "inverse-surface": "#d4e4fa", "tertiary": "#ffdddc", "surface-tint": "#00e475", "on-error": "#690005", "tertiary-container": "#ffb6b6", "on-secondary": "#00363d", "inverse-on-surface": "#233143", "on-tertiary": "#680014", "on-tertiary-fixed-variant": "#920021", "on-surface": "#d4e4fa", "outline-variant": "#3b4a3d", "on-tertiary-fixed": "#400009", "on-secondary-container": "#00616d", "on-background": "#d4e4fa", "secondary": "#bdf4ff", "surface-bright": "#2c3a4c", "secondary-container": "#00e3fd", "on-secondary-fixed": "#001f24", "surface-variant": "#273647", "on-primary": "#003918", "surface-container-high": "#1c2b3c", "secondary-fixed-dim": "#00daf3", "outline": "#859585", "background": "#051424", "surface-dim": "#051424", "on-primary-fixed": "#00210b", "on-error-container": "#ffdad6", "primary": "#75ff9e", "surface": "#051424", "on-primary-fixed-variant": "#005226", "inverse-primary": "#006d35", "on-primary-container": "#00612e", "tertiary-fixed": "#ffdad9", "surface-container": "#122131", "primary-container": "#00e676", "surface-container-highest": "#273647", "tertiary-fixed-dim": "#ffb3b3", "surface-container-lowest": "#010f1f", "on-surface-variant": "#bacbb9", "surface-container-low": "#0d1c2d", "primary-fixed-dim": "#00e475", "error-container": "#93000a", "on-tertiary-container": "#ab0028", "secondary-fixed": "#9cf0ff", "on-secondary-fixed-variant": "#004f58", "primary-fixed": "#62ff96" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "space-sm": "0.5rem", "margin": "1rem", "margin-tablet": "1.5rem", "space-xl": "2rem", "space-xs": "0.25rem", "space-md": "1rem", "gutter": "1rem", "gutter-desktop": "1.5rem", "margin-desktop": "2.5rem", "space-lg": "1.5rem" }, "fontFamily": { "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "label-sm": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "stat-display": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "label-lg": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "stat-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }] } } } };</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><img alt="FFA Crest Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1XecrBlCyRTcdqPTFw_fGEQ-bFOmGdCcZGW1zMPaniAmTpGm8GEHfiENDRUxpgkpFmuPEldggRB-IOs32ymLUXbvxQfTBdfUIJ1Ez63HhTteXLzHWqAU-rgHvDCBYeAIlmsAS-dD_puApV_qNb0ZvwIdO7FBQkil0Npii3pOT00jrIIWvvfuwuvco1EZAyDbhsRhaWnkXC2IBigWbwKCdAHTg-TgXipfUEkdao2o5jYBw"/><div class="flex flex-col"><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase">FFA</span><span class="font-label-sm text-label-sm text-primary tracking-widest uppercase -mt-1">Arena</span></div></div><div class="flex-1 px-space-xs text-center"><h1 class="font-headline-sm text-headline-sm text-on-surface truncate">Predictions</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Search" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[22px]">search</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-secondary-container shadow-[0_0_8px_#00e3fd]"></span></button><button aria-label="Notifications" class="w-12 h-12 flex items-center justify-center rounded-full text-on-surface hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_#00e676]"></span></button><a class="w-12 h-12 flex items-center justify-center" data-path="profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZN9dDeF6YF7lbp2DsgQGNFK3gKk3W64a7OIdbPbkblaxcMZkrK6oQqiWmFMwqdiG1Ej2RaYKcqVQTvzm7D0wLYok_eXSu2ZIbTbppP_l_fLIFg0k_8tu6KDif_m8WOiYwvLSJ8D_hAr0yoEV7EfDxPCZ4tM52GtffBLVLYIT2CYMLgwEZg7UxiSAg4qTn33nOdg4YBPFVgsqBdu94G0wI8ephehcctWhBjRa6JIyO"/></a></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-margin space-y-space-md">
+<!-- Supporter Stats Bento Card -->
+<div class="relative overflow-hidden rounded-lg bg-surface-container-high p-space-md shadow-xl">
+<div class="absolute -right-12 -top-12 w-40 h-40 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute -left-10 -bottom-10 w-32 h-32 bg-secondary-container/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]" style="font-variation-settings: 'FILL' 1;">military_tech</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Matchday Vault</span>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-lowest text-primary shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse shadow-[0_0_8px_#00e676]"></span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase">Season 4</span>
+</div>
+</div>
+<!-- 4-Up Metric Grid -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<div class="flex flex-col p-2.5 rounded bg-surface-container-lowest/80">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">token</span> Total Points
+        </span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-on-surface">1,480</span>
+<span class="font-label-sm text-label-sm text-primary">pts</span>
+</div>
+</div>
+<div class="flex flex-col p-2.5 rounded bg-surface-container-lowest/80">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary-container">public</span> Global Rank
+        </span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-secondary-container">#248</span>
+<span class="font-label-sm text-label-sm text-primary flex items-center">
+<span class="material-symbols-outlined text-[12px]">arrow_upward</span>12
+          </span>
+</div>
+</div>
+<div class="flex flex-col p-2.5 rounded bg-surface-container-lowest/80">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-primary">target</span> Accuracy
+        </span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-on-surface">74%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">hit rate</span>
+</div>
+</div>
+<div class="flex flex-col p-2.5 rounded bg-surface-container-lowest/80">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-tertiary">local_fire_department</span> Hot Streak
+        </span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="font-stat-display text-stat-display text-tertiary">5</span>
+<span class="font-label-sm text-label-sm text-tertiary">Matches 🔥</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Fair Play Disclaimer Pill -->
+<div class="flex items-center gap-2 p-2.5 rounded-full bg-surface-container-low text-on-surface-variant shadow-sm">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified_user</span>
+</div>
+<p class="font-label-sm text-label-sm tracking-wide text-on-surface-variant truncate">
+      Free Fan Predictions • No Real Betting • Points &amp; Terrace Bragging Rights Only
+    </p>
+</div>
+<!-- Filter Rail Tabs -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 -mx-margin px-margin">
+<button class="px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary font-label-md text-label-md tracking-wide shadow-[0_0_12px_rgba(0,230,118,0.3)] shrink-0 transition-transform active:scale-95">
+      Upcoming (8)
+    </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface transition-colors">
+      Submitted (3)
+    </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface transition-colors">
+      History
+    </button>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md shrink-0 hover:text-on-surface transition-colors flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">trophy</span> Leaderboard
+    </button>
+</div>
+<!-- Prediction Cards Section -->
+<div class="flex flex-col space-y-space-md">
+<!-- MATCH 1: High Stakes EPL Derby -->
+<div class="rounded-lg bg-surface-container p-space-md shadow-xl flex flex-col space-y-space-sm relative overflow-hidden" id="match-card-1">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px] text-tertiary">sports_soccer</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Premier League • GW 28</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-tertiary-container/30 text-tertiary">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight">KICKOFF 3h 15m</span>
+</div>
+</div>
+<!-- Teams Matchup Block -->
+<div class="flex items-center justify-between py-space-xs">
+<!-- Home Team -->
+<div class="flex items-center gap-2.5 flex-1 min-w-0">
+<div class="w-11 h-11 rounded-full bg-surface-container-highest p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-inner">
+<img class="w-full h-full object-contain" data-alt="Official round crest of Arsenal Football Club with iconic red cannon motif, sleek athletic styling on dark navy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsvxjy3y3ewBut_t1AqYaKF8YKiYi2OvT2il5wYuqTZU-wBhKsABVOhVAM0aCXerzfQbIm0i0WfgQRX6osiO8wnHl6kaxehdAMQX6lVVcqkLXWT4b3x7QmWIZ7kQ6XwP12H4bKE0hU5Ptnr0EDXGq5pCGtZXcm6zUs9ck2p9sqpSqX_pzwiJE5nT9LcUZ7rI1MjExECjI_532V0cEB_3d0i2ikqgIMY9H6YX7KYFWW"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Arsenal</span>
+<span class="font-label-sm text-label-sm text-primary">2nd • W W W D W</span>
+</div>
+</div>
+<!-- Center VS / Time Badge -->
+<div class="flex flex-col items-center px-2 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest font-bold">VS</span>
+<span class="font-label-sm text-label-sm text-secondary-container mt-0.5">17:30</span>
+</div>
+<!-- Away Team -->
+<div class="flex items-center justify-end gap-2.5 flex-1 min-w-0 text-right">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Man City</span>
+<span class="font-label-sm text-label-sm text-secondary">3rd • W W D W W</span>
+</div>
+<div class="w-11 h-11 rounded-full bg-surface-container-highest p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-inner">
+<img class="w-full h-full object-contain" data-alt="Official round circular shield logo of Manchester City Football Club in sky blue and white, precision modern badge silhouette" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-0N9A8LAOVBgvawU0Fk518oOTEP17aGQA8d4NDBObb74C-RqiuGlAqkrIj4gH28cCYYLstTp8XGYFgD4hf0GswWZ2y88K_cPeOZfUnhS2HEwl0JQYABJSih3o0A-vvMDb0q51RK2DguxWi6h7RQoYuk-UvQwXODKFwMLApBXMuI2yDHvs7ACbCoU7S0NUqQdQK2jOSmVhoZ0pWl0Em20bFwmCAn-OxkvL3RWkoK37"/>
+</div>
+</div>
+</div>
+<!-- Interactive 1X2 Buttons -->
+<div class="grid grid-cols-3 gap-2 pt-1" data-group="match-1">
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-surface-container-highest/70 hover:bg-surface-bright text-on-surface transition-all active:scale-95 group" onclick="selectPrediction(this, 'match-1')">
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">1 (Arsenal)</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed mt-0.5">2.1x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px]">+210 pts</span>
+</button>
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-surface-container-highest/70 hover:bg-surface-bright text-on-surface transition-all active:scale-95 group" onclick="selectPrediction(this, 'match-1')">
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-secondary transition-colors">X (Draw)</span>
+<span class="font-headline-sm text-headline-sm text-secondary mt-0.5">3.4x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px]">+340 pts</span>
+</button>
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-surface-container-highest/70 hover:bg-surface-bright text-on-surface transition-all active:scale-95 group" onclick="selectPrediction(this, 'match-1')">
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">2 (City)</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed mt-0.5">2.0x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px]">+200 pts</span>
+</button>
+</div>
+<!-- Split Crowd Consensus Meter -->
+<div class="flex flex-col space-y-1 pt-space-xs">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-primary font-bold">45% Home</span>
+<span class="text-on-surface-variant">18% Draw</span>
+<span class="text-secondary-container font-bold">37% Away</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-lowest flex overflow-hidden">
+<div class="bg-primary-container h-full transition-all duration-500" style="width: 45%;"></div>
+<div class="bg-outline h-full transition-all duration-500" style="width: 18%;"></div>
+<div class="bg-secondary-container h-full transition-all duration-500" style="width: 37%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<span class="font-label-sm text-label-sm text-[10px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">how_to_vote</span> 34,120 fans predicted
+          </span>
+<span class="font-label-sm text-label-sm text-[10px] text-primary">Bonus Pool +500 pts</span>
+</div>
+</div>
+</div>
+<!-- MATCH 2: Champions League (User Pick Submitted State) -->
+<div class="rounded-lg bg-surface-container p-space-md shadow-xl flex flex-col space-y-space-sm relative overflow-hidden" id="match-card-2">
+<!-- Active Pick Ambient Highlight Pill -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px] text-secondary">stars</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">UCL Semi-Final • 2nd Leg</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container/20 text-primary">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-label-sm text-label-sm font-bold tracking-tight">PICK LOCKED</span>
+</div>
+</div>
+<!-- Teams Matchup Block -->
+<div class="flex items-center justify-between py-space-xs">
+<!-- Home Team -->
+<div class="flex items-center gap-2.5 flex-1 min-w-0">
+<div class="w-11 h-11 rounded-full bg-surface-container-highest p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-inner">
+<img class="w-full h-full object-contain" data-alt="Official heraldic badge of Real Madrid CF featuring royal crown and gold diagonal sash, pristine athletic emblem against clean stadium lights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBPJ1D22UK9W-I8ocKyEdStoLbSseYEJbecNPxYW5eORoblSBmLgzAWLyZMYDibyjhLqmdDFmIiR-tDy-bP17k1WrK6SvS1YOKgWI8LzbfAcaqUInKvt-xn7lguU47tApdUnfAYDyk68aX2uYce5RPXziF2htYucIaxTwVcCZ553cdd_SbmpsmohytzGRaxuOrBZC1pvXpoyk5M8p3rR-tr2mCRvTG54smtX2kHGNQs"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Real Madrid</span>
+<span class="font-label-sm text-label-sm text-primary">14x UCL Winner</span>
+</div>
+</div>
+<div class="flex flex-col items-center px-2 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest font-bold">VS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Wed 20:00</span>
+</div>
+<!-- Away Team -->
+<div class="flex items-center justify-end gap-2.5 flex-1 min-w-0 text-right">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Bayern</span>
+<span class="font-label-sm text-label-sm text-tertiary">6x UCL Winner</span>
+</div>
+<div class="w-11 h-11 rounded-full bg-surface-container-highest p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-inner">
+<img class="w-full h-full object-contain" data-alt="Official circular red, blue, and white diamond badge of FC Bayern Munich, high resolution German football crest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNbg0kEBFgrJBjIuVbI3CApLDVWa9e0Hf4yiMxCdpTn0Xc2Vo4sv08wYv1TVU-6DSzaE0i6lIGNBuwqdIyREIOx6OJk6wNPq19wg74LKK1wWK3lErKYag2xHbHW1OHUELeYu41NZiofqJnltc-vuxtdQH-yHEvxb_bHyv3zfk_qqoK5ACBwgwbeHPDlCJyyAfjGeqx3v3LUwIbprEl-5KRWMseAxGucGBNZOor6Rcp"/>
+</div>
+</div>
+</div>
+<!-- Interactive 1X2 Buttons with Madrid Pre-Selected in Glow State -->
+<div class="grid grid-cols-3 gap-2 pt-1" data-group="match-2">
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-primary-container text-on-primary shadow-[0_0_16px_rgba(0,230,118,0.45)] transition-all active:scale-95 relative overflow-hidden" onclick="selectPrediction(this, 'match-2')">
+<div class="flex items-center gap-1 font-label-sm text-label-sm font-bold text-on-primary">
+<span>1 (Madrid)</span>
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-primary mt-0.5">1.95x</span>
+<span class="font-label-sm text-label-sm text-on-primary/90 text-[9px]">Your Pick: +195 pts</span>
+</button>
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-surface-container-highest/70 hover:bg-surface-bright text-on-surface transition-all active:scale-95 group" onclick="selectPrediction(this, 'match-2')">
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-secondary transition-colors">X (Draw)</span>
+<span class="font-headline-sm text-headline-sm text-secondary mt-0.5">3.8x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px]">+380 pts</span>
+</button>
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-surface-container-highest/70 hover:bg-surface-bright text-on-surface transition-all active:scale-95 group" onclick="selectPrediction(this, 'match-2')">
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">2 (Bayern)</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed mt-0.5">2.6x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px]">+260 pts</span>
+</button>
+</div>
+<!-- Split Crowd Consensus Meter -->
+<div class="flex flex-col space-y-1 pt-space-xs">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-primary font-bold">58% Real Madrid</span>
+<span class="text-on-surface-variant">14% Draw</span>
+<span class="text-secondary-container font-bold">28% Bayern</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-lowest flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 58%;"></div>
+<div class="bg-outline h-full" style="width: 14%;"></div>
+<div class="bg-secondary-container h-full" style="width: 28%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<span class="font-label-sm text-label-sm text-[10px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary">bolt</span> 68,910 fans predicted
+          </span>
+<span class="font-label-sm text-label-sm text-[10px] text-secondary">Edits close 19:30</span>
+</div>
+</div>
+</div>
+<!-- MATCH 3: Serie A Derby della Madonnina -->
+<div class="rounded-lg bg-surface-container p-space-md shadow-xl flex flex-col space-y-space-sm relative overflow-hidden" id="match-card-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<div class="w-5 h-5 rounded-full bg-surface-container-lowest flex items-center justify-center">
+<span class="material-symbols-outlined text-[13px] text-secondary-container">shield</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Serie A • Milan Derby</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-highest text-on-surface-variant">
+<span class="font-label-sm text-label-sm font-semibold tracking-tight">Sun 19:45</span>
+</div>
+</div>
+<!-- Teams Matchup Block -->
+<div class="flex items-center justify-between py-space-xs">
+<!-- Home Team -->
+<div class="flex items-center gap-2.5 flex-1 min-w-0">
+<div class="w-11 h-11 rounded-full bg-surface-container-highest p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-inner">
+<img class="w-full h-full object-contain" data-alt="Official Inter Milan badge with interlocking IM monogram in deep royal blue, gold, and black, minimalist contemporary soccer shield" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnkiUzmkRqE2DfUxWHUaBY4SIiNu9NTYEgmrHrLE1m6WCABK0tdggyLH4Rl-rvTjQIr3ABhnFjbuDuk_1MaVdA0HwhGrEZRjOJ5UCMhc4-vyMct-wJstRBlgb2ALg0XLuOkjfaQKIUcv94FWvyFS3COu_lryL10D-4FqLKIyfnjgeWmTAApRk_cLVxYWEM-xhlcsdd8dQDeTau5cyJebONNJHjNAkzbXzcEt9gFO3q"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Inter Milan</span>
+<span class="font-label-sm text-label-sm text-secondary-container">1st • Scudefto Lead</span>
+</div>
+</div>
+<div class="flex flex-col items-center px-2 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-widest font-bold">VS</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">San Siro</span>
+</div>
+<!-- Away Team -->
+<div class="flex items-center justify-end gap-2.5 flex-1 min-w-0 text-right">
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">AC Milan</span>
+<span class="font-label-sm text-label-sm text-tertiary">Rossoneri Pride</span>
+</div>
+<div class="w-11 h-11 rounded-full bg-surface-container-highest p-1 shrink-0 flex items-center justify-center overflow-hidden shadow-inner">
+<img class="w-full h-full object-contain" data-alt="Official AC Milan football club crest with iconic red and black vertical stripes and red St George cross, oval heraldic crest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBEBMy_etle5Pd4PFy4NGT61wsSvT-xGhunHhTh0Rb7fKQRQPyKPOwIx_XWJ0eaVUjnmjxl2KWj5yD-wiCyrHkliZh8lpRSJefnK139Tf0XZ896aTclxAS9t_b1bTDsO-yIDnVnr1p-dZ_eZDgND8hBahHH-kJtzuy3o9lZFM0s39CvG0qvd3XAnGXyBBze53ge3NAZpj7PxPVZupcayfR9h2-w6_YQ0OEQqGHMggl"/>
+</div>
+</div>
+</div>
+<!-- Interactive 1X2 Buttons -->
+<div class="grid grid-cols-3 gap-2 pt-1" data-group="match-3">
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-surface-container-highest/70 hover:bg-surface-bright text-on-surface transition-all active:scale-95 group" onclick="selectPrediction(this, 'match-3')">
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-primary transition-colors">1 (Inter)</span>
+<span class="font-headline-sm text-headline-sm text-primary-fixed mt-0.5">2.2x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px]">+220 pts</span>
+</button>
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-surface-container-highest/70 hover:bg-surface-bright text-on-surface transition-all active:scale-95 group" onclick="selectPrediction(this, 'match-3')">
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-secondary transition-colors">X (Draw)</span>
+<span class="font-headline-sm text-headline-sm text-secondary mt-0.5">3.2x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px]">+320 pts</span>
+</button>
+<button class="prediction-btn flex flex-col items-center justify-center py-2 px-1 rounded bg-surface-container-highest/70 hover:bg-surface-bright text-on-surface transition-all active:scale-95 group" onclick="selectPrediction(this, 'match-3')">
+<span class="font-label-sm text-label-sm text-on-surface-variant group-hover:text-tertiary transition-colors">2 (Milan)</span>
+<span class="font-headline-sm text-headline-sm text-tertiary mt-0.5">2.8x</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[9px]">+280 pts</span>
+</button>
+</div>
+<!-- Split Crowd Consensus Meter -->
+<div class="flex flex-col space-y-1 pt-space-xs">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="text-primary font-bold">51% Inter</span>
+<span class="text-on-surface-variant">21% Draw</span>
+<span class="text-secondary-container font-bold">28% AC Milan</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container-lowest flex overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 51%;"></div>
+<div class="bg-outline h-full" style="width: 21%;"></div>
+<div class="bg-secondary-container h-full" style="width: 28%;"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant pt-0.5">
+<span class="font-label-sm text-label-sm text-[10px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-secondary">groups</span> 22,480 fans predicted
+          </span>
+<span class="font-label-sm text-label-sm text-[10px] text-tertiary">Derby Double XP</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Mini Leaderboard Preview Component -->
+<div class="flex flex-col space-y-space-sm pt-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">leaderboard</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Top Supporter Gurus</h2>
+</div>
+<a class="font-label-md text-label-md text-primary flex items-center gap-0.5 hover:underline" href="#">
+        Full Table <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Time Filter Pills -->
+<div class="flex p-1 rounded-full bg-surface-container-lowest">
+<button class="flex-1 py-1 text-center rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold shadow-sm">
+        Weekly
+      </button>
+<button class="flex-1 py-1 text-center rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors">
+        Monthly
+      </button>
+<button class="flex-1 py-1 text-center rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors">
+        All-Time
+      </button>
+</div>
+<!-- Podium Presentation Card (Top 3) -->
+<div class="grid grid-cols-3 gap-2 pt-2 items-end">
+<!-- Rank #2: Silver Podium -->
+<div class="flex flex-col items-center p-2.5 rounded-lg bg-surface-container text-center relative overflow-hidden shadow-md">
+<div class="w-5 h-5 rounded-full bg-surface-container-highest text-secondary font-headline-sm text-[11px] flex items-center justify-center font-bold mb-1">
+          2
+        </div>
+<div class="relative w-12 h-12 rounded-full overflow-hidden mb-1">
+<img class="w-full h-full object-cover" data-alt="Portrait of an enthusiastic young woman football fanatic wearing retro scarf and warm terrace jacket, neon stadium bokeh background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2j5_Yn9W4QTSuBKUTstRu1HWhh197GAUDHTnPIMwbrtKqYllt5VZAQiLaLuoAlBRAfl45ZihFR10kP0onHd49CDvwS3OTcReEUqK4gT4BKEgoXjGuESa2ilc9o-gOvrPt-Ubsv-y-_fpNiYZGgr6G_sTVHCFbjJSkPlKtjC6oU9If5jcBGmu50BhQFuyFVTfTHjT6yBcaciJ30r-VX4OLLeDbV8jf230gCXcnndm1"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center text-[9px]">🔴</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full font-bold">Kasper_99</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Bayern Fan</span>
+<div class="mt-1 px-2 py-0.5 rounded bg-surface-container-lowest text-secondary font-label-sm text-label-sm font-bold">
+          3,210 pts
+        </div>
+</div>
+<!-- Rank #1: Gold Champion Podium -->
+<div class="flex flex-col items-center p-3 rounded-lg bg-surface-container-high text-center relative overflow-hidden shadow-xl -mt-2">
+<div class="absolute -top-6 w-24 h-24 bg-primary/20 rounded-full blur-xl pointer-events-none"></div>
+<div class="w-6 h-6 rounded-full bg-primary-container text-on-primary font-headline-sm text-label-sm flex items-center justify-center font-bold mb-1 shadow-[0_0_10px_#00e676]">
+          👑 1
+        </div>
+<div class="relative w-14 h-14 rounded-full overflow-hidden mb-1">
+<img class="w-full h-full object-cover" data-alt="Close up face of an intense male football ultras supporter cheering with face paint under stadium floodlights, dynamic cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMcKNHpqamcOljL8rui2dM1UjVOFSLuS2w-bUxVbpncapqmpRgPMZM6xleZMLo9bp2vb4ZxotwOPPKIbGBgsNdAYJNDeay22B9jSpdh11blPqRPryeAe9EL1LEDLZBGKlSR8Yg55Wf2gpY92JIj3pPJpvrZAJvNuw6s7x0HiAX5zahJpJ6Nl5yw0iTMNYg83j22GeHIe530k5u-rS7fLAo5VYuSLtvOXJrtYAJz9bT"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center text-[9px]">⚪</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary truncate w-full font-bold">TacticZizou</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Real Madrid</span>
+<div class="mt-1 px-2.5 py-0.5 rounded bg-primary-container text-on-primary font-headline-sm text-headline-sm text-[12px] font-bold shadow-sm">
+          3,420 pts
+        </div>
+</div>
+<!-- Rank #3: Bronze Podium -->
+<div class="flex flex-col items-center p-2.5 rounded-lg bg-surface-container text-center relative overflow-hidden shadow-md">
+<div class="w-5 h-5 rounded-full bg-surface-container-highest text-tertiary-fixed font-headline-sm text-[11px] flex items-center justify-center font-bold mb-1">
+          3
+        </div>
+<div class="relative w-12 h-12 rounded-full overflow-hidden mb-1">
+<img class="w-full h-full object-cover" data-alt="Portrait of an energetic supporter in a red jersey holding a club scarf, floodlight arena backdrop with lens flares" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDG62VYHc8mkK_J-TTApzGMDrIRFjbMp7Jsw1FZM1WMLP8G2MyQYTbtzilYLSEJUxFuFTquYUXJMAZuM9fpE6SzjC8bO0WMKE7fBfRXK8X9wBPmOafObYg3akeEIT3gbm2_jmyaLIyGIklGPdCvIi6zInVnKGGhNUG-Ohug8JVHbeULWMdN4E2baROHP9iXLUOuvuHQ7NpVQ-sYckOd5QfsqA-4eAOA4EcPZG30MyIC"/>
+<span class="absolute bottom-0 right-0 w-4 h-4 rounded-full bg-surface-container-lowest flex items-center justify-center text-[9px]">🔴</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface truncate w-full font-bold">GoonerDan</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Arsenal Fan</span>
+<div class="mt-1 px-2 py-0.5 rounded bg-surface-container-lowest text-tertiary-fixed font-label-sm text-label-sm font-bold">
+          3,090 pts
+        </div>
+</div>
+</div>
+<!-- Sticky User Current Position Strip -->
+<div class="flex items-center justify-between p-3 rounded-lg bg-surface-container-high text-on-surface shadow-lg mt-1">
+<div class="flex items-center gap-3 min-w-0">
+<div class="flex items-center justify-center w-8 h-8 rounded-full bg-secondary-container/20 text-secondary-container font-headline-sm text-headline-sm">
+          #248
+        </div>
+<div class="relative w-9 h-9 rounded-full overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Avatar photo of modern supporter profile photo with cool headphones and football club hoodie in neon ambient stadium lounge" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5x4RbNopEeilNpH8fzX-6FQslmela_Nwox3EZtsx80E7RGDUdHFOJrC6lCPxocLGfuQHRnHjSPNPYG23qy2Je5epmVRdmihEoFgyqhkR8gFaYTvFNeg5wo1ebN7ICjoMskhzYCQVTqAnUq-9ROoBTlkBvUhhPRcS4MSmude7DgndNOLFvrgv7M8fsZsBwLbp68Tl3aTXC2B_wk3viN0DGYhZuaUqBlsGJjw5KBmK4"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">You (Alex_FFA)</span>
+<span class="px-1.5 py-0.2 rounded bg-primary/20 text-primary font-label-sm text-[9px] font-bold">Top 5%</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">5 Match Win Streak 🔥</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-2">
+<div class="flex items-baseline gap-1">
+<span class="font-stat-display text-stat-display text-primary">1,480</span>
+<span class="font-label-sm text-label-sm text-primary">pts</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">42 pts to #247</span>
+</div>
+</div>
+</div>
+<!-- Interactive Client Micro-Interaction -->
+<script>
+    function selectPrediction(element, groupId) {
+      const container = document.querySelector(`[data-group="${groupId}"]`);
+      if (!container) return;
+      
+      const buttons = container.querySelectorAll('.prediction-btn');
+      buttons.forEach(btn => {
+        btn.classList.remove('bg-primary-container', 'text-on-primary', 'shadow-[0_0_16px_rgba(0,230,118,0.45)]');
+        btn.classList.add('bg-surface-container-highest/70', 'text-on-surface');
+      });
+
+      element.classList.remove('bg-surface-container-highest/70', 'text-on-surface');
+      element.classList.add('bg-primary-container', 'text-on-primary', 'shadow-[0_0_16px_rgba(0,230,118,0.45)]');
+
+      // Tactile vibration if device supports
+      if (window.navigator && window.navigator.vibrate) {
+        window.navigator.vibrate(20);
+      }
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/85 backdrop-blur-2xl shadow-[0_-8px_32px_rgba(0,0,0,0.6)]" data-active-classes="text-primary font-label-md"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="feed" href="#"><span class="material-symbols-outlined text-[24px]">newspaper</span><span class="font-label-sm text-label-sm tracking-wide">Feed</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="clubs" href="#"><span class="material-symbols-outlined text-[24px]">shield</span><span class="font-label-sm text-label-sm tracking-wide">Clubs</span></a><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 transition-colors relative text-primary font-label-md" data-path="predictions" href="#"><div class="relative flex items-center justify-center"><span class="material-symbols-outlined text-[24px]">sports_score</span><span class="absolute -top-1 -right-2 px-1 py-0.2 rounded-full bg-primary-container text-on-primary font-label-sm text-[8px] leading-tight font-bold tracking-tighter uppercase shadow-[0_0_8px_#00e676]">LIVE</span></div><span class="font-label-sm text-label-sm tracking-wide">Predictions</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="groups" href="#"><span class="material-symbols-outlined text-[24px]">local_fire_department</span><span class="font-label-sm text-label-sm tracking-wide">Groups</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors relative" data-path="profile" href="#"><span class="material-symbols-outlined text-[24px]">person</span><span class="font-label-sm text-label-sm tracking-wide">Profile</span></a></div></nav></body></html>

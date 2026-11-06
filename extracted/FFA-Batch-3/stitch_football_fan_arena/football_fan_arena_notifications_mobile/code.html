@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed-variant": "#005226", "error": "#ffb4ab", "inverse-primary": "#006d35", "on-surface-variant": "#bacbb9", "surface-container-high": "#1c2b3c", "on-error-container": "#ffdad6", "on-secondary-fixed": "#001f24", "surface-variant": "#273647", "outline": "#859585", "tertiary-fixed-dim": "#ffb3b3", "surface": "#051424", "on-background": "#d4e4fa", "primary-fixed-dim": "#00e475", "tertiary-container": "#ffb6b6", "tertiary": "#ffdddc", "inverse-on-surface": "#233143", "on-tertiary-fixed": "#400009", "outline-variant": "#3b4a3d", "on-secondary": "#00363d", "background": "#051424", "on-error": "#690005", "secondary-container": "#00e3fd", "on-secondary-container": "#00612e", "on-tertiary": "#680014", "secondary-fixed": "#9cf0ff", "surface-container-lowest": "#010f1f", "on-surface": "#d4e4fa", "inverse-surface": "#d4e4fa", "on-tertiary-fixed-variant": "#920021", "surface-dim": "#051424", "secondary-fixed-dim": "#00daf3", "on-primary-fixed": "#00210b", "surface-container": "#122131", "primary-fixed": "#62ff96", "surface-tint": "#00e475", "primary": "#75ff9e", "on-primary-container": "#00612e", "on-secondary-fixed-variant": "#004f58", "secondary": "#bdf4ff", "surface-container-highest": "#273647", "tertiary-fixed": "#ffdad9", "primary-container": "#00e676", "on-tertiary-container": "#ab0028", "surface-container-low": "#0d1c2d", "on-primary": "#003918", "surface-bright": "#2c3a4c", "error-container": "#93000a" }, borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, spacing: { "gutter": "1rem", "margin-desktop": "2.5rem", "space-md": "1rem", "space-xs": "0.25rem", "margin-tablet": "1.5rem", "margin": "1rem", "space-xl": "2rem", "gutter-desktop": "1.5rem", "space-sm": "0.5rem", "space-lg": "1.5rem" }, fontFamily: { "label-sm": ["Inter"], "headline-xl": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-sm": ["Inter"], "stat-display": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, fontSize: { "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }], "headline-xl": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }], "body-lg": ["16px", { "lineHeight": "26px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "700" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" }], "body-sm": ["12px", { "lineHeight": "18px", "letterSpacing": "0.01em", "fontWeight": "400" }], "stat-display": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-xl-mobile": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" }] } } } }</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;background-color:#051424;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl pt-safe shadow-[0_1px_8px_rgba(0,0,0,0.2)]"><div class="h-16 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><h1 class="font-headline-md text-headline-md text-on-surface tracking-tight uppercase">Notifications</h1><span class="flex items-center justify-center h-5 px-1.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm">3</span></div><div class="flex items-center gap-space-sm"><button aria-label="Mark all as read" class="min-h-[44px] min-w-[44px] px-space-sm flex items-center justify-center rounded-full bg-surface-container/60 hover:bg-surface-container text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">done_all</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Interactive Filter Rails -->
+<section class="sticky top-0 z-20 bg-surface/90 backdrop-blur-md px-margin py-space-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar scroll-smooth">
+<button class="filter-chip flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shrink-0 transition-transform active:scale-95 shadow-[0_0_16px_-4px_rgba(0,230,118,0.4)]" onclick="filterNotifications('all', this)">
+<span>All</span>
+<span class="unread-pill px-1.5 py-0.5 rounded-full bg-surface text-primary font-label-sm text-label-sm">5 Unread</span>
+</button>
+<button class="filter-chip flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high/80 text-on-surface-variant font-label-md text-label-md shrink-0 transition-transform active:scale-95 hover:text-on-surface" onclick="filterNotifications('mentions', this)">
+        Mentions &amp; Replies
+      </button>
+<button class="filter-chip flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high/80 text-on-surface-variant font-label-md text-label-md shrink-0 transition-transform active:scale-95 hover:text-on-surface" onclick="filterNotifications('reactions', this)">
+        Reactions
+      </button>
+<button class="filter-chip flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high/80 text-on-surface-variant font-label-md text-label-md shrink-0 transition-transform active:scale-95 hover:text-on-surface" onclick="filterNotifications('predictions', this)">
+        Predictions
+      </button>
+<button class="filter-chip flex items-center px-3.5 py-1.5 rounded-full bg-surface-container-high/80 text-on-surface-variant font-label-md text-label-md shrink-0 transition-transform active:scale-95 hover:text-on-surface" onclick="filterNotifications('banter', this)">
+        Fanbases &amp; Banter
+      </button>
+</div>
+</section>
+<!-- Feed Status Hint -->
+<div class="flex items-center justify-between px-margin pt-space-sm pb-space-xs">
+<div class="flex items-center gap-2">
+<span class="inline-flex w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Terrace Live Wire</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant/70">Swipe left to dismiss</span>
+</div>
+<!-- Notification Stream -->
+<div class="flex flex-col gap-2.5 px-margin py-space-sm" id="notificationStream">
+<!-- 1. UNREAD: Reaction/Cheer -->
+<article class="notif-card group relative overflow-hidden rounded-DEFAULT bg-surface-container-low p-space-md shadow-md transition-all duration-200 hover:bg-surface-container" data-category="reactions">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container rounded-l-full"></div>
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="A portrait shot of a passionate Arsenal supporter in red and white kit cheering under stadium lights, cinematic stadium bokeh, deep navy shadows, photorealistic athletic tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFmYC2x00vvg6zO0HPXZ1_E4ivh9-yFPODnJHc8VX5qE0ZtmGxYZt8BYTQDopjQdEHmM_R6w7LghJr8ApsuC2OA31HecC2ayk5bPywuu7dmLi9eQxBOHB2d4YyXmRPHVsZcRtqAwV172Vk6r-b50BUSiBQxDFT-5DBRLPGhxMilOIWWqYCQZpeCd6bXAB_Xv0vjukjN6iFzaIhQKsIspuDDVzYGdjMv28l0I0gWWV7"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-baseline justify-between gap-2">
+<div class="flex items-baseline gap-1.5 truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Declan Rolls Rice</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">@DeclanRollsRice</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">15m ago</span>
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,230,118,0.8)]"></span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Cheered your tactical analysis take:
+          </p>
+<div class="mt-2 p-2.5 rounded-DEFAULT bg-surface-container-high/70 text-on-surface font-body-sm text-body-sm line-clamp-2">
+            "Rice's duel win rate against Chelsea was otherworldly, stepping into transitions like a master technician..."
+          </div>
+</div>
+</div>
+</article>
+<!-- 2. UNREAD: Prediction Settlement -->
+<article class="notif-card group relative overflow-hidden rounded-DEFAULT bg-surface-container-low p-space-md shadow-md transition-all duration-200 hover:bg-surface-container" data-category="predictions">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container rounded-l-full"></div>
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<div class="w-11 h-11 rounded-full bg-primary-container/20 flex items-center justify-center text-primary-fixed-dim">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">emoji_events</span>
+</div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">military_tech</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-baseline justify-between gap-2">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-primary-container/20 text-primary-fixed-dim font-label-sm text-label-sm uppercase tracking-wide">GW28 Lock In</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Exact Score Hit!</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">1h ago</span>
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,230,118,0.8)]"></span>
+</div>
+</div>
+<div class="flex items-center justify-between mt-2.5 p-3 rounded-DEFAULT bg-surface-container-highest">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface">Arsenal 2 - 0 Newcastle</span>
+</div>
+<div class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md">
+<span class="material-symbols-outlined text-[15px]">trending_up</span>
+<span>+150 PTS</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-2 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary-fixed-dim text-[16px]">leaderboard</span>
+<span>Climbed <strong class="text-primary-fixed-dim font-label-md text-label-md">18 spots</strong> on the Terrace Leaderboard to <span class="text-on-surface font-headline-sm text-headline-sm">#342</span></span>
+</div>
+</div>
+</div>
+</article>
+<!-- 3. UNREAD: Reply with Quick Action -->
+<article class="notif-card group relative overflow-hidden rounded-DEFAULT bg-surface-container-low p-space-md shadow-md transition-all duration-200 hover:bg-surface-container" data-category="mentions">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container rounded-l-full"></div>
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="Portrait of an Italian football supporter wearing black and blue scarf under dim stadium arc lights, Milan ultras aesthetic, gritty cinematic composition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAc9bWXDYWxVIsTToshsbE0OCcF0_IHyn2NyYMKcLmC_HDILrWmJxVx1aK2DM5QcDv6A-Up_tbYGKgWVcvWhto1gPItJcfVGLixppUXV0X_UgFOJkzcNvSaIzO66wV_I8BEL-EBUHc9IABRCxtcr_ccSKwV5oZD7Pr1v2yr_hpCJFePAdQ3ZJ00s4OF_wdLXWUAOD9g9adPqalxO8Y8gEYLGVihJtOcu5yjYtjRKAJY"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">reply</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-baseline justify-between gap-2">
+<div class="flex items-baseline gap-1.5 truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Curva Nord Milano</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">@CurvaNord</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">2h ago</span>
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,230,118,0.8)]"></span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+            Replied in <span class="text-secondary font-label-md text-label-md">Derby Banter Arena</span>:
+          </p>
+<p class="mt-2 p-2.5 rounded-DEFAULT bg-surface-container-high/70 text-on-surface font-body-sm text-body-sm">
+            "Spot on about the half-space pivot, Arsenal controlled the tempo completely."
+          </p>
+<div class="flex items-center gap-2 mt-3">
+<button class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary-container transition-colors active:scale-95" onclick="toggleReplyInput(this)">
+<span class="material-symbols-outlined text-[15px]">mode_comment</span>
+<span>Reply</span>
+</button>
+<button class="flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high/40 text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[15px]">favorite</span>
+<span>Approve</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- 4. UNREAD: Official Arsenal Matchroom Invitation -->
+<article class="notif-card group relative overflow-hidden rounded-DEFAULT bg-surface-container-low p-space-md shadow-md transition-all duration-200 hover:bg-surface-container" data-category="banter">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary-container rounded-l-full"></div>
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<div class="w-11 h-11 rounded-full bg-surface-variant flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">sports_soccer</span>
+</div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">podcasts</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-baseline justify-between gap-2">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Official Arsenal Fanbase</span>
+<span class="material-symbols-outlined text-primary text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">3h ago</span>
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,230,118,0.8)]"></span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1">
+            Live Matchroom opened for upcoming <span class="font-headline-sm text-headline-sm text-primary">London Derby</span>!
+          </p>
+<div class="flex items-center gap-2 mt-2 font-body-sm text-body-sm text-on-surface-variant">
+<div class="flex -space-x-1.5">
+<span class="w-4 h-4 rounded-full bg-primary-container"></span>
+<span class="w-4 h-4 rounded-full bg-secondary-container"></span>
+<span class="w-4 h-4 rounded-full bg-tertiary-container"></span>
+</div>
+<span>12.4k supporters chanting now</span>
+</div>
+<div class="mt-3">
+<button class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md active:scale-95 transition-transform shadow-[0_0_14px_-2px_rgba(0,230,118,0.35)]">
+<span class="material-symbols-outlined text-[16px]">sensors</span>
+<span>Join Room</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- 5. UNREAD: Rival Alert Mention -->
+<article class="notif-card group relative overflow-hidden rounded-DEFAULT bg-surface-container-low p-space-md shadow-md transition-all duration-200 hover:bg-surface-container" data-category="banter">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-error rounded-l-full"></div>
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover shadow-sm" data-alt="A moody, high-contrast close-up portrait of a London football supporter in a dark navy beanie with focused stadium atmosphere lighting, sports photography aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZwVDDFJDYBB4RSHuaqpgo4zL3vETiaO-Jm3NWgEhYT2cscpP8I_MJKcmpzF-T1YMiJwLgk31JfmHfAJBSYtWBJuBr-RDrB5CJ21nntvF60New8xebDetSozuE3iU4N8L6PGHSEy5BXojbEDu6pdTI2LWQgrbuMqT9q5dRaaVTxLaBUT_xGa4u7mzf3wwepkYjcWnFMCBnBeMg6GIGewwrVTgfa6gsgXcEM7L88ZPB"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-error text-on-error flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-baseline justify-between gap-2">
+<div class="flex items-center gap-1.5 truncate">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm shrink-0">Rival Alert</span>
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Spurs Pulse Pod</span>
+</div>
+<div class="flex items-center gap-1.5 shrink-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">4h ago</span>
+<span class="w-2 h-2 rounded-full bg-primary-container shadow-[0_0_8px_rgba(0,230,118,0.8)]"></span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Mentioned you in <span class="text-on-surface font-label-md text-label-md">North London Derby Banter</span>:
+          </p>
+<p class="mt-2 p-2.5 rounded-DEFAULT bg-surface-container-high/70 text-on-surface font-body-sm text-body-sm italic">
+            "Let's see if @Alex_Terrace still backs that 4-2-3-1 against high pressing..."
+          </p>
+<div class="flex items-center gap-2 mt-3">
+<button class="px-3.5 py-1 rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-variant transition-colors active:scale-95">
+              Enter The Arena
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- 6. READ: Dossier Followers -->
+<article class="notif-card group relative overflow-hidden rounded-DEFAULT bg-surface-container-lowest/80 p-space-md opacity-85 transition-opacity hover:opacity-100" data-category="mentions">
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<img class="w-11 h-11 rounded-full object-cover grayscale opacity-90" data-alt="Black and white artistic photograph of an English terrace football fan standing in front of vintage turnstiles under misty night floodlights" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1Yu5kKCBLV28FqHg2F21LWvK7S21cQhSHhEcR0lpkv2UeeK0ncn6_p-rSQ8MvB_je2yRdoCO21Yu29FY5as41d7lNzRVUwQHIxhN7CKfjCZaPCzn9ylbNB0p9aZZlWRsbA_USagV03XbWDCYdFNIlNnA3BVb1PyVSeLUR4YaPuZ46FEgI99XUIN2ZvNBGGybPM054PwaeTiD5G_bRQ5GeFLLDQjw67LzC5Pe0toBv"/>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[13px]">person_add</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Highbury Ghost</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">1d ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            and <strong class="text-on-surface">14 others</strong> followed your tactical profile dossier.
+          </p>
+<div class="mt-2.5">
+<button class="px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md active:scale-95 hover:bg-surface-container-highest transition-colors">
+              View Dossier
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- 7. READ: Private Group Invitation -->
+<article class="notif-card group relative overflow-hidden rounded-DEFAULT bg-surface-container-lowest/80 p-space-md opacity-85 transition-opacity hover:opacity-100" data-category="banter">
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">group_add</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-baseline justify-between gap-2">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">North Bank Ultra</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">2d ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Invited you to join private banter collective:
+          </p>
+<div class="font-label-lg text-label-lg text-primary mt-0.5">
+            "Clock End Away Loyals"
+          </div>
+<div class="flex items-center gap-2 mt-3" id="inviteActions">
+<button class="px-3.5 py-1 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md active:scale-95 transition-transform" onclick="acceptInvite(this)">
+              Accept
+            </button>
+<button class="px-3.5 py-1 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-md text-label-md active:scale-95 transition-colors" onclick="declineInvite(this)">
+              Decline
+            </button>
+</div>
+</div>
+</div>
+</article>
+<!-- 8. READ: Opta Analyst Pro Telemetry -->
+<article class="notif-card group relative overflow-hidden rounded-DEFAULT bg-surface-container-lowest/80 p-space-md opacity-85 transition-opacity hover:opacity-100" data-category="predictions">
+<div class="flex items-start gap-space-md">
+<div class="relative shrink-0">
+<div class="w-11 h-11 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">query_stats</span>
+</div>
+</div>
+<div class="flex flex-col flex-1 min-w-0">
+<div class="flex items-baseline justify-between gap-2">
+<div class="flex items-center gap-1.5 truncate">
+<span class="font-headline-sm text-headline-sm text-on-surface truncate">Opta Analyst Pro</span>
+<span class="material-symbols-outlined text-primary text-[15px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant shrink-0">3d ago</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+            Published verified telemetry report on <span class="text-on-surface font-label-md text-label-md">Premier League GW28</span> including expected pitch control matrices.
+          </p>
+<div class="mt-2.5">
+<button class="inline-flex items-center gap-1.5 text-primary font-label-md text-label-md hover:underline">
+<span>Read Telemetry Analysis</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+<!-- End of Stream Terrace Indicator -->
+<div class="flex flex-col items-center justify-center py-space-xl px-margin text-center">
+<div class="w-12 h-12 rounded-full bg-surface-container-high flex items-center justify-center text-on-surface-variant mb-2">
+<span class="material-symbols-outlined text-[22px]">done_all</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface">You're all caught up!</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-[260px] mt-1">
+      Floodlights off for now. We will alert you when the team sheets drop.
+    </p>
+</div>
+</div>
+<script>
+  function filterNotifications(filter, button) {
+    const chips = document.querySelectorAll('.filter-chip');
+    chips.forEach(chip => {
+      chip.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_16px_-4px_rgba(0,230,118,0.4)]');
+      chip.classList.add('bg-surface-container-high/80', 'text-on-surface-variant');
+    });
+
+    button.classList.remove('bg-surface-container-high/80', 'text-on-surface-variant');
+    button.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-[0_0_16px_-4px_rgba(0,230,118,0.4)]');
+
+    const cards = document.querySelectorAll('.notif-card');
+    cards.forEach(card => {
+      if (filter === 'all' || card.getAttribute('data-category') === filter) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+
+  function toggleReplyInput(btn) {
+    const parent = btn.parentElement;
+    if (parent.nextElementSibling && parent.nextElementSibling.classList.contains('reply-box')) {
+      parent.nextElementSibling.remove();
+      return;
+    }
+    const box = document.createElement('div');
+    box.className = 'reply-box mt-3 flex items-center gap-2';
+    box.innerHTML = `
+      <input type="text" placeholder="Drop banter..." class="flex-1 bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full text-body-md focus:outline-none focus:ring-1 focus:ring-primary-container" />
+      <button onclick="this.closest('.reply-box').remove()" class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+        <span class="material-symbols-outlined text-[16px]">send</span>
+      </button>
+    `;
+    parent.after(box);
+  }
+
+  function acceptInvite(btn) {
+    const wrapper = btn.closest('#inviteActions');
+    wrapper.innerHTML = `
+      <span class="inline-flex items-center gap-1.5 font-label-md text-label-md text-primary-fixed-dim">
+        <span class="material-symbols-outlined text-[18px]">check_circle</span>
+        Accepted • Welcome to Clock End
+      </span>
+    `;
+  }
+
+  function declineInvite(btn) {
+    const wrapper = btn.closest('#inviteActions');
+    wrapper.innerHTML = `
+      <span class="font-label-sm text-label-sm text-on-surface-variant">
+        Invitation declined
+      </span>
+    `;
+  }
+
+  // Header "mark all as read" hookup
+  document.addEventListener('DOMContentLoaded', () => {
+    const markReadBtn = document.querySelector('header button[aria-label="Mark all as read"]');
+    if (markReadBtn) {
+      markReadBtn.addEventListener('click', () => {
+        document.querySelectorAll('.unread-pill').forEach(el => el.remove());
+        document.querySelectorAll('.bg-primary-container.shadow-\\[0_0_8px_rgba\\(0\\,230\\,118\\,0\\.8\\)\\]').forEach(dot => dot.remove());
+        const headerBadge = document.querySelector('header span.bg-primary-container');
+        if (headerBadge) headerBadge.textContent = '0';
+      });
+    }
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-4px_20px_rgba(0,0,0,0.5)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="feed" href="#"><span class="material-symbols-outlined text-[22px]">dynamic_feed</span><span class="font-label-sm text-label-sm tracking-wide mt-0.5">Feed</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="clubs" href="#"><span class="material-symbols-outlined text-[22px]">shield</span><span class="font-label-sm text-label-sm tracking-wide mt-0.5">Clubs</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="predictions" href="#"><span class="material-symbols-outlined text-[22px]">sports_soccer</span><span class="font-label-sm text-label-sm tracking-wide mt-0.5">Predict</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="groups" href="#"><span class="material-symbols-outlined text-[22px]">forum</span><span class="font-label-sm text-label-sm tracking-wide mt-0.5">Groups</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] w-14 text-on-surface-variant hover:text-on-surface transition-colors" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-sm text-label-sm tracking-wide mt-0.5">Profile</span></a></div></nav></body></html>
