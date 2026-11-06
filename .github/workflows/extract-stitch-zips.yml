@@ -21,9 +21,9 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p extracted/FFA-Batch-1 extracted/FFA-Batch-2 extracted/FFA-Batch-3
-          unzip -q "FFA Batch 1.zip" -d extracted/FFA-Batch-1
-          unzip -q "FFA Batch 2.zip" -d extracted/FFA-Batch-2
-          unzip -q "FFA Batch 3.zip" -d extracted/FFA-Batch-3
+          unzip -q "FFA Batch 1_035118.zip" -d extracted/FFA-Batch-1
+          unzip -q "FFA Batch 2_034848.zip" -d extracted/FFA-Batch-2
+          unzip -q "FFA Batch 3_035358.zip" -d extracted/FFA-Batch-3
           echo "Batch 1 files: $(find extracted/FFA-Batch-1 -type f | wc -l)"
           echo "Batch 2 files: $(find extracted/FFA-Batch-2 -type f | wc -l)"
           echo "Batch 3 files: $(find extracted/FFA-Batch-3 -type f | wc -l)"
